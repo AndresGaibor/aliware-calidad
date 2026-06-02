@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_FdR_gF6SEfGXp-igzKfSsw" name="sellers" dataPackage="_FdR_gV6SEfGXp-igzKfSsw" Server="Localhost 127.0.0.1" FilePath="/Users/andresgaibor/geniuslab/Fuentes/sellers.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_FdR_gV6SEfGXp-igzKfSsw" name="default" dataManager="_FdR_gF6SEfGXp-igzKfSsw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_FdR_gl6SEfGXp-igzKfSsw" id="_0T6q0F6REfGXp-igzKfSsw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FdR_g16SEfGXp-igzKfSsw" label="seller_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FdR_hF6SEfGXp-igzKfSsw" label="seller_zip_code_prefix" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FdR_hV6SEfGXp-igzKfSsw" label="seller_city" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FdR_hl6SEfGXp-igzKfSsw" label="seller_state" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

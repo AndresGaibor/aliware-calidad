@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_3zZM8F6SEfGXp-igzKfSsw" name="geolocation" dataPackage="_3zZM8V6SEfGXp-igzKfSsw" Server="Localhost 127.0.0.1" FilePath="/Users/andresgaibor/geniuslab/Fuentes/geolocation.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_3zZM8V6SEfGXp-igzKfSsw" name="default" dataManager="_3zZM8F6SEfGXp-igzKfSsw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_3zZ0AF6SEfGXp-igzKfSsw" id="_v_-T8F6SEfGXp-igzKfSsw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3zZ0AV6SEfGXp-igzKfSsw" label="geolocation_zip_code_prefix" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3zZ0Al6SEfGXp-igzKfSsw" label="geolocation_lat" length="19" precision="16" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3zZ0A16SEfGXp-igzKfSsw" label="geolocation_lng" length="19" precision="16" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3zZ0BF6SEfGXp-igzKfSsw" label="geolocation_city" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3zZ0BV6SEfGXp-igzKfSsw" label="geolocation_state" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
