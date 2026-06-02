@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_8Ycy4F6aEfGQ0ed-VkYKHg" name="ejemplo" creationDate="2026-06-02T10:51:39.501-0500" defaultContext="Default">
+  <clientDependency href="../Analyses/Basic_Column_Analysis_olist_customers_0.1.ana#_yWd7IF6bEfGQ0ed-VkYKHg"/>
+  <clientDependency href="../Analyses/Basic_Column_Analysis_olist_geolocation_0.1.ana#_yW9qYF6bEfGQ0ed-VkYKHg"/>
+  <clientDependency href="../Analyses/Basic_Column_Analysis_orders_0.1.ana#_yXEYEF6bEfGQ0ed-VkYKHg"/>
+  <clientDependency href="../Analyses/Basic_Column_Analysis_olist_order_items_0.1.ana#_ZmQXkF6gEfGQ0ed-VkYKHg"/>
+  <clientDependency href="../Analyses/Basic_Column_Analysis_olist_order_payments_0.1.ana#_ZmUB8F6gEfGQ0ed-VkYKHg"/>
+  <clientDependency href="../Analyses/Basic_Column_Analysis_olist_order_reviews_0.1.ana#_ZmXsUF6gEfGQ0ed-VkYKHg"/>
+  <clientDependency href="../Analyses/Basic_Column_Analysis_olist_product_0.1.ana#_Zmb9wF6gEfGQ0ed-VkYKHg"/>
+  <clientDependency href="../Analyses/Basic_Column_Analysis_sellers_0.1.ana#_ZmhdUF6gEfGQ0ed-VkYKHg"/>
+  <taggedValue xmi:id="_8Ycy4V6aEfGQ0ed-VkYKHg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_8Ycy4l6aEfGQ0ed-VkYKHg" tag="Author" value="jose.bonillao@trial.l8vvxvbbvpva9h4.us.qlikcloud.com"/>
+  <taggedValue xmi:id="_8Ycy416aEfGQ0ed-VkYKHg" tag="Purpose"/>
+  <taggedValue xmi:id="_8Ycy5F6aEfGQ0ed-VkYKHg" tag="Description"/>
+  <taggedValue xmi:id="_8Ycy5V6aEfGQ0ed-VkYKHg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_8Ycy5l6aEfGQ0ed-VkYKHg" tag="OutputFolder" value="/Users/andresgaibor/geniuslab/Reportes"/>
+  <taggedValue xmi:id="_8Ycy516aEfGQ0ed-VkYKHg" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_8Ycy6F6aEfGQ0ed-VkYKHg" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_8Ycy6V6aEfGQ0ed-VkYKHg" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_8Ycy6l6aEfGQ0ed-VkYKHg" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_8Ycy616aEfGQ0ed-VkYKHg" tag="REP_DBINFO_WAREHOUSE" value=""/>
+  <taggedValue xmi:id="_8Ycy7F6aEfGQ0ed-VkYKHg" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_8Ycy7V6aEfGQ0ed-VkYKHg" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_8Ycy7l6aEfGQ0ed-VkYKHg" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_8Ycy716aEfGQ0ed-VkYKHg" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:Pr/E3j/iMFQZAFVF8vAUk6FaX1dwVR96q4uurg=="/>
+  <taggedValue xmi:id="_8Ycy8F6aEfGQ0ed-VkYKHg" tag="REP_DBINFO_PARAMETER" value=""/>
+  <taggedValue xmi:id="_8Ycy8V6aEfGQ0ed-VkYKHg" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file://Applications/TalendStudio-8.0.1/studio/workspace/TDQ_reporting_db/talend_dq"/>
+  <taggedValue xmi:id="_8Ycy8l6aEfGQ0ed-VkYKHg" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_8Ycy816aEfGQ0ed-VkYKHg" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_8Ycy9F6aEfGQ0ed-VkYKHg" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_8ZGTIF6aEfGQ0ed-VkYKHg" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_8ZGTIV6aEfGQ0ed-VkYKHg" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_dqvS8F6bEfGQ0ed-VkYKHg" tag="OutputFileName" value="GAIBOR_ANDRES_Reporte"/>
+  <taggedValue xmi:id="_dqv6AF6bEfGQ0ed-VkYKHg" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_yWaQwV6bEfGQ0ed-VkYKHg" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <taggedValue xmi:id="_yWaQwl6bEfGQ0ed-VkYKHg" tag="REP_AUTHPASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_yWaQw16bEfGQ0ed-VkYKHg" tag="REP_CLIENTSECRET_CONTEXT" value="false"/>
+  <analysisMap xmi:id="_JM4HoF6bEfGQ0ed-VkYKHg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Basic_Column_Analysis_olist_customers_0.1.ana#_4H2kkF6TEfGXp-igzKfSsw"/>
+  </analysisMap>
+  <analysisMap xmi:id="_JM4HoV6bEfGQ0ed-VkYKHg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Basic_Column_Analysis_olist_geolocation_0.1.ana#_55goEF6WEfGXp-igzKfSsw"/>
+  </analysisMap>
+  <analysisMap xmi:id="_JM4usF6bEfGQ0ed-VkYKHg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Basic_Column_Analysis_orders_0.1.ana#_ehdVAF6aEfGQ0ed-VkYKHg"/>
+  </analysisMap>
+  <analysisMap xmi:id="_TefIEF6gEfGQ0ed-VkYKHg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Basic_Column_Analysis_olist_order_items_0.1.ana#_-pxDUF6cEfGQ0ed-VkYKHg"/>
+  </analysisMap>
+  <analysisMap xmi:id="_TefIEV6gEfGQ0ed-VkYKHg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Basic_Column_Analysis_olist_order_payments_0.1.ana#_nYdqkF6dEfGQ0ed-VkYKHg"/>
+  </analysisMap>
+  <analysisMap xmi:id="_TefIEl6gEfGQ0ed-VkYKHg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Basic_Column_Analysis_olist_order_reviews_0.1.ana#_-YUcEF6eEfGQ0ed-VkYKHg"/>
+  </analysisMap>
+  <analysisMap xmi:id="_TefIE16gEfGQ0ed-VkYKHg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Basic_Column_Analysis_olist_product_0.1.ana#_lh2cUF6fEfGQ0ed-VkYKHg"/>
+  </analysisMap>
+  <analysisMap xmi:id="_TefIFF6gEfGQ0ed-VkYKHg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Basic_Column_Analysis_sellers_0.1.ana#_5y7v4F6fEfGQ0ed-VkYKHg"/>
+  </analysisMap>
+  <ExecInformations xmi:id="_AcvSQF6cEfGQ0ed-VkYKHg" executionDate="2026-06-02T11:30:44.558-0500" executionDuration="541607" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2"/>
+  <context xmi:id="_yWaQwF6bEfGQ0ed-VkYKHg" confirmationNeeded="false" hide="false" name="Default"/>
+</dataquality.reports:TdReport>

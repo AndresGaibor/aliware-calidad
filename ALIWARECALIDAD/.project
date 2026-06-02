@@ -9,4 +9,16 @@
 	<natures>
 		<nature>org.talend.core.talendnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>.GAIBOR_ANDRES_Reporte-20260602-1139-00049.pdf</name>
+			<type>1</type>
+			<location>/Users/andresgaibor/geniuslab/Reportes/GAIBOR_ANDRES_Reporte-20260602-1139-00049.pdf</location>
+		</link>
+		<link>
+			<name>.Reporte Olist-20260602-1059-00018.pdf</name>
+			<type>1</type>
+			<location>/Users/andresgaibor/geniuslab/Reportes/Reporte Olist-20260602-1059-00018.pdf</location>
+		</link>
+	</linkedResources>
 </projectDescription>

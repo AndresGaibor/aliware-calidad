@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <dataquality.analysis:Analysis xmi:id="_4H2kkF6TEfGXp-igzKfSsw" name="Basic_Column_Analysis_olist_customers" creationDate="2026-06-02T10:01:04.459-0500" defaultContext="Default">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_4H2kkF6TEfGXp-igzKfSsw" name="Basic_Column_Analysis_olist_customers" supplierDependency="_yWd7IF6bEfGQ0ed-VkYKHg" creationDate="2026-06-02T10:01:04.459-0500" defaultContext="Default">
     <clientDependency href="../../metadata/fileDelimited/OLIST/customers_0.1.item#_0w3IsF6VEfGXp-igzKfSsw"/>
     <taggedValue xmi:id="_4H2kkV6TEfGXp-igzKfSsw" tag="Status" value="Draft"/>
     <taggedValue xmi:id="_4H2kkl6TEfGXp-igzKfSsw" tag="Author" value="jose.bonillao@trial.l8vvxvbbvpva9h4.us.qlikcloud.com"/>
@@ -20,7 +20,7 @@
       <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/customers_0.1.item#_V4mX516REfGXp-igzKfSsw"/>
     </context>
     <results xmi:id="_4H2kl16TEfGXp-igzKfSsw">
-      <resultMetadata xmi:id="_4H2kmF6TEfGXp-igzKfSsw" executionDate="2026-06-02T10:15:30.622-0500" executionDuration="43425" message="" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <resultMetadata xmi:id="_4H2kmF6TEfGXp-igzKfSsw" executionDate="2026-06-02T11:30:44.561-0500" executionDuration="56642" message="" executionNumber="4" lastRunOk="true" lastExecutionNumberOk="3"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_0wwbAF6VEfGXp-igzKfSsw" count="99441" computed="true">
         <parameters xmi:id="_0wwbAV6VEfGXp-igzKfSsw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/customers_0.1.item#_V4mX416REfGXp-igzKfSsw"/>
@@ -665,6 +665,9 @@
     <parameters xmi:id="_4H2kmV6TEfGXp-igzKfSsw" dataFilter="_EBvjsF6UEfGXp-igzKfSsw" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
     <contextType xmi:id="_EBsgYF6UEfGXp-igzKfSsw" confirmationNeeded="false" hide="false" name="Default"/>
   </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_yWd7IF6bEfGQ0ed-VkYKHg" kind="Usage" supplier="_4H2kkF6TEfGXp-igzKfSsw">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/ejemplo_0.1.rep#_8Ycy4F6aEfGQ0ed-VkYKHg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
   <dataquality.domain:Domain xmi:id="_EBvjsF6UEfGXp-igzKfSsw" name="Basic_Column_Analysis_olist_customers">
     <ranges xmi:id="_EBvjsV6UEfGXp-igzKfSsw">
       <expressions xmi:id="_EBwKwF6UEfGXp-igzKfSsw">
