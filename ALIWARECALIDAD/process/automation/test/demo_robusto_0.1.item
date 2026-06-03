@@ -1,0 +1,16 @@
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_QYas5drzrdsgPzOGXPDj80" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"></context>
+  <node xmi:id="_aqmtxGXGzttoUvvlCXsmy2" componentName="tFixedFlowInput" posX="128" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1"></elementParameter>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"></elementParameter>
+    <metadata connector="FLOW" label="tFixedFlowInput_1" name="tFixedFlowInput_1" xmi:id="_3QSMBmgTonyB9nmvw1fKjO">
+      <column name="mensaje" type="id_String" length="100"></column>
+    </metadata>
+  </node>
+  <node xmi:id="_M_GjEf45QkC2NJY3ZrekFz" componentName="tLogRow" posX="448" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1"></elementParameter>
+  </node>
+  <connection xmi:id="_lPbTBBhGTeUS7F8Vws9Afh" source="tFixedFlowInput_1" target="tLogRow_1" label="row1" connectorName="FLOW">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1"></elementParameter>
+  </connection>
+</talendfile:ProcessType>

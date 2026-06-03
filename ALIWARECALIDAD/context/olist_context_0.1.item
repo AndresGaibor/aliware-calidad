@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_VbSncF6qEfGQ0ed-VkYKHg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_VbSncV6qEfGQ0ed-VkYKHg" comment="" name="ss_host" prompt="ss_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="svc-3482219c-a389-4079-b18b-d50662524e8a-shared-dml.aws-virginia-6.svc.singlestore.com"></contextParameter>
+  <contextParameter xmi:id="_VbSncl6qEfGQ0ed-VkYKHg" comment="" name="ss_port" prompt="ss_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3333"></contextParameter>
+  <contextParameter xmi:id="_VbSnc16qEfGQ0ed-VkYKHg" comment="" name="ss_db" prompt="ss_db?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="db_andres_99693"></contextParameter>
+  <contextParameter xmi:id="_VbSndF6qEfGQ0ed-VkYKHg" comment="" name="ss_user" prompt="ss_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""></contextParameter>
+  <contextParameter xmi:id="_VbSndV6qEfGQ0ed-VkYKHg" comment="" name="ss_password" prompt="ss_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:tiWqAjRpW479C4GlDd/Hbw5p66Rx/lg9xYURWsrPHcBmff6PugLlmg+mXx4KI3x4n+LU"></contextParameter>
+  <contextParameter xmi:id="_VbSndl6qEfGQ0ed-VkYKHg" comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="routines.System.currentTimeMillis().toString()"></contextParameter>
+  <contextParameter xmi:id="_VbSnd16qEfGQ0ed-VkYKHg" comment="" name="olist_path" prompt="olist_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Users/andresgaibor/geniuslab/Fuentes/"></contextParameter>
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+</talendfile:ContextType>

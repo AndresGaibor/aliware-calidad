@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_i34cbXABVswrlC7kL5XFvk" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_nOcIdIr7TmIeB4KH-AbFX7" name="DB_HOST" value="209.50.254.159" type="id_String"></contextParameter>
+
+  
+  
+
+  
+</talendfile:ContextType>

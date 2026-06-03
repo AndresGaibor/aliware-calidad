@@ -694,7 +694,7 @@
         </builtInIndicatorDefinition>
       </indicators>
     </results>
-    <parameters xmi:id="_-pxDWV6cEfGQ0ed-VkYKHg" dataFilter="_AtTBVV6dEfGQ0ed-VkYKHg" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
+    <parameters xmi:id="_-pxDWV6cEfGQ0ed-VkYKHg" dataFilter="_AtTBVV6dEfGQ0ed-VkYKHg" analysisType="Multiple Column Analysis" executionLanguage="Java" storeData="false"/>
     <contextType xmi:id="_AtTBUF6dEfGQ0ed-VkYKHg" confirmationNeeded="false" hide="false" name="Default"/>
   </dataquality.analysis:Analysis>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_ZmQXkF6gEfGQ0ed-VkYKHg" kind="Usage" supplier="_-pxDUF6cEfGQ0ed-VkYKHg">
