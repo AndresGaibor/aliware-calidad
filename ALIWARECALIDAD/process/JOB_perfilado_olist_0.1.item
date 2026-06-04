@@ -313,8 +313,8 @@
         <mapperTableEntries name="message_type" expression="row1.message_type " type="id_String" nullable="true"/>
         <mapperTableEntries name="message" expression="row1.message " type="id_String" nullable="true"/>
         <mapperTableEntries name="duration" expression="row1.duration " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="avg_len" expression="ow1.total_chars / Math.max(1, row1.rows_not_null)" type="id_Double" nullable="true"/>
-        <mapperTableEntries name="pct_null" expression="((double) row1.rows_null / row1.rows_total) * 100.0&#xA;" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="avg_len" expression="0.0" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="pct_null" expression="0.0" type="id_Double" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="moment" type="id_Date" nullable="true"/>

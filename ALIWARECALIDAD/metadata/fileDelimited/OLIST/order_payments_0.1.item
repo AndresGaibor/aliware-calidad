@@ -6,16 +6,16 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YNOcgVX3EfGTqf6QMT8iLg" id="order_id" label="order_id" length="40" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_1mQmAV6dEfGQ0ed-VkYKHg" tag="Content Type" value="Nominal"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YNOcglX3EfGTqf6QMT8iLg" id="payment_sequential" label="payment_sequential" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YNOcglX3EfGTqf6QMT8iLg" id="payment_sequential" label="payment_sequential" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_1mQmDl6dEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YNOcg1X3EfGTqf6QMT8iLg" id="payment_type" label="payment_type" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_1mQmHV6dEfGQ0ed-VkYKHg" tag="Content Type" value="Nominal"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YNOchFX3EfGTqf6QMT8iLg" id="payment_installments" label="payment_installments" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YNOchFX3EfGTqf6QMT8iLg" id="payment_installments" label="payment_installments" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_1mQmKl6dEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YNOchVX3EfGTqf6QMT8iLg" id="payment_value" label="payment_value" length="10" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YNOchVX3EfGTqf6QMT8iLg" id="payment_value" label="payment_value" length="-1" precision="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_1mQmN16dEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
     </ownedElement>

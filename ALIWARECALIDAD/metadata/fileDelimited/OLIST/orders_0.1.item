@@ -12,19 +12,19 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JhcN9F6REfGXp-igzKfSsw" id="order_status" label="order_status" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_IorcL16gEfGQ0ed-VkYKHg" tag="Content Type" value="Nominal"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JhcN9V6REfGXp-igzKfSsw" id="order_purchase_timestamp" label="order_purchase_timestamp" length="19" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JhcN9V6REfGXp-igzKfSsw" id="order_purchase_timestamp" label="order_purchase_timestamp" length="-1" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
         <taggedValue xmi:id="_IorcPF6gEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JhcN9l6REfGXp-igzKfSsw" id="order_approved_at" label="order_approved_at" length="19" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JhcN9l6REfGXp-igzKfSsw" id="order_approved_at" label="order_approved_at" length="-1" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
         <taggedValue xmi:id="_IorcSV6gEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JhcN916REfGXp-igzKfSsw" id="order_delivered_carrier_date" label="order_delivered_carrier_date" length="19" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JhcN916REfGXp-igzKfSsw" id="order_delivered_carrier_date" label="order_delivered_carrier_date" length="-1" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
         <taggedValue xmi:id="_IorcVl6gEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JhcN-F6REfGXp-igzKfSsw" id="order_delivered_customer_date" label="order_delivered_customer_date" length="19" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JhcN-F6REfGXp-igzKfSsw" id="order_delivered_customer_date" label="order_delivered_customer_date" length="-1" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
         <taggedValue xmi:id="_IorcY16gEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JhcN-V6REfGXp-igzKfSsw" id="order_estimated_delivery_date" label="order_estimated_delivery_date" length="19" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JhcN-V6REfGXp-igzKfSsw" id="order_estimated_delivery_date" label="order_estimated_delivery_date" length="-1" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
         <taggedValue xmi:id="_IorccF6gEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
     </ownedElement>

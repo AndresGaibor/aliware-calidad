@@ -6,10 +6,10 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3zZ0AV6SEfGXp-igzKfSsw" id="geolocation_zip_code_prefix" label="geolocation_zip_code_prefix" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_GteCwV6XEfGXp-igzKfSsw" tag="Content Type" value="Nominal"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3zZ0Al6SEfGXp-igzKfSsw" id="geolocation_lat" label="geolocation_lat" length="19" precision="16" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3zZ0Al6SEfGXp-igzKfSsw" id="geolocation_lat" label="geolocation_lat" length="-1" precision="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_Gtep2F6XEfGXp-igzKfSsw" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3zZ0A16SEfGXp-igzKfSsw" id="geolocation_lng" label="geolocation_lng" length="19" precision="16" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3zZ0A16SEfGXp-igzKfSsw" id="geolocation_lng" label="geolocation_lng" length="-1" precision="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_Gtep4V6XEfGXp-igzKfSsw" tag="Content Type" value="Interval"/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3zZ0BF6SEfGXp-igzKfSsw" id="geolocation_city" label="geolocation_city" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">

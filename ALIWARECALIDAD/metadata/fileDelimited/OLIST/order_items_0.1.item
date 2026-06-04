@@ -4,12 +4,12 @@
   <orgomg.cwm.resource.record:RecordFile xmi:id="_PpzC4lX3EfGBwpuyyuDaVg" name="default" dataManager="_PpzC4VX3EfGBwpuyyuDaVg">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_PpzC41X3EfGBwpuyyuDaVg" id="_YVQMkFX2EfGBwpuyyuDaVg" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PpzC5FX3EfGBwpuyyuDaVg" label="order_id" length="40" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PpzC5VX3EfGBwpuyyuDaVg" label="order_item_id" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PpzC5VX3EfGBwpuyyuDaVg" label="order_item_id" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PpzC5lX3EfGBwpuyyuDaVg" label="product_id" length="40" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PpzC51X3EfGBwpuyyuDaVg" label="seller_id" length="40" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PpzC6FX3EfGBwpuyyuDaVg" label="shipping_limit_date" length="19" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PpzC6VX3EfGBwpuyyuDaVg" label="price" length="10" precision="4" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PpzC6lX3EfGBwpuyyuDaVg" label="freight_value" length="10" precision="4" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PpzC6FX3EfGBwpuyyuDaVg" label="shipping_limit_date" length="-1" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PpzC6VX3EfGBwpuyyuDaVg" label="price" length="-1" precision="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PpzC6lX3EfGBwpuyyuDaVg" label="freight_value" length="-1" precision="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_URjEHF6dEfGQ0ed-VkYKHg" kind="Usage" supplier="_PpzC4VX3EfGBwpuyyuDaVg">

@@ -1,0 +1,27 @@
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_IKl-AR1swrTpy5e1012y4j" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"></context>
+  <parameters/>
+  <node xmi:id="_5JrkKNcmpVxB5hLC1S5P7b" componentName="tRESTClient" posX="128" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1"></elementParameter>
+    <elementParameter field="TEXT" name="URL" value="&quot;https://api.olist.com/v1/orders&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="METHOD" value="GET"></elementParameter>
+  </node>
+  <node xmi:id="_tBP2hjqEe_K1-FUb-SrpWw" componentName="tMysqlOutput" posX="448" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1"></elementParameter>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;olist_orders_api&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="DATA_ACTION" value="INSERT"></elementParameter>
+  </node>
+  <node xmi:id="_ezUGVlMebjbGlDaWaONC06" componentName="tLogCatcher" posX="128" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1"></elementParameter>
+  </node>
+  <node xmi:id="_erwUJclo2QLIIGmhU1p7LJ" componentName="tLogRow" posX="448" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1"></elementParameter>
+    <elementParameter field="TEXT" name="TABLE_PRINT" value="true"></elementParameter>
+  </node>
+  <connection xmi:id="_sA7mV__JspezlLWr78rzkz" source="tRESTClient_1" target="tDBOutput_1" label="row1" connectorName="FLOW">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1"></elementParameter>
+  </connection>
+  <connection xmi:id="_yWm4DdvkTz1BA3lwx_RgI3" source="tLogCatcher_1" target="tLogRow_1" label="row2" connectorName="FLOW">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2"></elementParameter>
+  </connection>
+</talendfile:ProcessType>

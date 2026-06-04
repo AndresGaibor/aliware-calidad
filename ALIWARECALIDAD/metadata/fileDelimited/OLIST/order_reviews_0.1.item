@@ -9,7 +9,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EsLdRF6TEfGXp-igzKfSsw" id="order_id" label="order_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_rtPZ4l6aEfGQ0ed-VkYKHg" tag="Content Type" value="Nominal"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EsLdRV6TEfGXp-igzKfSsw" id="review_score" label="review_score" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EsLdRV6TEfGXp-igzKfSsw" id="review_score" label="review_score" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_rtPZ716aEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EsLdRl6TEfGXp-igzKfSsw" id="review_comment_title" label="review_comment_title" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
@@ -18,10 +18,10 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EsLdR16TEfGXp-igzKfSsw" id="review_comment_message" label="review_comment_message" length="177" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_rtPaEV6aEfGQ0ed-VkYKHg" tag="Content Type" value="Nominal"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EsLdSF6TEfGXp-igzKfSsw" id="review_creation_date" label="review_creation_date" length="19" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EsLdSF6TEfGXp-igzKfSsw" id="review_creation_date" label="review_creation_date" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_rtQA5V6aEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EsLdSV6TEfGXp-igzKfSsw" id="review_answer_timestamp" label="review_answer_timestamp" length="19" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EsLdSV6TEfGXp-igzKfSsw" id="review_answer_timestamp" label="review_answer_timestamp" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_rtQA8l6aEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
     </ownedElement>

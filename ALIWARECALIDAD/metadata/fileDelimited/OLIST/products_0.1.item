@@ -9,25 +9,25 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jpFR0EfG4b6yKTmlQGQ" id="product_category_name" label="product_category_name" length="60" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_yWnIXl6fEfGQ0ed-VkYKHg" tag="Content Type" value="Nominal"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jpVR0EfG4b6yKTmlQGQ" id="product_name_lenght" label="product_name_lenght" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jpVR0EfG4b6yKTmlQGQ" id="product_name_lenght" label="product_name_lenght" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_yWnIa16fEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jplR0EfG4b6yKTmlQGQ" id="product_description_lenght" label="product_description_lenght" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jplR0EfG4b6yKTmlQGQ" id="product_description_lenght" label="product_description_lenght" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_yWnIeF6fEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jp1R0EfG4b6yKTmlQGQ" id="product_photos_qty" label="product_photos_qty" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jp1R0EfG4b6yKTmlQGQ" id="product_photos_qty" label="product_photos_qty" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_yWnIhV6fEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jqFR0EfG4b6yKTmlQGQ" id="product_weight_g" label="product_weight_g" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jqFR0EfG4b6yKTmlQGQ" id="product_weight_g" label="product_weight_g" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_yWnIkl6fEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jqVR0EfG4b6yKTmlQGQ" id="product_length_cm" label="product_length_cm" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jqVR0EfG4b6yKTmlQGQ" id="product_length_cm" label="product_length_cm" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_yWnvWl6fEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jqlR0EfG4b6yKTmlQGQ" id="product_height_cm" label="product_height_cm" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jqlR0EfG4b6yKTmlQGQ" id="product_height_cm" label="product_height_cm" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_yWnvZ16fEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jq1R0EfG4b6yKTmlQGQ" id="product_width_cm" label="product_width_cm" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qr2jq1R0EfG4b6yKTmlQGQ" id="product_width_cm" label="product_width_cm" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_yWnvdF6fEfGQ0ed-VkYKHg" tag="Content Type" value="Interval"/>
       </feature>
     </ownedElement>
