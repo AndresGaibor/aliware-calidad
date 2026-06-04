@@ -8,4 +8,5 @@
   <contextParameter xmi:id="_VbSnd16qEfGQ0ed-VkYKHg" comment="" name="olist_path" prompt="olist_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Users/andresgaibor/geniuslab/Fuentes/"/>
   <contextParameter xmi:id="_JVOuUF-LEfGRHsGBAOP07A" comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="timestampt"/>
   <contextParameter xmi:id="_JVPVYF-LEfGRHsGBAOP07A" comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="500000"/>
+  <contextParameter xmi:id="_lvG3cGBbEfG_06p10MWAVQ" comment="" name="FECHAINI" prompt="FECHAINI?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
 </talendfile:ContextType>
