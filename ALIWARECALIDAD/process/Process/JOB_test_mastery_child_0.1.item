@@ -1,0 +1,8 @@
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_wpJ3ZzVvLzYGe-gPXIJrAc" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"></context>
+  <node xmi:id="_bspMO7t176fz3sqXNmO1ng" componentName="tJava" posX="100" posY="100">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Log Hijo"></elementParameter>
+    <elementParameter field="TEXT" name="CODE" value="&quot;System.out.println(\&quot;=== [HIJO] Ejecutado exitosamente por tRunJob ===\&quot;);&quot;"></elementParameter>
+  </node>
+</talendfile:ProcessType>

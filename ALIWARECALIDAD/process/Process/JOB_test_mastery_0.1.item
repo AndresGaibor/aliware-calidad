@@ -1,0 +1,322 @@
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_NVjpJ5GtrcA1t2Pc0lv8t8" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_16o39UiXJlYGlRHfd3ojtW" name="test_value" type="id_String" value="test_context_val" comment="Valor de contexto de prueba"></contextParameter>
+  </context>
+  <node xmi:id="_8mdr3AHFzaBzPvJacY46PA" componentName="tPrejob" posX="100" posY="100">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="PreJob Hook"></elementParameter>
+  </node>
+  <node xmi:id="_JiD1IKlM526YVo1VgFLOZG" componentName="tMysqlConnection" posX="250" posY="100">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlConnection_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Abrir Conexión DB"></elementParameter>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;aliware_dq&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="USER" value="&quot;aliware_dev&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="PASS" value="&quot;password&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"></elementParameter>
+  </node>
+  <node xmi:id="_KrUEX4LC8mg_MkUF03gNrO" componentName="tMysqlRow" posX="400" posY="100">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Reiniciar Tabla"></elementParameter>
+    <elementParameter field="TEXT" name="USE_EXISTING_CONNECTION" value="true"></elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION" value="tMysqlConnection_1"></elementParameter>
+    <elementParameter field="TEXT" name="QUERY" value="&quot;DROP TABLE IF EXISTS stg_mastery_test; CREATE TABLE stg_mastery_test (id INT, name VARCHAR(50), value DOUBLE, total DOUBLE);&quot;"></elementParameter>
+  </node>
+  <node xmi:id="_L-6NTCC7MI0RSJPxrMKq33" componentName="tSetGlobalVar" posX="550" posY="100">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Guardar Var Global"></elementParameter>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;test_key&quot;" id="0"></elementValue>
+      <elementValue elementRef="VALUE" value="&quot;test_global_value&quot;" id="1"></elementValue>
+    </elementParameter>
+  </node>
+  <node xmi:id="_JgJIrvB87z6L836Bn78Oi8" componentName="tJava" posX="700" posY="100">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Log Global Var"></elementParameter>
+    <elementParameter field="TEXT" name="CODE" value="&quot;System.out.println(\&quot;=== [GLOBAL VAR] test_key = \&quot; + globalMap.get(\&quot;test_key\&quot;));&quot;"></elementParameter>
+  </node>
+  <node xmi:id="_9U9qkat9_NBg_dsD2GOyZv" componentName="tLoop" posX="100" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Loop 1 a 3"></elementParameter>
+    <elementParameter field="TEXT" name="FORLOOP" value="true"></elementParameter>
+    <elementParameter field="TEXT" name="FROM" value="1"></elementParameter>
+    <elementParameter field="TEXT" name="TO" value="3"></elementParameter>
+    <elementParameter field="TEXT" name="STEP" value="1"></elementParameter>
+    <elementParameter field="TEXT" name="INCREASE" value="true"></elementParameter>
+  </node>
+  <node xmi:id="_TFUKdEsWlVlvBBrUtG6tB0" componentName="tFixedFlowInput" posX="220" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Fixed Loop ID"></elementParameter>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"></elementParameter>
+    <elementParameter field="TEXT" name="USE_SINGLEMODE" value="true"></elementParameter>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="loop_id" value="((Integer)globalMap.get(&quot;tLoop_1_CURRENT_VALUE&quot;)).toString()" id="0"></elementValue>
+    </elementParameter>
+    <metadata connector="FLOW" label="tFixedFlowInput_1" name="tFixedFlowInput_1" xmi:id="_aax49wF-dvR6_ROcxNJv9w">
+      <column name="loop_id" type="id_String"></column>
+    </metadata>
+  </node>
+  <node xmi:id="_rbHZdhLZJx7mPOPugWfbPS" componentName="tFlowToIterate" posX="340" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Iterar Loop ID"></elementParameter>
+  </node>
+  <node xmi:id="_uxDJRaGOw1zRt1KnLcdyk6" componentName="tFileInputDelimited" posX="460" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Leer Mock CSV"></elementParameter>
+    <elementParameter field="TEXT" name="FILENAME" value="&quot;/Users/andresgaibor/geniuslab/Fuentes/mastery_mock_data.csv&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="HEADER" value="1"></elementParameter>
+    <elementParameter field="TEXT" name="CSV_OPTION" value="false"></elementParameter>
+    <elementParameter field="TEXT" name="ENCODING" value="&quot;UTF-8&quot;"></elementParameter>
+    <metadata connector="FLOW" label="tFileInputDelimited_1" name="tFileInputDelimited_1" xmi:id="_jx2AV0TcJkzRnfxlBajSKx">
+      <column name="id" type="id_Integer"></column>
+      <column name="name" type="id_String"></column>
+      <column name="value" type="id_Double"></column>
+    </metadata>
+  </node>
+  <node xmi:id="_LOab0KtnMHU9WbsJTGRyrK" componentName="tMap" posX="580" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Transformar"></elementParameter>
+    <metadata connector="FLOW" label="row_mapped" name="row_mapped" xmi:id="_rMMvxksUccP7eHrAZDOKbN">
+      <column name="id" type="id_Integer"></column>
+      <column name="name" type="id_String"></column>
+      <column name="value" type="id_Double"></column>
+      <column name="total" type="id_Double"></column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"></uiProperties>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"></varTables>
+      <outputTables sizeState="INTERMEDIATE" name="row_mapped">
+        <mapperTableEntries name="id" expression="row_in.id" type="id_Integer"></mapperTableEntries>
+        <mapperTableEntries name="name" expression="row_in.name.toUpperCase()" type="id_String"></mapperTableEntries>
+        <mapperTableEntries name="value" expression="row_in.value" type="id_Double"></mapperTableEntries>
+        <mapperTableEntries name="total" expression="row_in.value * 2" type="id_Double"></mapperTableEntries>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row_in" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="id" type="id_Integer"></mapperTableEntries>
+        <mapperTableEntries name="name" type="id_String"></mapperTableEntries>
+        <mapperTableEntries name="value" type="id_Double"></mapperTableEntries>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node xmi:id="_8wYdOIgavim1amP5cefJWY" componentName="tFilterRow" posX="700" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Filtrar (value &gt; 15.0)"></elementParameter>
+    <elementParameter field="TEXT" name="USE_ADVANCED" value="true"></elementParameter>
+    <elementParameter field="TEXT" name="ADVANCED_COND" value="row_mapped.value &gt; 15.0"></elementParameter>
+    <metadata connector="FILTER" label="tFilterRow_1" name="tFilterRow_1" xmi:id="_NOZR3o4Wk7NsforQLl5cND">
+      <column name="id" type="id_Integer"></column>
+      <column name="name" type="id_String"></column>
+      <column name="value" type="id_Double"></column>
+      <column name="total" type="id_Double"></column>
+    </metadata>
+  </node>
+  <node xmi:id="_D__iFCAg2qiZ-mZutz9IV4" componentName="tJavaRow" posX="820" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="JavaRow Print"></elementParameter>
+    <elementParameter field="TEXT" name="CODE" value="&quot;System.out.println(\&quot;=== [JAVAROW] procesando: \&quot; + input_row.name + \&quot;, total = \&quot; + input_row.total); output_row.id = input_row.id; output_row.name = input_row.name; output_row.value = input_row.value; output_row.total = input_row.total;&quot;"></elementParameter>
+    <metadata connector="FLOW" label="tJavaRow_1" name="tJavaRow_1" xmi:id="_qr2bmiYQpOo0r7I9-0ddSN">
+      <column name="id" type="id_Integer"></column>
+      <column name="name" type="id_String"></column>
+      <column name="value" type="id_Double"></column>
+      <column name="total" type="id_Double"></column>
+    </metadata>
+  </node>
+  <node xmi:id="_K78r3y9Vd_BjXjd4CTmMWe" componentName="tMysqlOutput" posX="940" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Escribir DB"></elementParameter>
+    <elementParameter field="TEXT" name="USE_EXISTING_CONNECTION" value="true"></elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION" value="tMysqlConnection_1"></elementParameter>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_mastery_test&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="DATA_ACTION" value="INSERT"></elementParameter>
+    <elementParameter field="TEXT" name="DIE_ON_ERROR" value="true"></elementParameter>
+    <metadata connector="FLOW" label="tMysqlOutput_1" name="tMysqlOutput_1" xmi:id="_ae95cMNWSBKmCbYxslfPQu">
+      <column name="id" type="id_Integer"></column>
+      <column name="name" type="id_String"></column>
+      <column name="value" type="id_Double"></column>
+      <column name="total" type="id_Double"></column>
+    </metadata>
+  </node>
+  <node xmi:id="_wylqjTF0akFtopFCDvY1hq" componentName="tLogRow" posX="1060" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Consola Pipeline"></elementParameter>
+    <elementParameter field="TEXT" name="BASIC_MODE" value="true"></elementParameter>
+  </node>
+  <node xmi:id="_fBKOG8JgMFssvUgYJpZNJS" componentName="tMysqlInput" posX="100" posY="380">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Leer DB"></elementParameter>
+    <elementParameter field="TEXT" name="USE_EXISTING_CONNECTION" value="true"></elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION" value="tMysqlConnection_1"></elementParameter>
+    <elementParameter field="TEXT" name="QUERY" value="&quot;SELECT id, name, value, total FROM stg_mastery_test&quot;"></elementParameter>
+    <metadata connector="FLOW" label="tMysqlInput_1" name="tMysqlInput_1" xmi:id="_c_WqVaUCWzad2ObBVFyzGd">
+      <column name="id" type="id_Integer"></column>
+      <column name="name" type="id_String"></column>
+      <column name="value" type="id_Double"></column>
+      <column name="total" type="id_Double"></column>
+    </metadata>
+  </node>
+  <node xmi:id="_QqLj_awbtz4_iRl2Ah3RsT" componentName="tLogRow" posX="250" posY="380">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Consola DB"></elementParameter>
+    <elementParameter field="TEXT" name="BASIC_MODE" value="true"></elementParameter>
+  </node>
+  <node xmi:id="_aZ7xFL7Dpg5TjPWm1AfNXk" componentName="tRunJob" posX="400" posY="380">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Ejecutar Hijo"></elementParameter>
+    <elementParameter field="TEXT" name="PROCESS" value="&quot;JOB_test_mastery_child&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="DIE_ON_CHILD_ERROR" value="true"></elementParameter>
+  </node>
+  <node xmi:id="_YXTDtduKkMIeHrfNStVGQI" componentName="tRESTClient" posX="550" posY="380">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Llamada REST"></elementParameter>
+    <elementParameter field="TEXT" name="URL" value="&quot;https://httpbin.org/get&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="METHOD" value="GET"></elementParameter>
+    <elementParameter field="TEXT" name="CONTENT_TYPE" value="application/json"></elementParameter>
+    <elementParameter field="TEXT" name="ACCEPT_TYPE" value="application/json"></elementParameter>
+    <metadata connector="Response" label="tRESTClient_1" name="tRESTClient_1" xmi:id="_O_VOdG3sW5I9j5hEt4b-F1">
+      <column name="statusCode" type="id_Integer"></column>
+      <column name="body" type="id_String"></column>
+      <column name="string" type="id_String"></column>
+    </metadata>
+  </node>
+  <node xmi:id="_ehcFZ3Z1naTgezyt2ZFoTM" componentName="tLogRow" posX="700" posY="380">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_rest"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Consola REST"></elementParameter>
+    <elementParameter field="TEXT" name="BASIC_MODE" value="true"></elementParameter>
+  </node>
+  <node xmi:id="_3gmwrbkl1Djp6TBtAqRD4b" componentName="tSendMail" posX="850" posY="380">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Enviar Correo"></elementParameter>
+    <elementParameter field="TEXT" name="TO" value="&quot;test@domain.com&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="FROM" value="&quot;sender@domain.com&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend Mastery Test&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Mastery test run completed successfully!&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;localhost&quot;"></elementParameter>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="25"></elementParameter>
+    <elementParameter field="TEXT" name="DIE_ON_ERROR" value="false"></elementParameter>
+  </node>
+  <node xmi:id="_fFdsE2py_02dvlQNy9yni6" componentName="tPostjob" posX="100" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="PostJob Hook"></elementParameter>
+  </node>
+  <node xmi:id="_LxwOKsj62ahxb4jcCi1GvL" componentName="tMysqlClose" posX="250" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlClose_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Cerrar Conexión DB"></elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION" value="tMysqlConnection_1"></elementParameter>
+  </node>
+  <node xmi:id="_jY64hnMVD4ima93DHdmpAx" componentName="tJava" posX="400" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Log Fin"></elementParameter>
+    <elementParameter field="TEXT" name="CODE" value="&quot;System.out.println(\&quot;=== [FIN] Conexión cerrada y ejecución terminada ===\&quot;);&quot;"></elementParameter>
+  </node>
+  <node xmi:id="_RTHe0arPgJDUZ0cJtrE8Oi" componentName="tLogCatcher" posX="750" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Capturar Excepciones"></elementParameter>
+    <elementParameter field="TEXT" name="CATCH_JAVA_EXCEPTION" value="true"></elementParameter>
+    <elementParameter field="TEXT" name="CATCH_TDIE" value="true"></elementParameter>
+    <elementParameter field="TEXT" name="CATCH_TWARN" value="true"></elementParameter>
+    <metadata connector="FLOW" label="tLogCatcher_1" name="tLogCatcher_1" xmi:id="_c6-ZWgIY_gSimRoD5Pn9sy">
+      <column name="moment" type="id_Date"></column>
+      <column name="pid" type="id_String"></column>
+      <column name="project" type="id_String"></column>
+      <column name="job" type="id_String"></column>
+      <column name="origin" type="id_String"></column>
+      <column name="type" type="id_String"></column>
+      <column name="message" type="id_String"></column>
+      <column name="code" type="id_Integer"></column>
+    </metadata>
+  </node>
+  <node xmi:id="_gUkSvKDySiBrpReSTcZtkQ" componentName="tLogRow" posX="900" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_logs"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Consola Logs"></elementParameter>
+    <elementParameter field="TEXT" name="BASIC_MODE" value="true"></elementParameter>
+  </node>
+  <node xmi:id="_8Zm0UE10cVusV5ZhaI9Wlf" componentName="tStatCatcher" posX="750" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tStatCatcher_1"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Capturar Stats"></elementParameter>
+    <metadata connector="FLOW" label="tStatCatcher_1" name="tStatCatcher_1" xmi:id="_7DuE1hq3gzhCl0q9urZiDp">
+      <column name="moment" type="id_Date"></column>
+      <column name="pid" type="id_String"></column>
+      <column name="project" type="id_String"></column>
+      <column name="job" type="id_String"></column>
+      <column name="system_pid" type="id_Long"></column>
+      <column name="origin" type="id_String"></column>
+      <column name="message_type" type="id_String"></column>
+      <column name="message" type="id_String"></column>
+      <column name="duration" type="id_Long"></column>
+    </metadata>
+  </node>
+  <node xmi:id="_C5Ust0KmQ6jts4OpKdjyCw" componentName="tLogRow" posX="900" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_stats"></elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Consola Stats"></elementParameter>
+    <elementParameter field="TEXT" name="BASIC_MODE" value="true"></elementParameter>
+  </node>
+  <connection xmi:id="_RWiKBMOAFMaarEQ_to7xiU" source="tPrejob_1" target="tMysqlConnection_1" label="OnComponentOk1" connectorName="COMPONENT_OK">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1"></elementParameter>
+  </connection>
+  <connection xmi:id="_Fdb5eQN6k9kkOR0xLQbbjB" source="tMysqlConnection_1" target="tMysqlRow_1" label="OnComponentOk2" connectorName="COMPONENT_OK">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2"></elementParameter>
+  </connection>
+  <connection xmi:id="_DxBeJY8mRuDjZgIm0FUNgM" source="tMysqlRow_1" target="tSetGlobalVar_1" label="OnComponentOk3" connectorName="COMPONENT_OK">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3"></elementParameter>
+  </connection>
+  <connection xmi:id="__-lU86tmWppIHi-F7ANh92" source="tSetGlobalVar_1" target="tJava_1" label="OnComponentOk4" connectorName="COMPONENT_OK">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4"></elementParameter>
+  </connection>
+  <connection xmi:id="_yOIq86-JWkgRNuERMzZFuN" source="tLoop_1" target="tFixedFlowInput_1" label="Iterate1" connectorName="ITERATE">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Iterate1"></elementParameter>
+  </connection>
+  <connection xmi:id="_v-zf5kfRw51zUCxQPvzxmI" source="tFixedFlowInput_1" target="tFlowToIterate_1" label="row_loop" connectorName="FLOW">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_loop"></elementParameter>
+  </connection>
+  <connection xmi:id="_vRcUYh_v_ujWr8GpECKFfs" source="tFlowToIterate_1" target="tFileInputDelimited_1" label="Iterate2" connectorName="ITERATE">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Iterate2"></elementParameter>
+  </connection>
+  <connection xmi:id="_OwOgy0W3m2srprXKfRRZpZ" source="tFileInputDelimited_1" target="tMap_1" label="row_in" connectorName="FLOW">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_in"></elementParameter>
+  </connection>
+  <connection xmi:id="_YXEUSN7m13I2k-A5pjECC9" source="tMap_1" target="tFilterRow_1" label="row_mapped" connectorName="FLOW">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_mapped"></elementParameter>
+  </connection>
+  <connection xmi:id="_yd2a-aAZ0TuSH6bLSywAgc" source="tFilterRow_1" target="tJavaRow_1" label="row_filtered" connectorName="FILTER">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_filtered"></elementParameter>
+  </connection>
+  <connection xmi:id="_6GsZC2dtRlgEXteWSBX0jZ" source="tJavaRow_1" target="tMysqlOutput_1" label="row_processed" connectorName="FLOW">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_processed"></elementParameter>
+  </connection>
+  <connection xmi:id="_GospZ-KKWs23scYoAfO-0Z" source="tMysqlOutput_1" target="tLogRow_1" label="row_logged" connectorName="FLOW">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_logged"></elementParameter>
+  </connection>
+  <connection xmi:id="_yK5yV5JC5oq6lxbPiGa2tp" source="tLoop_1" target="tMysqlInput_1" label="OnSubjobOk1" connectorName="SUBJOB_OK">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1"></elementParameter>
+  </connection>
+  <connection xmi:id="_shT1LidbbLhMHyYVyElMQ8" source="tMysqlInput_1" target="tLogRow_2" label="row_readback" connectorName="FLOW">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_readback"></elementParameter>
+  </connection>
+  <connection xmi:id="_kmkPm65GxYrM56EhKfVYXc" source="tMysqlInput_1" target="tRunJob_1" label="OnSubjobOk2" connectorName="SUBJOB_OK">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2"></elementParameter>
+  </connection>
+  <connection xmi:id="_paSfaIUDwVcVwQiwsk9GOE" source="tRunJob_1" target="tRESTClient_1" label="OnSubjobOk3" connectorName="SUBJOB_OK">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3"></elementParameter>
+  </connection>
+  <connection xmi:id="__8ALUbeYrs8UxzpllaAS8F" source="tRESTClient_1" target="tLogRow_rest" label="row_rest_response" connectorName="Response">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_rest_response"></elementParameter>
+  </connection>
+  <connection xmi:id="_l3SDS1vmxWevxvE3Z6n09_" source="tRESTClient_1" target="tSendMail_1" label="OnSubjobOk4" connectorName="SUBJOB_OK">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4"></elementParameter>
+  </connection>
+  <connection xmi:id="_lET8ejffk04OOULMx2mbnX" source="tPostjob_1" target="tMysqlClose_1" label="OnComponentOk5" connectorName="COMPONENT_OK">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5"></elementParameter>
+  </connection>
+  <connection xmi:id="_tEVPi96cIDBrU1HyDceBHw" source="tMysqlClose_1" target="tJava_2" label="OnComponentOk6" connectorName="COMPONENT_OK">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6"></elementParameter>
+  </connection>
+  <connection xmi:id="_ms_SesIupBEaakXZdI0ICC" source="tLogCatcher_1" target="tLogRow_logs" label="row_log_caught" connectorName="FLOW">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_log_caught"></elementParameter>
+  </connection>
+  <connection xmi:id="_dPgZGVoNXJj0yHGzbQQpqe" source="tStatCatcher_1" target="tLogRow_stats" label="row_stat_caught" connectorName="FLOW">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_stat_caught"></elementParameter>
+  </connection>
+</talendfile:ProcessType>
