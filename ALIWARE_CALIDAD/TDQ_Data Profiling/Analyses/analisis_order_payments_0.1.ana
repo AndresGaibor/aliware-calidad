@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_oChUMV6dEfGmeMsHSxupsg" name="analisis_order_payments" supplierDependency="_sBxQoF6gEfGmeMsHSxupsg" creationDate="2026-06-02T11:10:51.507-0500" defaultContext="Default">
+    <clientDependency href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_EM4RMF6eEfGmeMsHSxupsg"/>
+    <taggedValue xmi:id="_oChUMl6dEfGmeMsHSxupsg" tag="Status" value="Draft"/>
+    <taggedValue xmi:id="_oChUM16dEfGmeMsHSxupsg" tag="Author" value="stiven.apolo@trial.rik0fdl1mh0n14y.us.qlikcloud.com"/>
+    <taggedValue xmi:id="_oChUNF6dEfGmeMsHSxupsg" tag="Purpose"/>
+    <taggedValue xmi:id="_oChUNV6dEfGmeMsHSxupsg" tag="Description"/>
+    <taggedValue xmi:id="_oChUNl6dEfGmeMsHSxupsg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_wk1TgV6dEfGmeMsHSxupsg" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_wk1Tgl6dEfGmeMsHSxupsg" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_wk1Tg16dEfGmeMsHSxupsg" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_wk1ThF6dEfGmeMsHSxupsg" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_oChUN16dEfGmeMsHSxupsg">
+      <connection href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXgV6UEfGmeMsHSxupsg"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhF6UEfGmeMsHSxupsg"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhV6UEfGmeMsHSxupsg"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhl6UEfGmeMsHSxupsg"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXh16UEfGmeMsHSxupsg"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXiF6UEfGmeMsHSxupsg"/>
+    </context>
+    <results xmi:id="_oChUOF6dEfGmeMsHSxupsg">
+      <resultMetadata xmi:id="_oChUOV6dEfGmeMsHSxupsg" executionDate="2026-06-02T12:02:17.346-0500" executionDuration="8343" message="" executionNumber="3" lastRunOk="true" lastExecutionNumberOk="3"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_EM4RIF6eEfGmeMsHSxupsg" count="103886" computed="true">
+        <parameters xmi:id="_EM4RIV6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhF6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_EY23oF6eEfGmeMsHSxupsg" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_EY23oV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_EY23ol6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_EY23o16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_EM4RIl6eEfGmeMsHSxupsg" count="103886" computed="true">
+        <parameters xmi:id="_EM4RI16eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhF6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <builtInIndicatorDefinition xmi:id="_EZLAsF6eEfGmeMsHSxupsg" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_EZLAsV6eEfGmeMsHSxupsg" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_EZLAsl6eEfGmeMsHSxupsg" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_EZLAs16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_EM4RJF6eEfGmeMsHSxupsg" count="103886" computed="true" distinctValueCount="99440">
+        <parameters xmi:id="_EM4RJV6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhF6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_EdDbIF6eEfGmeMsHSxupsg" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_EdDbIV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_EdDbIl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_EdDbI16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_EM4RJl6eEfGmeMsHSxupsg" count="103886" computed="true" length="32">
+        <parameters xmi:id="_EM4RJ16eEfGmeMsHSxupsg">
+          <textParameter xmi:id="_EM4RKF6eEfGmeMsHSxupsg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhF6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_EdVvAF6eEfGmeMsHSxupsg" name="Minimal Length" label="Minimal Length">
+          <taggedValue xmi:id="_EdVvAV6eEfGmeMsHSxupsg" tag="Description" value="computes the minimal length of a text field. Does not take into account the null and blank values when computing the minimal length."/>
+          <taggedValue xmi:id="_EdVvAl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the length of the smallest textual record of non-null and non-blank values"/>
+          <sqlGenericExpression xmi:id="_EdVvA16eEfGmeMsHSxupsg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_EdVvBF6eEfGmeMsHSxupsg" body="SELECT MIN( LENGTH(&lt;%=__COLUMN_NAMES__%>) ) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(NVL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) IS NOT NULL) &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_EdVvBV6eEfGmeMsHSxupsg" body="SELECT MIN(LEN(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (LTRIM(RTRIM(CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END)) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_EdVvBl6eEfGmeMsHSxupsg" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+          <sqlGenericExpression xmi:id="_EdVvB16eEfGmeMsHSxupsg" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQLite"/>
+          <sqlGenericExpression xmi:id="_EdVvCF6eEfGmeMsHSxupsg" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Hive"/>
+          <sqlGenericExpression xmi:id="_EdVvCV6eEfGmeMsHSxupsg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_EdVvCl6eEfGmeMsHSxupsg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( LTRIM(RTRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END ))  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_EdVvC16eEfGmeMsHSxupsg" body="SELECT MIN(CHAR_LENGTH( &lt;%=__COLUMN_NAMES__%> )) FROM  &lt;%=__TABLE_NAME__%>   WHERE ( &lt;%=__COLUMN_NAMES__%>  IS NOT NULL ) AND ( TRIM( CASE WHEN  &lt;%=__COLUMN_NAMES__%>  IS NULL  THEN 'NULL TALEND' ELSE  &lt;%=__COLUMN_NAMES__%>  END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Informix"/>
+          <sqlGenericExpression xmi:id="_EdVvDF6eEfGmeMsHSxupsg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (1=1) AND (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_EdVvDV6eEfGmeMsHSxupsg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
+          <sqlGenericExpression xmi:id="_EdVvDl6eEfGmeMsHSxupsg" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Snowflake"/>
+          <sqlGenericExpression xmi:id="_EdVvD16eEfGmeMsHSxupsg" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="HDB"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_EM4RKV6eEfGmeMsHSxupsg" count="103886" computed="true" length="32">
+        <parameters xmi:id="_EM4RKl6eEfGmeMsHSxupsg">
+          <textParameter xmi:id="_EM4RK16eEfGmeMsHSxupsg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhF6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_0.1.definition#_ccHq1RF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_Eddq0F6eEfGmeMsHSxupsg" name="Maximal Length" label="Maximal Length">
+          <taggedValue xmi:id="_Eddq0V6eEfGmeMsHSxupsg" tag="Description" value="computes the maximal length of a text field. Does not take into account the null and blank values when computing the maximal length."/>
+          <taggedValue xmi:id="_Eddq0l6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the length of the longest textual record of non-null and non-blank values"/>
+          <sqlGenericExpression xmi:id="_Eddq016eEfGmeMsHSxupsg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_Eddq1F6eEfGmeMsHSxupsg" body="SELECT MAX( LENGTH(&lt;%=__COLUMN_NAMES__%>) ) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(NVL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) IS NOT NULL) &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle" modificationDate=""/>
+          <sqlGenericExpression xmi:id="_Eddq1V6eEfGmeMsHSxupsg" body="SELECT MAX(LEN(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (LTRIM(RTRIM(CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END)) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_Eddq1l6eEfGmeMsHSxupsg" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+          <sqlGenericExpression xmi:id="_Eddq116eEfGmeMsHSxupsg" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQLite"/>
+          <sqlGenericExpression xmi:id="_Eddq2F6eEfGmeMsHSxupsg" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Hive" modificationDate=""/>
+          <sqlGenericExpression xmi:id="_Eddq2V6eEfGmeMsHSxupsg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_Eddq2l6eEfGmeMsHSxupsg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( LTRIM(RTRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END ))  &lt;>  '' )  &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_Eddq216eEfGmeMsHSxupsg" body="SELECT MAX(CHAR_LENGTH( &lt;%=__COLUMN_NAMES__%> )) FROM  &lt;%=__TABLE_NAME__%>   WHERE ( &lt;%=__COLUMN_NAMES__%>  IS NOT NULL ) AND ( TRIM( CASE WHEN  &lt;%=__COLUMN_NAMES__%>  IS NULL  THEN 'NULL TALEND' ELSE  &lt;%=__COLUMN_NAMES__%>  END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Informix"/>
+          <sqlGenericExpression xmi:id="_Eddq3F6eEfGmeMsHSxupsg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_Eddq3V6eEfGmeMsHSxupsg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
+          <sqlGenericExpression xmi:id="_Eddq3l6eEfGmeMsHSxupsg" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Snowflake"/>
+          <sqlGenericExpression xmi:id="_Eddq316eEfGmeMsHSxupsg" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="HDB"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_EM4RLF6eEfGmeMsHSxupsg" count="103886" computed="true" distinctValueCount="10" uniqueValueCount="96458" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74002061613939616161396139613939396139616161396161396139393939393939397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000001D74002061616139393961393939616139393939616139393939393939393939616139397371007E0003000000000000001A74002039616161616139613939396139396139613961613939613961613961393939397371007E0003000000000000000F74002061613961613939396161393961613939613961616161393939616139393939397371007E0003000000000000001374002039613939616161613939616161393961393961616139396139613939393939397371007E0003000000000000000E740020616161616139613961616161396161613961393961616161616139613939393971007E000B740020393939396139393939616139393939396139613939613939393939393961393971007E000D74002039393961613939396139616139613939393961393961613939616139393939617371007E00030000000000000015740020393939393939393961393961613939613961393939393961393939396161393971007E000974002039393961396139396161616139616139393939396161613939396161393961397371007E0003000000000000001678">
+        <parameters xmi:id="_EM4RLV6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhF6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+        <builtInIndicatorDefinition xmi:id="_Edop8F6eEfGmeMsHSxupsg" name="Pattern Frequency Table" label="Pattern Frequency Table">
+          <taggedValue xmi:id="_Edop8V6eEfGmeMsHSxupsg" tag="Description" value="counts the number of records for each distinct pattern"/>
+          <taggedValue xmi:id="_Edop8l6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the most frequent patterns"/>
+          <sqlGenericExpression xmi:id="_Edop816eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_Edop9F6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_Edop9V6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_Edop9l6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_Edop916eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_Edop-F6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%> , COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_Edop-V6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_Edop-l6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="AS/400"/>
+          <sqlGenericExpression xmi:id="_Edop-16eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_Edop_F6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Vertica Database"/>
+          <sqlGenericExpression xmi:id="_Edop_V6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Netezza"/>
+          <charactersMapping xmi:id="_Edop_l6eEfGmeMsHSxupsg" language="SQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Edop_16eEfGmeMsHSxupsg" name="Characters mapping on MySQL" language="MySQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EdoqAF6eEfGmeMsHSxupsg" name="Characters mapping on Oracle" language="Oracle" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EdoqAV6eEfGmeMsHSxupsg" name="Characters mapping on PostgreSQL" language="PostgreSQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EdoqAl6eEfGmeMsHSxupsg" name="Characters mapping on Microsoft SQL Server" language="Microsoft SQL Server" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EdoqA16eEfGmeMsHSxupsg" name="Characters mapping on DB2" language="DB2" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EdoqBF6eEfGmeMsHSxupsg" name="Characters mapping on AS/400" language="AS/400" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EdoqBV6eEfGmeMsHSxupsg" name="Characters mapping on Informix" language="Informix" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EdoqBl6eEfGmeMsHSxupsg" name="Characters mapping on Teradata" language="Teradata" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EdoqB16eEfGmeMsHSxupsg" name="Characters mapping on Vertica" language="Vertica Database" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EdoqCF6eEfGmeMsHSxupsg" language="Netezza" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EdoqCV6eEfGmeMsHSxupsg" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexFreqIndicator" xmi:id="_EM4RLl6eEfGmeMsHSxupsg" count="103886" computed="true" distinctValueCount="10" uniqueValueCount="96479" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74002061666666653734346336323561663233343439313337623866383332653633307372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000015EA74002066666665343163363435303163633837633830316664363164623366363234347371007E000300000000000010E074002066666530643662376434373732613733383039373865663766303838356238397371007E0003000000000000109B74002063666664653066303438326661373034613662306535343366383338636262667371007E0003000000000000197A74002065666662633262653165326564613566303235306164633266333037663334367371007E000300000000000015FF74002063666663336663653734353062326462356636323934323239323839323939627371007E00030000000000001B3374002064666665336333666462333864643763613536656239383430383733303337387371007E00030000000000001C0B74002064666631653961353137643339623934306636343234633366646664626465617371007E00030000000000001A4074002065666664303238666533363938313332386465336234626537643663376562347371007E0003000000000000164174002061666664353766623064616136626131386534376362396633316332626336357371007E000300000000000015ED78" valueToDistinctFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74002061666666653734346336323561663233343439313337623866383332653633307372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000155774002066666665343163363435303163633837633830316664363164623366363234347371007E0003000000000000102F74002066666530643662376434373732613733383039373865663766303838356238397371007E0003000000000000101174002063666664653066303438326661373034613662306535343366383338636262667371007E0003000000000000188774002065666662633262653165326564613566303235306164633266333037663334367371007E0003000000000000151274002063666663336663653734353062326462356636323934323239323839323939627371007E00030000000000001A0774002064666665336333666462333864643763613536656239383430383733303337387371007E00030000000000001AB874002064666631653961353137643339623934306636343234633366646664626465617371007E0003000000000000192C74002065666664303238666533363938313332386465336234626537643663376562347371007E0003000000000000151B74002061666664353766623064616136626131386534376362396633316332626336357371007E0003000000000000150C78">
+        <parameters xmi:id="_EM4RL16eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhF6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Frequency_Table_0.1.definition#_VGep4Pa7Ed24-N3PsP_o-w"/>
+        <builtInIndicatorDefinition xmi:id="_Ed0QIF6eEfGmeMsHSxupsg" name="Soundex Frequency Table" label="Soundex Frequency Table">
+          <taggedValue xmi:id="_Ed0QIV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of records for each record with a distinct soundex"/>
+          <taggedValue xmi:id="_Ed0QIl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the most frequent records with respect to their soundex value"/>
+          <sqlGenericExpression xmi:id="_Ed0QI16eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>), COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY SOUNDEX(&lt;%=__COLUMN_NAMES__%>) ORDER BY d DESC,c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_Ed0QJF6eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>) , COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY 2 ORDER BY d DESC,c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_Ed0QJV6eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>), COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY SOUNDEX(&lt;%=__COLUMN_NAMES__%>) ORDER BY d DESC,c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_Ed0QJl6eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>),  COUNT(*), COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY SOUNDEX(&lt;%=__COLUMN_NAMES__%>) ORDER BY COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) DESC , COUNT(*) DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_Ed0QJ16eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>), COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY SOUNDEX(&lt;%=__COLUMN_NAMES__%>) ORDER BY d DESC,c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_Ed0QKF6eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>), COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY SOUNDEX(&lt;%=__COLUMN_NAMES__%>) ORDER BY d DESC,c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_Ed0QKV6eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>), COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY SOUNDEX(&lt;%=__COLUMN_NAMES__%>) ORDER BY d DESC,c DESC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_Ed0QKl6eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>) , COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY 2 ORDER BY d DESC,c DESC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_Ed0QK16eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), NYSIIS(&lt;%=__COLUMN_NAMES__%>) , COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY 2 ORDER BY d DESC,c DESC" language="Netezza"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_EM4RMl6eEfGmeMsHSxupsg" count="103886" computed="true">
+        <parameters xmi:id="_EM4RM16eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhV6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_Ed-oMF6eEfGmeMsHSxupsg" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_Ed-oMV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_Ed-oMl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_Ed-oM16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_EM4RNF6eEfGmeMsHSxupsg" count="103886" computed="true">
+        <parameters xmi:id="_EM4RNV6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhV6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <builtInIndicatorDefinition xmi:id="_EeLcgF6eEfGmeMsHSxupsg" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_EeLcgV6eEfGmeMsHSxupsg" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_EeLcgl6eEfGmeMsHSxupsg" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_EeLcg16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_EM4RNl6eEfGmeMsHSxupsg" count="103886" computed="true" distinctValueCount="29">
+        <parameters xmi:id="_EM4RN16eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhV6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_EeY34F6eEfGmeMsHSxupsg" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_EeY34V6eEfGmeMsHSxupsg" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_EeY34l6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_EeY3416eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RangeIndicator" xmi:id="_EM4ROF6eEfGmeMsHSxupsg" computed="true">
+        <parameters xmi:id="_EM4ROV6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhV6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Range_0.1.definition#_ccI49hF2Ed2PKb6nEJEvhw"/>
+        <lowerValue xmi:id="_EM4ROl6eEfGmeMsHSxupsg" count="103886" computed="true" value="1" datatype="4">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhV6UEfGmeMsHSxupsg"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Minimum_0.1.definition#_ccJgABF2Ed2PKb6nEJEvhw"/>
+          <builtInIndicatorDefinition xmi:id="_Eej3AF6eEfGmeMsHSxupsg" name="Minimum" label="Minimum">
+            <taggedValue xmi:id="_Eej3AV6eEfGmeMsHSxupsg" tag="Description" value="gives the minimal record"/>
+            <taggedValue xmi:id="_Eej3Al6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the minimal record"/>
+            <sqlGenericExpression xmi:id="_Eej3A16eEfGmeMsHSxupsg" body="SELECT MIN(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+          </builtInIndicatorDefinition>
+        </lowerValue>
+        <upperValue xmi:id="_EM4RO16eEfGmeMsHSxupsg" count="103886" computed="true" value="29" datatype="4">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhV6UEfGmeMsHSxupsg"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Maximum_0.1.definition#_ccJgARF2Ed2PKb6nEJEvhw"/>
+          <builtInIndicatorDefinition xmi:id="_EeuPEF6eEfGmeMsHSxupsg" name="Maximum" label="Maximum">
+            <taggedValue xmi:id="_EeuPEV6eEfGmeMsHSxupsg" tag="Description" value="gives the maximal record"/>
+            <taggedValue xmi:id="_EeuPEl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the maximal record"/>
+            <sqlGenericExpression xmi:id="_EeuPE16eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+          </builtInIndicatorDefinition>
+        </upperValue>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_EM4RPF6eEfGmeMsHSxupsg" count="103886" computed="true" distinctValueCount="2" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000274000239397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000A1740001397371007E0003000000000001952D78">
+        <parameters xmi:id="_EM4RPV6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhV6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+        <builtInIndicatorDefinition xmi:id="_Ee6cUF6eEfGmeMsHSxupsg" name="Pattern Frequency Table" label="Pattern Frequency Table">
+          <taggedValue xmi:id="_Ee6cUV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of records for each distinct pattern"/>
+          <taggedValue xmi:id="_Ee6cUl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the most frequent patterns"/>
+          <sqlGenericExpression xmi:id="_Ee6cU16eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_Ee6cVF6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_Ee6cVV6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_Ee6cVl6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_Ee6cV16eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_Ee6cWF6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%> , COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_Ee6cWV6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_Ee6cWl6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="AS/400"/>
+          <sqlGenericExpression xmi:id="_Ee6cW16eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_Ee6cXF6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Vertica Database"/>
+          <sqlGenericExpression xmi:id="_Ee6cXV6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Netezza"/>
+          <charactersMapping xmi:id="_Ee6cXl6eEfGmeMsHSxupsg" language="SQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Ee6cX16eEfGmeMsHSxupsg" name="Characters mapping on MySQL" language="MySQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Ee6cYF6eEfGmeMsHSxupsg" name="Characters mapping on Oracle" language="Oracle" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Ee6cYV6eEfGmeMsHSxupsg" name="Characters mapping on PostgreSQL" language="PostgreSQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Ee6cYl6eEfGmeMsHSxupsg" name="Characters mapping on Microsoft SQL Server" language="Microsoft SQL Server" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Ee6cY16eEfGmeMsHSxupsg" name="Characters mapping on DB2" language="DB2" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Ee6cZF6eEfGmeMsHSxupsg" name="Characters mapping on AS/400" language="AS/400" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Ee6cZV6eEfGmeMsHSxupsg" name="Characters mapping on Informix" language="Informix" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Ee6cZl6eEfGmeMsHSxupsg" name="Characters mapping on Teradata" language="Teradata" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Ee6cZ16eEfGmeMsHSxupsg" name="Characters mapping on Vertica" language="Vertica Database" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Ee6caF6eEfGmeMsHSxupsg" language="Netezza" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Ee6caV6eEfGmeMsHSxupsg" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_EM4RP16eEfGmeMsHSxupsg" count="103886" computed="true">
+        <parameters xmi:id="_EM4RQF6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhl6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_EfC_MF6eEfGmeMsHSxupsg" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_EfC_MV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_EfC_Ml6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_EfC_M16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_EM4RQV6eEfGmeMsHSxupsg" count="103886" computed="true">
+        <parameters xmi:id="_EM4RQl6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhl6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <builtInIndicatorDefinition xmi:id="_EfMJIF6eEfGmeMsHSxupsg" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_EfMJIV6eEfGmeMsHSxupsg" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_EfMJIl6eEfGmeMsHSxupsg" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_EfMJI16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_EM4RQ16eEfGmeMsHSxupsg" count="103886" computed="true" distinctValueCount="5">
+        <parameters xmi:id="_EM4RRF6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhl6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_EfVTEF6eEfGmeMsHSxupsg" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_EfVTEV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_EfVTEl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_EfVTE16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_EM4RRV6eEfGmeMsHSxupsg" count="103886" computed="true" length="6">
+        <parameters xmi:id="_EM4RRl6eEfGmeMsHSxupsg">
+          <textParameter xmi:id="_EM4RR16eEfGmeMsHSxupsg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhl6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_Efd18F6eEfGmeMsHSxupsg" name="Minimal Length" label="Minimal Length">
+          <taggedValue xmi:id="_Efd18V6eEfGmeMsHSxupsg" tag="Description" value="computes the minimal length of a text field. Does not take into account the null and blank values when computing the minimal length."/>
+          <taggedValue xmi:id="_Efd18l6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the length of the smallest textual record of non-null and non-blank values"/>
+          <sqlGenericExpression xmi:id="_Efd1816eEfGmeMsHSxupsg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_Efd19F6eEfGmeMsHSxupsg" body="SELECT MIN( LENGTH(&lt;%=__COLUMN_NAMES__%>) ) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(NVL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) IS NOT NULL) &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_Efd19V6eEfGmeMsHSxupsg" body="SELECT MIN(LEN(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (LTRIM(RTRIM(CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END)) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_Efd19l6eEfGmeMsHSxupsg" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+          <sqlGenericExpression xmi:id="_Efd1916eEfGmeMsHSxupsg" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQLite"/>
+          <sqlGenericExpression xmi:id="_Efd1-F6eEfGmeMsHSxupsg" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Hive"/>
+          <sqlGenericExpression xmi:id="_Efd1-V6eEfGmeMsHSxupsg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_Efd1-l6eEfGmeMsHSxupsg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( LTRIM(RTRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END ))  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_Efd1-16eEfGmeMsHSxupsg" body="SELECT MIN(CHAR_LENGTH( &lt;%=__COLUMN_NAMES__%> )) FROM  &lt;%=__TABLE_NAME__%>   WHERE ( &lt;%=__COLUMN_NAMES__%>  IS NOT NULL ) AND ( TRIM( CASE WHEN  &lt;%=__COLUMN_NAMES__%>  IS NULL  THEN 'NULL TALEND' ELSE  &lt;%=__COLUMN_NAMES__%>  END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Informix"/>
+          <sqlGenericExpression xmi:id="_Efd1_F6eEfGmeMsHSxupsg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (1=1) AND (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_Efd1_V6eEfGmeMsHSxupsg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
+          <sqlGenericExpression xmi:id="_Efd1_l6eEfGmeMsHSxupsg" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Snowflake"/>
+          <sqlGenericExpression xmi:id="_Efd1_16eEfGmeMsHSxupsg" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="HDB"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_EM4RSF6eEfGmeMsHSxupsg" count="103886" computed="true" length="11">
+        <parameters xmi:id="_EM4RSV6eEfGmeMsHSxupsg">
+          <textParameter xmi:id="_EM4RSl6eEfGmeMsHSxupsg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhl6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_0.1.definition#_ccHq1RF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_Efm_4F6eEfGmeMsHSxupsg" name="Maximal Length" label="Maximal Length">
+          <taggedValue xmi:id="_Efm_4V6eEfGmeMsHSxupsg" tag="Description" value="computes the maximal length of a text field. Does not take into account the null and blank values when computing the maximal length."/>
+          <taggedValue xmi:id="_Efm_4l6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the length of the longest textual record of non-null and non-blank values"/>
+          <sqlGenericExpression xmi:id="_Efm_416eEfGmeMsHSxupsg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_Efm_5F6eEfGmeMsHSxupsg" body="SELECT MAX( LENGTH(&lt;%=__COLUMN_NAMES__%>) ) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(NVL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) IS NOT NULL) &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle" modificationDate=""/>
+          <sqlGenericExpression xmi:id="_Efm_5V6eEfGmeMsHSxupsg" body="SELECT MAX(LEN(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (LTRIM(RTRIM(CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END)) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_Efm_5l6eEfGmeMsHSxupsg" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+          <sqlGenericExpression xmi:id="_Efm_516eEfGmeMsHSxupsg" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQLite"/>
+          <sqlGenericExpression xmi:id="_Efm_6F6eEfGmeMsHSxupsg" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Hive" modificationDate=""/>
+          <sqlGenericExpression xmi:id="_Efm_6V6eEfGmeMsHSxupsg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_Efm_6l6eEfGmeMsHSxupsg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( LTRIM(RTRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END ))  &lt;>  '' )  &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_Efm_616eEfGmeMsHSxupsg" body="SELECT MAX(CHAR_LENGTH( &lt;%=__COLUMN_NAMES__%> )) FROM  &lt;%=__TABLE_NAME__%>   WHERE ( &lt;%=__COLUMN_NAMES__%>  IS NOT NULL ) AND ( TRIM( CASE WHEN  &lt;%=__COLUMN_NAMES__%>  IS NULL  THEN 'NULL TALEND' ELSE  &lt;%=__COLUMN_NAMES__%>  END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Informix"/>
+          <sqlGenericExpression xmi:id="_Efm_7F6eEfGmeMsHSxupsg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_Efm_7V6eEfGmeMsHSxupsg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
+          <sqlGenericExpression xmi:id="_Efm_7l6eEfGmeMsHSxupsg" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Snowflake"/>
+          <sqlGenericExpression xmi:id="_Efm_716eEfGmeMsHSxupsg" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="HDB"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_EM4RS16eEfGmeMsHSxupsg" count="103886" computed="true" distinctValueCount="5" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000574000A61616161615F616161617372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000005F974000B6161615F616161616161617371007E00030000000000000003740007616161616161617371007E0003000000000000168F74000B6161616161615F616161617371007E00030000000000012BFB7400066161616161617371007E00030000000000004D4878">
+        <parameters xmi:id="_EM4RTF6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhl6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+        <builtInIndicatorDefinition xmi:id="_EfwJ0F6eEfGmeMsHSxupsg" name="Pattern Frequency Table" label="Pattern Frequency Table">
+          <taggedValue xmi:id="_EfwJ0V6eEfGmeMsHSxupsg" tag="Description" value="counts the number of records for each distinct pattern"/>
+          <taggedValue xmi:id="_EfwJ0l6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the most frequent patterns"/>
+          <sqlGenericExpression xmi:id="_EfwJ016eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_EfwJ1F6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_EfwJ1V6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_EfwJ1l6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_EfwJ116eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_EfwJ2F6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%> , COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_EfwJ2V6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_EfwJ2l6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="AS/400"/>
+          <sqlGenericExpression xmi:id="_EfwJ216eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_EfwJ3F6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Vertica Database"/>
+          <sqlGenericExpression xmi:id="_EfwJ3V6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Netezza"/>
+          <charactersMapping xmi:id="_EfwJ3l6eEfGmeMsHSxupsg" language="SQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EfwJ316eEfGmeMsHSxupsg" name="Characters mapping on MySQL" language="MySQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EfwJ4F6eEfGmeMsHSxupsg" name="Characters mapping on Oracle" language="Oracle" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EfwJ4V6eEfGmeMsHSxupsg" name="Characters mapping on PostgreSQL" language="PostgreSQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EfwJ4l6eEfGmeMsHSxupsg" name="Characters mapping on Microsoft SQL Server" language="Microsoft SQL Server" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EfwJ416eEfGmeMsHSxupsg" name="Characters mapping on DB2" language="DB2" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EfwJ5F6eEfGmeMsHSxupsg" name="Characters mapping on AS/400" language="AS/400" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EfwJ5V6eEfGmeMsHSxupsg" name="Characters mapping on Informix" language="Informix" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EfwJ5l6eEfGmeMsHSxupsg" name="Characters mapping on Teradata" language="Teradata" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EfwJ516eEfGmeMsHSxupsg" name="Characters mapping on Vertica" language="Vertica Database" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EfwJ6F6eEfGmeMsHSxupsg" language="Netezza" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_EfwJ6V6eEfGmeMsHSxupsg" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexFreqIndicator" xmi:id="_EM4RTV6eEfGmeMsHSxupsg" count="103886" computed="true" distinctValueCount="5" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000574000B6372656469745F636172647372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000383F1740007766F75636865727371007E000300000000000043AD740006626F6C65746F7371007E0003000000000000E7D874000B6E6F745F646566696E65647371007E0003000000000000000974000A64656269745F636172647371007E000300000000000011EB78" valueToDistinctFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000574000B6372656469745F636172647372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000003740007766F756368657271007E0005740006626F6C65746F71007E000574000B6E6F745F646566696E656471007E000574000A64656269745F6361726471007E000578">
+        <parameters xmi:id="_EM4RTl6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXhl6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Frequency_Table_0.1.definition#_VGep4Pa7Ed24-N3PsP_o-w"/>
+        <builtInIndicatorDefinition xmi:id="_Ef-MQF6eEfGmeMsHSxupsg" name="Soundex Frequency Table" label="Soundex Frequency Table">
+          <taggedValue xmi:id="_Ef-MQV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of records for each record with a distinct soundex"/>
+          <taggedValue xmi:id="_Ef-MQl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the most frequent records with respect to their soundex value"/>
+          <sqlGenericExpression xmi:id="_Ef-MQ16eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>), COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY SOUNDEX(&lt;%=__COLUMN_NAMES__%>) ORDER BY d DESC,c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_Ef-MRF6eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>) , COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY 2 ORDER BY d DESC,c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_Ef-MRV6eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>), COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY SOUNDEX(&lt;%=__COLUMN_NAMES__%>) ORDER BY d DESC,c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_Ef-MRl6eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>),  COUNT(*), COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY SOUNDEX(&lt;%=__COLUMN_NAMES__%>) ORDER BY COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) DESC , COUNT(*) DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_Ef-MR16eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>), COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY SOUNDEX(&lt;%=__COLUMN_NAMES__%>) ORDER BY d DESC,c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_Ef-MSF6eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>), COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY SOUNDEX(&lt;%=__COLUMN_NAMES__%>) ORDER BY d DESC,c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_Ef-MSV6eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>), COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY SOUNDEX(&lt;%=__COLUMN_NAMES__%>) ORDER BY d DESC,c DESC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_Ef-MSl6eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), SOUNDEX(&lt;%=__COLUMN_NAMES__%>) , COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY 2 ORDER BY d DESC,c DESC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_Ef-MS16eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), NYSIIS(&lt;%=__COLUMN_NAMES__%>) , COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY 2 ORDER BY d DESC,c DESC" language="Netezza"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_EM4RUF6eEfGmeMsHSxupsg" count="103886" computed="true">
+        <parameters xmi:id="_EM4RUV6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXh16UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_EgHWMF6eEfGmeMsHSxupsg" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_EgHWMV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_EgHWMl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_EgHWM16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_EM4RUl6eEfGmeMsHSxupsg" count="103886" computed="true">
+        <parameters xmi:id="_EM4RU16eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXh16UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <builtInIndicatorDefinition xmi:id="_EgQgIF6eEfGmeMsHSxupsg" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_EgQgIV6eEfGmeMsHSxupsg" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_EgQgIl6eEfGmeMsHSxupsg" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_EgQgI16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_EM4RVF6eEfGmeMsHSxupsg" count="103886" computed="true" distinctValueCount="24">
+        <parameters xmi:id="_EM4RVV6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXh16UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_EgZqEF6eEfGmeMsHSxupsg" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_EgZqEV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_EgZqEl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_EgZqE16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RangeIndicator" xmi:id="_EM4RVl6eEfGmeMsHSxupsg" computed="true">
+        <parameters xmi:id="_EM4RV16eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXh16UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Range_0.1.definition#_ccI49hF2Ed2PKb6nEJEvhw"/>
+        <lowerValue xmi:id="_EM4RWF6eEfGmeMsHSxupsg" count="103886" computed="true" value="0" datatype="4">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXh16UEfGmeMsHSxupsg"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Minimum_0.1.definition#_ccJgABF2Ed2PKb6nEJEvhw"/>
+          <builtInIndicatorDefinition xmi:id="_Egi0AF6eEfGmeMsHSxupsg" name="Minimum" label="Minimum">
+            <taggedValue xmi:id="_Egi0AV6eEfGmeMsHSxupsg" tag="Description" value="gives the minimal record"/>
+            <taggedValue xmi:id="_Egi0Al6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the minimal record"/>
+            <sqlGenericExpression xmi:id="_Egi0A16eEfGmeMsHSxupsg" body="SELECT MIN(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+          </builtInIndicatorDefinition>
+        </lowerValue>
+        <upperValue xmi:id="_EM4RWV6eEfGmeMsHSxupsg" count="103886" computed="true" value="24" datatype="4">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXh16UEfGmeMsHSxupsg"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Maximum_0.1.definition#_ccJgARF2Ed2PKb6nEJEvhw"/>
+          <builtInIndicatorDefinition xmi:id="_Egr98F6eEfGmeMsHSxupsg" name="Maximum" label="Maximum">
+            <taggedValue xmi:id="_Egr98V6eEfGmeMsHSxupsg" tag="Description" value="gives the maximal record"/>
+            <taggedValue xmi:id="_Egr98l6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the maximal record"/>
+            <sqlGenericExpression xmi:id="_Egr9816eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+          </builtInIndicatorDefinition>
+        </upperValue>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_EM4RWl6eEfGmeMsHSxupsg" count="103886" computed="true" distinctValueCount="2" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000274000239397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000001625740001397371007E00030000000000017FA978">
+        <parameters xmi:id="_EM4RW16eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXh16UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+        <builtInIndicatorDefinition xmi:id="_Eg1u8F6eEfGmeMsHSxupsg" name="Pattern Frequency Table" label="Pattern Frequency Table">
+          <taggedValue xmi:id="_Eg1u8V6eEfGmeMsHSxupsg" tag="Description" value="counts the number of records for each distinct pattern"/>
+          <taggedValue xmi:id="_Eg1u8l6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the most frequent patterns"/>
+          <sqlGenericExpression xmi:id="_Eg1u816eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_Eg1u9F6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_Eg1u9V6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_Eg1u9l6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_Eg1u916eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_Eg1u-F6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%> , COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_Eg1u-V6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_Eg1u-l6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="AS/400"/>
+          <sqlGenericExpression xmi:id="_Eg1u-16eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_Eg1u_F6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Vertica Database"/>
+          <sqlGenericExpression xmi:id="_Eg1u_V6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Netezza"/>
+          <charactersMapping xmi:id="_Eg1u_l6eEfGmeMsHSxupsg" language="SQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eg1u_16eEfGmeMsHSxupsg" name="Characters mapping on MySQL" language="MySQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eg1vAF6eEfGmeMsHSxupsg" name="Characters mapping on Oracle" language="Oracle" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eg1vAV6eEfGmeMsHSxupsg" name="Characters mapping on PostgreSQL" language="PostgreSQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eg1vAl6eEfGmeMsHSxupsg" name="Characters mapping on Microsoft SQL Server" language="Microsoft SQL Server" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eg1vA16eEfGmeMsHSxupsg" name="Characters mapping on DB2" language="DB2" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eg1vBF6eEfGmeMsHSxupsg" name="Characters mapping on AS/400" language="AS/400" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eg1vBV6eEfGmeMsHSxupsg" name="Characters mapping on Informix" language="Informix" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eg1vBl6eEfGmeMsHSxupsg" name="Characters mapping on Teradata" language="Teradata" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eg1vB16eEfGmeMsHSxupsg" name="Characters mapping on Vertica" language="Vertica Database" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eg1vCF6eEfGmeMsHSxupsg" language="Netezza" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eg1vCV6eEfGmeMsHSxupsg" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_EM4RXV6eEfGmeMsHSxupsg" count="103886" computed="true">
+        <parameters xmi:id="_EM4RXl6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXiF6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_EhG0sF6eEfGmeMsHSxupsg" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_EhG0sV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_EhG0sl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_EhG0s16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_EM4RX16eEfGmeMsHSxupsg" count="103886" computed="true">
+        <parameters xmi:id="_EM4RYF6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXiF6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <builtInIndicatorDefinition xmi:id="_EhP-oF6eEfGmeMsHSxupsg" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_EhP-oV6eEfGmeMsHSxupsg" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_EhP-ol6eEfGmeMsHSxupsg" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_EhP-o16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_EM4RYV6eEfGmeMsHSxupsg" count="103886" computed="true" distinctValueCount="29077">
+        <parameters xmi:id="_EM4RYl6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXiF6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_EhZvoF6eEfGmeMsHSxupsg" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_EhZvoV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_EhZvol6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_EhZvo16eEfGmeMsHSxupsg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RangeIndicator" xmi:id="_EM4RY16eEfGmeMsHSxupsg" computed="true">
+        <parameters xmi:id="_EM4RZF6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXiF6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Range_0.1.definition#_ccI49hF2Ed2PKb6nEJEvhw"/>
+        <lowerValue xmi:id="_EM4RZV6eEfGmeMsHSxupsg" count="103886" computed="true" value="0.0" datatype="6">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXiF6UEfGmeMsHSxupsg"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Minimum_0.1.definition#_ccJgABF2Ed2PKb6nEJEvhw"/>
+          <builtInIndicatorDefinition xmi:id="_Ehi5kF6eEfGmeMsHSxupsg" name="Minimum" label="Minimum">
+            <taggedValue xmi:id="_Ehi5kV6eEfGmeMsHSxupsg" tag="Description" value="gives the minimal record"/>
+            <taggedValue xmi:id="_Ehi5kl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the minimal record"/>
+            <sqlGenericExpression xmi:id="_Ehi5k16eEfGmeMsHSxupsg" body="SELECT MIN(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+          </builtInIndicatorDefinition>
+        </lowerValue>
+        <upperValue xmi:id="_EM4RZl6eEfGmeMsHSxupsg" count="103886" computed="true" value="13664.08" datatype="6">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXiF6UEfGmeMsHSxupsg"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Maximum_0.1.definition#_ccJgARF2Ed2PKb6nEJEvhw"/>
+          <builtInIndicatorDefinition xmi:id="_EhsDgF6eEfGmeMsHSxupsg" name="Maximum" label="Maximum">
+            <taggedValue xmi:id="_EhsDgV6eEfGmeMsHSxupsg" tag="Description" value="gives the maximal record"/>
+            <taggedValue xmi:id="_EhsDgl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the maximal record"/>
+            <sqlGenericExpression xmi:id="_EhsDg16eEfGmeMsHSxupsg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+          </builtInIndicatorDefinition>
+        </upperValue>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_EM4RZ16eEfGmeMsHSxupsg" count="103886" computed="true" distinctValueCount="9" uniqueValueCount="1" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000974000439392E397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000001E1B74000539392E39397371007E0003000000000000A6A3740003392E397371007E000300000000000000A47400063939392E39397371007E0003000000000000ADB9740006393939392E397371007E0003000000000000008B7400053939392E397371007E00030000000000001908740007393939392E39397371007E000300000000000003F274000839393939392E39397371007E00030000000000000001740004392E39397371007E0003000000000000052D78">
+        <parameters xmi:id="_EM4RaF6eEfGmeMsHSxupsg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/OLIST/order_payments_0.1.item#_DtHXiF6UEfGmeMsHSxupsg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+        <builtInIndicatorDefinition xmi:id="_Eh1NcF6eEfGmeMsHSxupsg" name="Pattern Frequency Table" label="Pattern Frequency Table">
+          <taggedValue xmi:id="_Eh1NcV6eEfGmeMsHSxupsg" tag="Description" value="counts the number of records for each distinct pattern"/>
+          <taggedValue xmi:id="_Eh1Ncl6eEfGmeMsHSxupsg" tag="Purpose" value="evaluates the most frequent patterns"/>
+          <sqlGenericExpression xmi:id="_Eh1Nc16eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_Eh1NdF6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_Eh1NdV6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_Eh1Ndl6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_Eh1Nd16eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_Eh1NeF6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%> , COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_Eh1NeV6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_Eh1Nel6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="AS/400"/>
+          <sqlGenericExpression xmi:id="_Eh1Ne16eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_Eh1NfF6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Vertica Database"/>
+          <sqlGenericExpression xmi:id="_Eh1NfV6eEfGmeMsHSxupsg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Netezza"/>
+          <charactersMapping xmi:id="_Eh1Nfl6eEfGmeMsHSxupsg" language="SQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eh1Nf16eEfGmeMsHSxupsg" name="Characters mapping on MySQL" language="MySQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eh1NgF6eEfGmeMsHSxupsg" name="Characters mapping on Oracle" language="Oracle" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eh1NgV6eEfGmeMsHSxupsg" name="Characters mapping on PostgreSQL" language="PostgreSQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eh1Ngl6eEfGmeMsHSxupsg" name="Characters mapping on Microsoft SQL Server" language="Microsoft SQL Server" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eh1Ng16eEfGmeMsHSxupsg" name="Characters mapping on DB2" language="DB2" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eh1NhF6eEfGmeMsHSxupsg" name="Characters mapping on AS/400" language="AS/400" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eh1NhV6eEfGmeMsHSxupsg" name="Characters mapping on Informix" language="Informix" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eh1Nhl6eEfGmeMsHSxupsg" name="Characters mapping on Teradata" language="Teradata" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eh1Nh16eEfGmeMsHSxupsg" name="Characters mapping on Vertica" language="Vertica Database" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eh1NiF6eEfGmeMsHSxupsg" language="Netezza" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_Eh1NiV6eEfGmeMsHSxupsg" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+    </results>
+    <parameters xmi:id="_oChUOl6dEfGmeMsHSxupsg" dataFilter="_wk16kF6dEfGmeMsHSxupsg" analysisType="Multiple Column Analysis" executionLanguage="Java" storeData="false"/>
+    <contextType xmi:id="_wk1TgF6dEfGmeMsHSxupsg" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_sBxQoF6gEfGmeMsHSxupsg" kind="Usage" supplier="_oChUMV6dEfGmeMsHSxupsg">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/Reporte_Olist/report_media_olist_0.1.rep#_lcYqUF6bEfGmeMsHSxupsg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+  <dataquality.domain:Domain xmi:id="_wk16kF6dEfGmeMsHSxupsg" name="analisis_order_payments">
+    <ranges xmi:id="_wk16kV6dEfGmeMsHSxupsg">
+      <expressions xmi:id="_wk16kl6dEfGmeMsHSxupsg">
+        <expression xsi:type="relational:TdExpression" xmi:id="_wk16k16dEfGmeMsHSxupsg" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_Vxj3kF6YEfGmeMsHSxupsg" name="Basic_Column_Analysis" creationDate="2026-06-02T10:33:01.448-0500" defaultContext="Default">
+    <taggedValue xmi:id="_Vxj3kV6YEfGmeMsHSxupsg" tag="Status" value="Draft"/>
+    <taggedValue xmi:id="_Vxj3kl6YEfGmeMsHSxupsg" tag="Author" value="stiven.apolo@trial.rik0fdl1mh0n14y.us.qlikcloud.com"/>
+    <taggedValue xmi:id="_Vxj3k16YEfGmeMsHSxupsg" tag="Purpose"/>
+    <taggedValue xmi:id="_Vxj3lF6YEfGmeMsHSxupsg" tag="Description"/>
+    <taggedValue xmi:id="_Vxj3lV6YEfGmeMsHSxupsg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_9C4h4V6YEfGmeMsHSxupsg" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_9C4h4l6YEfGmeMsHSxupsg" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_9C4h416YEfGmeMsHSxupsg" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_9C4h5F6YEfGmeMsHSxupsg" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_Vxj3ll6YEfGmeMsHSxupsg">
+      <connection href="../../metadata/fileDelimited/OLIST/geolocations_0.1.item#_WFi80V6TEfGmeMsHSxupsg"/>
+    </context>
+    <results xmi:id="_Vxj3l16YEfGmeMsHSxupsg">
+      <resultMetadata xmi:id="_Vxj3mF6YEfGmeMsHSxupsg"/>
+    </results>
+    <parameters xmi:id="_Vxj3mV6YEfGmeMsHSxupsg" dataFilter="_9C4h5V6YEfGmeMsHSxupsg" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
+    <contextType xmi:id="_9C4h4F6YEfGmeMsHSxupsg" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_9C4h5V6YEfGmeMsHSxupsg" name="Basic_Column_Analysis">
+    <ranges xmi:id="_9C4h5l6YEfGmeMsHSxupsg">
+      <expressions xmi:id="_9C4h516YEfGmeMsHSxupsg">
+        <expression xsi:type="relational:TdExpression" xmi:id="_9C4h6F6YEfGmeMsHSxupsg" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>

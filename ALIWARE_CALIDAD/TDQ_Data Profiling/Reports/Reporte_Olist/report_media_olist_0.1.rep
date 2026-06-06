@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.reports="http://dataquality.reports" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_lcYqUF6bEfGmeMsHSxupsg" name="report_media_olist" creationDate="2026-06-02T10:56:14.958-0500" defaultContext="Default">
+  <clientDependency href="../../Analyses/analisis_customers_0.1.ana#_KI_VIF6cEfGmeMsHSxupsg"/>
+  <clientDependency href="../../Analyses/analisis_geolocations_0.1.ana#_KJQa4F6cEfGmeMsHSxupsg"/>
+  <clientDependency href="../../Analyses/analisis_orders_0.1.ana#_KJWhgF6cEfGmeMsHSxupsg"/>
+  <clientDependency href="../../Analyses/analisis_order_items_0.1.ana#_sBtmQF6gEfGmeMsHSxupsg"/>
+  <clientDependency href="../../Analyses/analisis_order_payments_0.1.ana#_sBxQoF6gEfGmeMsHSxupsg"/>
+  <clientDependency href="../../Analyses/analisis_order_reviews_0.1.ana#_sB5McF6gEfGmeMsHSxupsg"/>
+  <clientDependency href="../../Analyses/analisis_product_0.1.ana#_sB9d4F6gEfGmeMsHSxupsg"/>
+  <clientDependency href="../../Analyses/analisis_sellers_0.1.ana#_sCCWYF6gEfGmeMsHSxupsg"/>
+  <taggedValue xmi:id="_lcYqUV6bEfGmeMsHSxupsg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_lcYqUl6bEfGmeMsHSxupsg" tag="Author" value="stiven.apolo@trial.rik0fdl1mh0n14y.us.qlikcloud.com"/>
+  <taggedValue xmi:id="_lcYqU16bEfGmeMsHSxupsg" tag="Purpose"/>
+  <taggedValue xmi:id="_lcYqVF6bEfGmeMsHSxupsg" tag="Description"/>
+  <taggedValue xmi:id="_lcYqVV6bEfGmeMsHSxupsg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_lcYqVl6bEfGmeMsHSxupsg" tag="OutputFolder" value="C:\Fuente de datos GL\Reporte media"/>
+  <taggedValue xmi:id="_lcYqV16bEfGmeMsHSxupsg" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_lcYqWF6bEfGmeMsHSxupsg" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_lcYqWV6bEfGmeMsHSxupsg" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_lcYqWl6bEfGmeMsHSxupsg" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_lcYqW16bEfGmeMsHSxupsg" tag="REP_DBINFO_WAREHOUSE" value=""/>
+  <taggedValue xmi:id="_lcYqXF6bEfGmeMsHSxupsg" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_lcYqXV6bEfGmeMsHSxupsg" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_lcYqXl6bEfGmeMsHSxupsg" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_lcYqX16bEfGmeMsHSxupsg" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:KAkW8oQJnmzfGUUPF3yq4d9oMvfFb+gheoIGZQ=="/>
+  <taggedValue xmi:id="_lcYqYF6bEfGmeMsHSxupsg" tag="REP_DBINFO_PARAMETER" value=""/>
+  <taggedValue xmi:id="_lcYqYV6bEfGmeMsHSxupsg" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:/C:\Program Files (x86)\Talend-Studio\studio\workspace\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_lcYqYl6bEfGmeMsHSxupsg" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_lcYqY16bEfGmeMsHSxupsg" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_lcYqZF6bEfGmeMsHSxupsg" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_ldePcF6bEfGmeMsHSxupsg" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_ldePcV6bEfGmeMsHSxupsg" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_wdnjIF6bEfGmeMsHSxupsg" tag="OutputFileName" value="barragan_kevin_reporte"/>
+  <taggedValue xmi:id="_wdnjIV6bEfGmeMsHSxupsg" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_KI-HAV6cEfGmeMsHSxupsg" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <taggedValue xmi:id="_KI-HAl6cEfGmeMsHSxupsg" tag="REP_AUTHPASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_KI-HA16cEfGmeMsHSxupsg" tag="REP_CLIENTSECRET_CONTEXT" value="false"/>
+  <presentationParams xmi:id="_J2lWgF6cEfGmeMsHSxupsg" type="TOP_MIDDLE_PRESENTATIONKEY">
+    <formula xmi:id="_rYkioF6gEfGmeMsHSxupsg">
+      <expression xsi:type="relational:TdExpression" xmi:id="_rYkioV6gEfGmeMsHSxupsg" body="Creation Date"/>
+    </formula>
+  </presentationParams>
+  <presentationParams xmi:id="_J2l9kV6cEfGmeMsHSxupsg" type="TOP_LEFT_PRESENTATIONKEY">
+    <formula xmi:id="_rYkiol6gEfGmeMsHSxupsg">
+      <expression xsi:type="relational:TdExpression" xmi:id="_rYkio16gEfGmeMsHSxupsg" body="Page Number"/>
+    </formula>
+  </presentationParams>
+  <presentationParams xmi:id="_J2l9lF6cEfGmeMsHSxupsg" type="TOP_RIGHT_PRESENTATIONKEY">
+    <formula xmi:id="_rYkipF6gEfGmeMsHSxupsg">
+      <expression xsi:type="relational:TdExpression" xmi:id="_rYkipV6gEfGmeMsHSxupsg" body="Page Number"/>
+    </formula>
+  </presentationParams>
+  <analysisMap xmi:id="_rBi8AF6bEfGmeMsHSxupsg" mustRefresh="true" reportType="Basic">
+    <analysis href="../../Analyses/analisis_customers_0.1.ana#_WQWpMF6UEfGmeMsHSxupsg"/>
+  </analysisMap>
+  <analysisMap xmi:id="_rBi8AV6bEfGmeMsHSxupsg" mustRefresh="true" reportType="Basic">
+    <analysis href="../../Analyses/analisis_geolocations_0.1.ana#_0VIZgV6WEfGmeMsHSxupsg"/>
+  </analysisMap>
+  <analysisMap xmi:id="_rBi8Al6bEfGmeMsHSxupsg" mustRefresh="true" reportType="Basic">
+    <analysis href="../../Analyses/analisis_orders_0.1.ana#_N14vkF6aEfGmeMsHSxupsg"/>
+  </analysisMap>
+  <analysisMap xmi:id="_kU1aIF6gEfGmeMsHSxupsg" mustRefresh="true" reportType="Basic">
+    <analysis href="../../Analyses/analisis_order_items_0.1.ana#_0t86cV6cEfGmeMsHSxupsg"/>
+  </analysisMap>
+  <analysisMap xmi:id="_i5ncgF6kEfGPh5Ars2lx7Q" mustRefresh="true" reportType="Basic">
+    <analysis href="../../Analyses/analisis_order_payments_0.1.ana#_oChUMV6dEfGmeMsHSxupsg"/>
+  </analysisMap>
+  <analysisMap xmi:id="_i5ncgV6kEfGPh5Ars2lx7Q" mustRefresh="true" reportType="Basic">
+    <analysis href="../../Analyses/analisis_order_reviews_0.1.ana#_VIMiwV6eEfGmeMsHSxupsg"/>
+  </analysisMap>
+  <analysisMap xmi:id="_i5ncgl6kEfGPh5Ars2lx7Q" mustRefresh="true" reportType="Basic">
+    <analysis href="../../Analyses/analisis_product_0.1.ana#_nxjOEV6fEfGmeMsHSxupsg"/>
+  </analysisMap>
+  <analysisMap xmi:id="_i5ncg16kEfGPh5Ars2lx7Q" mustRefresh="true" reportType="Basic">
+    <analysis href="../../Analyses/analisis_sellers_0.1.ana#_DobOUV6gEfGmeMsHSxupsg"/>
+  </analysisMap>
+  <ExecInformations xmi:id="_kTxnAF6cEfGmeMsHSxupsg" executionDate="2026-06-02T12:00:47.592-0500" executionDuration="103207" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2"/>
+  <context xmi:id="_KI-HAF6cEfGmeMsHSxupsg" confirmationNeeded="false" hide="false" name="Default"/>
+</dataquality.reports:TdReport>

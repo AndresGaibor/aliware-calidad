@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_WFi80V6TEfGmeMsHSxupsg" name="geolocations" supplierDependency="_di5icF6XEfGmeMsHSxupsg" dataPackage="_WFi80l6TEfGmeMsHSxupsg" Server="Localhost 127.0.0.1" FilePath="C:/Fuente de datos GL/olist_geolocation_dataset.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_WFi80l6TEfGmeMsHSxupsg" name="default" dataManager="_WFi80V6TEfGmeMsHSxupsg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_WFi8016TEfGmeMsHSxupsg" id="_KoSPUF6TEfGmeMsHSxupsg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WFi81F6TEfGmeMsHSxupsg" id="geolocation_zip_code_prefix" label="geolocation_zip_code_prefix" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_di5icV6XEfGmeMsHSxupsg" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WFi81V6TEfGmeMsHSxupsg" id="geolocation_lat" label="geolocation_lat" length="19" precision="16" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_di5ifl6XEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WFi81l6TEfGmeMsHSxupsg" id="geolocation_lng" label="geolocation_lng" length="19" precision="16" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_di5ii16XEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WFi8116TEfGmeMsHSxupsg" id="geolocation_city" label="geolocation_city" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_di5inF6XEfGmeMsHSxupsg" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WFi82F6TEfGmeMsHSxupsg" id="geolocation_state" label="geolocation_state" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_di5irV6XEfGmeMsHSxupsg" tag="Content Type" value="Nominal"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_di5icF6XEfGmeMsHSxupsg" kind="Usage" supplier="_WFi80V6TEfGmeMsHSxupsg">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/analisis_geolocations_0.1.ana#_0VIZgV6WEfGmeMsHSxupsg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

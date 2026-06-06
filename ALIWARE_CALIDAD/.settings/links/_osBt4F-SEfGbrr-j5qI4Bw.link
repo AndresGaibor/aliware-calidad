@@ -1,0 +1,41 @@
+{
+  "itemId" : "_osBt4F-SEfGbrr-j5qI4Bw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_vkvy0F-KEfGbrr-j5qI4Bw",
+    "parameterList" : [ {
+      "id" : "_vlRXQl-KEfGbrr-j5qI4Bw",
+      "name" : "BASE_FILE_PATH"
+    }, {
+      "id" : "_YJSGkV-NEfGbrr-j5qI4Bw",
+      "name" : "batch_size"
+    }, {
+      "id" : "_vlRXQ1-KEfGbrr-j5qI4Bw",
+      "name" : "DB_HOST"
+    }, {
+      "id" : "_vlRXRV-KEfGbrr-j5qI4Bw",
+      "name" : "DB_NAME"
+    }, {
+      "id" : "_vlRXR1-KEfGbrr-j5qI4Bw",
+      "name" : "DB_PASSWORD"
+    }, {
+      "id" : "_vlRXRF-KEfGbrr-j5qI4Bw",
+      "name" : "DB_PORT"
+    }, {
+      "id" : "_vlRXRl-KEfGbrr-j5qI4Bw",
+      "name" : "DB_USER"
+    }, {
+      "id" : "_vlRXQV-KEfGbrr-j5qI4Bw",
+      "name" : "ENV_NAME"
+    }, {
+      "id" : "_mfvDIGBbEfGyI6Yfhg-nxg",
+      "name" : "FECHAINI"
+    }, {
+      "id" : "_vlRXSF-KEfGbrr-j5qI4Bw",
+      "name" : "PIPELINE_NAME"
+    }, {
+      "id" : "_YJSGkF-NEfGbrr-j5qI4Bw",
+      "name" : "run_id"
+    } ]
+  } ]
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_DtHXgV6UEfGmeMsHSxupsg" name="order_payments" supplierDependency="_EM4RMF6eEfGmeMsHSxupsg" dataPackage="_DtHXgl6UEfGmeMsHSxupsg" Server="Localhost 127.0.0.1" FilePath="C:/Fuente de datos GL/order_payments.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_DtHXgl6UEfGmeMsHSxupsg" name="default" dataManager="_DtHXgV6UEfGmeMsHSxupsg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_DtHXg16UEfGmeMsHSxupsg" id="_7-SDkF6TEfGmeMsHSxupsg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtHXhF6UEfGmeMsHSxupsg" id="order_id" label="order_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_EM4RMV6eEfGmeMsHSxupsg" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtHXhV6UEfGmeMsHSxupsg" id="payment_sequential" label="payment_sequential" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_EM4RPl6eEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtHXhl6UEfGmeMsHSxupsg" id="payment_type" label="payment_type" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_EM4RT16eEfGmeMsHSxupsg" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtHXh16UEfGmeMsHSxupsg" id="payment_installments" label="payment_installments" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_EM4RXF6eEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtHXiF6UEfGmeMsHSxupsg" id="payment_value" label="payment_value" length="6" precision="4" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_EM4RaV6eEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_EM4RMF6eEfGmeMsHSxupsg" kind="Usage" supplier="_DtHXgV6UEfGmeMsHSxupsg">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/analisis_order_payments_0.1.ana#_oChUMV6dEfGmeMsHSxupsg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

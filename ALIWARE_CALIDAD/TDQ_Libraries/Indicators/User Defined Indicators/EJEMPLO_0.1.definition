@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.indicators.definition.userdefine:UDIndicatorDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.indicators.definition.userdefine="http://dataquality.indicators.definition.userdefine" xmi:id="_rDfL0V6SEfGmeMsHSxupsg" name="EJEMPLO" label="EJEMPLO">
+  <taggedValue xmi:id="_rDfL0l6SEfGmeMsHSxupsg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_rDfL016SEfGmeMsHSxupsg" tag="Author" value="stiven.apolo@trial.rik0fdl1mh0n14y.us.qlikcloud.com"/>
+  <taggedValue xmi:id="_rDfL1F6SEfGmeMsHSxupsg" tag="Purpose" value="EJEMPLO"/>
+  <taggedValue xmi:id="_rDfL1V6SEfGmeMsHSxupsg" tag="Description" value="EJEMPLO GENIUS"/>
+  <taggedValue xmi:id="_rDfL1l6SEfGmeMsHSxupsg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_rDfL116SEfGmeMsHSxupsg" tag="Validation_Status" value="true"/>
+  <categories href="../../.Talend.definition#_b5F7QHqTEd67hM2eKD3QgQ"/>
+</dataquality.indicators.definition.userdefine:UDIndicatorDefinition>

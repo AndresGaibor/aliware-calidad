@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_mtEvwV6TEfGmeMsHSxupsg" name="order_reviews" supplierDependency="__jvtcF6eEfGmeMsHSxupsg" dataPackage="_mtEvwl6TEfGmeMsHSxupsg" Server="Localhost 127.0.0.1" FilePath="C:/Fuente de datos GL/olist_order_reviews_dataset.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_mtEvwl6TEfGmeMsHSxupsg" name="default" dataManager="_mtEvwV6TEfGmeMsHSxupsg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_mtEvw16TEfGmeMsHSxupsg" id="_XfP6sF6TEfGmeMsHSxupsg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtEvxF6TEfGmeMsHSxupsg" id="review_id" label="review_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="__jvtcV6eEfGmeMsHSxupsg" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtEvxV6TEfGmeMsHSxupsg" id="order_id" label="order_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="__jvtgl6eEfGmeMsHSxupsg" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtEvxl6TEfGmeMsHSxupsg" id="review_score" label="review_score" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="__jvtj16eEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtEvx16TEfGmeMsHSxupsg" id="review_comment_title" label="review_comment_title" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="__jwUeV6eEfGmeMsHSxupsg" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtEvyF6TEfGmeMsHSxupsg" id="review_comment_message" label="review_comment_message" length="177" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="__jwUil6eEfGmeMsHSxupsg" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtEvyV6TEfGmeMsHSxupsg" id="review_creation_date" label="review_creation_date" length="19" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <taggedValue xmi:id="__jwUl16eEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtEvyl6TEfGmeMsHSxupsg" id="review_answer_timestamp" label="review_answer_timestamp" length="19" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <taggedValue xmi:id="__jwUpF6eEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="__jvtcF6eEfGmeMsHSxupsg" kind="Usage" supplier="_mtEvwV6TEfGmeMsHSxupsg">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/analisis_order_reviews_0.1.ana#_VIMiwV6eEfGmeMsHSxupsg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

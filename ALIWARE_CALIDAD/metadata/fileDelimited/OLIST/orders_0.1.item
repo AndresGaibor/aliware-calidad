@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_7d7P4F6QEfGmeMsHSxupsg" name="orders" supplierDependency="_uWZNbl6aEfGmeMsHSxupsg" dataPackage="_7d-TMF6QEfGmeMsHSxupsg" Server="Localhost 127.0.0.1" FilePath="C:/Fuente de datos GL/orders.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_7d-TMF6QEfGmeMsHSxupsg" name="default" dataManager="_7d7P4F6QEfGmeMsHSxupsg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_7d-TMV6QEfGmeMsHSxupsg" id="_L-tXEF6QEfGmeMsHSxupsg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7d-TMl6QEfGmeMsHSxupsg" id="order_id" label="order_id" length="32" talendType="id_String" key="true" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_uWZNb16aEfGmeMsHSxupsg" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7d-TM16QEfGmeMsHSxupsg" id="customer_id" label="customer_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_uWZNfl6aEfGmeMsHSxupsg" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7d-TNF6QEfGmeMsHSxupsg" id="order_status" label="order_status" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_uWZNjV6aEfGmeMsHSxupsg" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7d-TNV6QEfGmeMsHSxupsg" id="order_purchase_timestamp" label="order_purchase_timestamp" length="-1" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <taggedValue xmi:id="_uWZNml6aEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7d-TNl6QEfGmeMsHSxupsg" id="order_approved_at" label="order_approved_at" length="-1" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <taggedValue xmi:id="_uWZNp16aEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7d-TN16QEfGmeMsHSxupsg" id="order_delivered_carrier_date" label="order_delivered_carrier_date" length="-1" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <taggedValue xmi:id="_uWZNtF6aEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7d-TOF6QEfGmeMsHSxupsg" id="order_delivered_customer_date" label="order_delivered_customer_date" length="-1" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <taggedValue xmi:id="_uWZNwV6aEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7d-TOV6QEfGmeMsHSxupsg" id="order_estimated_delivery_date" label="order_estimated_delivery_date" length="-1" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <taggedValue xmi:id="_uWZNzl6aEfGmeMsHSxupsg" tag="Content Type" value="Interval"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_uWZNbl6aEfGmeMsHSxupsg" kind="Usage" supplier="_7d7P4F6QEfGmeMsHSxupsg">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/analisis_orders_0.1.ana#_N14vkF6aEfGmeMsHSxupsg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>
