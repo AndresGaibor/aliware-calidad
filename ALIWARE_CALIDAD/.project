@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>ALIWARE_CALIDAD</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.talend.core.talendnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.barragan_kevin_reporte-20260602-1202-00036.pdf</name>
+			<type>1</type>
+			<location>C:/Fuente de datos GL/Reporte media/barragan_kevin_reporte-20260602-1202-00036.pdf</location>
+		</link>
+		<link>
+			<name>.reporte_media-20260602-1103-00022.pdf</name>
+			<type>1</type>
+			<location>C:/Fuente de datos GL/Reporte media/reporte_media-20260602-1103-00022.pdf</location>
+		</link>
+	</linkedResources>
+</projectDescription>
