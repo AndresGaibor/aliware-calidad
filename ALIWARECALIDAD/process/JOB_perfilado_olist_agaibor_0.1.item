@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="olist_path" prompt="olist_path?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="/Users/andresgaibor/geniuslab/Fuentes/" internalId="__l3E4F6sEfGQ0ed-VkYKHg"/>
-    <contextParameter comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="routines.System.currentTimeMillis().toString()" internalId="__l3E4V6sEfGQ0ed-VkYKHg"/>
-    <contextParameter comment="" name="ss_db" prompt="ss_db?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="db_andres_99693" internalId="__l3E4l6sEfGQ0ed-VkYKHg"/>
-    <contextParameter comment="" name="ss_host" prompt="ss_host?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="svc-3482219c-a389-4079-b18b-d50662524e8a-shared-dml.aws-virginia-6.svc.singlestore.com" internalId="__l3E416sEfGQ0ed-VkYKHg"/>
-    <contextParameter comment="" name="ss_password" prompt="ss_password?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_Password" value="enc:system.encryption.key.v1:PUUe8TA634YjI/XBOpMpBJxAGab+wPcF30LS6jH3PHwHV7kgBAem891XM8ApCkbpzniS" internalId="__l3E5F6sEfGQ0ed-VkYKHg"/>
-    <contextParameter comment="" name="ss_port" prompt="ss_port?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="3333" internalId="__l3E5V6sEfGQ0ed-VkYKHg"/>
-    <contextParameter comment="" name="ss_user" prompt="ss_user?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="" internalId="__l3E5l6sEfGQ0ed-VkYKHg"/>
+    <contextParameter comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="50000" internalId="_almXQGFqEfGBi9GGfAMN1Q"/>
+    <contextParameter comment="" name="olist_path" prompt="olist_path?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="/Users/andresgaibor/geniuslab/Fuentes/" internalId="_almXQWFqEfGBi9GGfAMN1Q"/>
+    <contextParameter comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="" internalId="_almXQmFqEfGBi9GGfAMN1Q"/>
+    <contextParameter comment="" name="run_id2" prompt="run_id2?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="timestampt" internalId="_almXQ2FqEfGBi9GGfAMN1Q"/>
+    <contextParameter comment="" name="ss_db" prompt="ss_db?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="db_andres_99693" internalId="_almXRGFqEfGBi9GGfAMN1Q"/>
+    <contextParameter comment="" name="ss_host" prompt="ss_host?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="svc-3482219c-a389-4079-b18b-d50662524e8a-shared-dml.aws-virginia-6.svc.singlestore.com" internalId="_almXRWFqEfGBi9GGfAMN1Q"/>
+    <contextParameter comment="" name="ss_password" prompt="ss_password?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_Password" value="enc:system.encryption.key.v1:D5W/muBLoQ7g4z0goctT+3Pw9eeK/3gX1u+9gHQ2lchGvsKKQrH+rHlDCDO+VWctkvxP" internalId="_alm-UGFqEfGBi9GGfAMN1Q"/>
+    <contextParameter comment="" name="ss_port" prompt="ss_port?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="3333" internalId="_alm-UWFqEfGBi9GGfAMN1Q"/>
+    <contextParameter comment="" name="ss_user" prompt="ss_user?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="andres-c8f0f" internalId="_alm-UmFqEfGBi9GGfAMN1Q"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -109,7 +111,7 @@
   </parameters>
   <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="40" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="8"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="table_name" id="0"/>
@@ -117,7 +119,8 @@
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
     <elementParameter field="TABLE" name="INTABLE">
-      <elementValue elementRef="table_name" value="&quot;order_items&quot;" id="0"/>
+      <elementValue elementRef="table_name" value="&quot;orders&quot;" id="0"/>
+      <elementValue elementRef="table_name" value="&quot;order_items&quot;" id="1"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -163,10 +166,8 @@
     <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="dataset" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="row" id="0"/>
       <elementValue elementRef="TRIM" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="row" id="2"/>
-      <elementValue elementRef="TRIM" value="false" id="3"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
@@ -175,21 +176,17 @@
     <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
     <elementParameter field="TABLE" name="DECODE_COLS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="dataset" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="row" id="0"/>
       <elementValue elementRef="DECODE" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="row" id="2"/>
-      <elementValue elementRef="DECODE" value="false" id="3"/>
     </elementParameter>
     <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
     <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputDelimited_1">
-      <column comment="" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="row" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="row" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -197,7 +194,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="output_row.dataset = input_row.dataset;&#xA;output_row.row = input_row.row;&#xA;&#xA;&#xA;System.out.println(&#xA;    &quot;Columnas Dynamic = &quot;&#xA;    + input_row.row.getColumnCount()&#xA;);&#xA;&#xA;for(int i=0; i&lt; input_row.row.getColumnCount(); i++)&#xA;{&#xA;    System.out.println(&#xA;        &quot;Columna: &quot;&#xA;        + input_row.row.getColumnMetadata(i).getName()&#xA;    );&#xA;}&#xA;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="&#xA;output_row.row = input_row.row;&#xA;&#xA;/*&#xA;System.out.println(&#xA;    &quot;Columnas Dynamic = &quot;&#xA;    + input_row.row.getColumnCount()&#xA;);&#xA;*/&#xA;&#xA;for(int i=0; i&lt; input_row.row.getColumnCount(); i++)&#xA;{&#xA;&#x9;/*&#xA;    System.out.println(&#xA;        &quot;Columna: &quot;&#xA;        + input_row.row.getColumnMetadata(i).getName()&#xA;    );&#xA;    */&#xA;}&#xA;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
@@ -208,9 +205,9 @@
   <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_1" show="false"/>
     <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE_START" value="java.util.Map&lt;String, Long> totalRows =&#xA;new java.util.HashMap&lt;String, Long>();&#xA;&#xA;java.util.Map&lt;String, Long> nullRows =&#xA;new java.util.HashMap&lt;String, Long>();&#xA;&#xA;java.util.Map&lt;String, Long> totalChars =&#xA;new java.util.HashMap&lt;String, Long>();&#xA;&#xA;java.util.Map&lt;String, java.util.Set&lt;String>> distinctValues =&#xA;new java.util.HashMap&lt;String, java.util.Set&lt;String>>();&#xA;&#xA;java.util.Map&lt;String,String> dataTypes =&#xA;new java.util.HashMap&lt;String,String>();&#xA;&#xA;java.util.Map&lt;String,String> minValues =&#xA;new java.util.HashMap&lt;String,String>();&#xA;&#xA;java.util.Map&lt;String,String> maxValues =&#xA;new java.util.HashMap&lt;String,String>();"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE_MAIN" value="routines.system.Dynamic dyn = input_row.row;&#xA;&#xA;//Dataset actual proveniente del tFlowToIterate&#xA;String datasetName =&#xA;(String)globalMap.get(&quot;row1.dataset&quot;);&#xA;&#xA;//Mostrar estructura sólo una vez&#xA;if(globalMap.get(&quot;PRINT_DYNAMIC_COLUMNS&quot;) == null)&#xA;{&#xA;System.out.println(&#xA;   &quot;Columnas Dynamic = &quot;&#xA;   + dyn.getColumnCount()&#xA;);&#xA;&#xA;for(int i = 0; i &lt; dyn.getColumnCount(); i++)&#xA;{&#xA;   System.out.println(&#xA;       &quot;Columna: &quot;&#xA;       + dyn.getColumnMetadata(i).getName()&#xA;   );&#xA;}&#xA;&#xA;globalMap.put(&#xA;   &quot;PRINT_DYNAMIC_COLUMNS&quot;,&#xA;   true&#xA;);&#xA;}&#xA;&#xA;//Recorrer todas las columnas dinámicas&#xA;for(int i = 0; i &lt; dyn.getColumnCount(); i++)&#xA;{&#xA;String columnName =&#xA;   dyn.getColumnMetadata(i)&#xA;      .getName()&#xA;      .replace(&quot;\&quot;&quot;,&quot;&quot;);&#xA;&#xA;Object value =&#xA;   dyn.getColumnValue(i);&#xA;&#xA;String key =&#xA;   datasetName&#xA;   + &quot;|&quot;&#xA;   + columnName;&#xA;&#xA;// ==========================&#xA;// Total registros&#xA;// ==========================&#xA;&#xA;totalRows.put(&#xA;   key,&#xA;   totalRows.getOrDefault(&#xA;       key,&#xA;       0L&#xA;   ) + 1&#xA;);&#xA;&#xA;// ==========================&#xA;// Nulos&#xA;// ==========================&#xA;&#xA;boolean isNull =&#xA;   (&#xA;       value == null&#xA;       ||&#xA;       String.valueOf(value)&#xA;             .trim()&#xA;             .isEmpty()&#xA;   );&#xA;&#xA;if(isNull)&#xA;{&#xA;   nullRows.put(&#xA;       key,&#xA;       nullRows.getOrDefault(&#xA;           key,&#xA;           0L&#xA;       ) + 1&#xA;   );&#xA;}&#xA;else&#xA;{&#xA;   String valueStr =&#xA;       String.valueOf(value);&#xA;&#xA;   // ==========================&#xA;   // Longitud acumulada&#xA;   // ==========================&#xA;&#xA;   totalChars.put(&#xA;       key,&#xA;       totalChars.getOrDefault(&#xA;           key,&#xA;           0L&#xA;       )&#xA;       +&#xA;       valueStr.length()&#xA;   );&#xA;&#xA;   // ==========================&#xA;   // Cardinalidad&#xA;   // ==========================&#xA;&#xA;   distinctValues&#xA;       .computeIfAbsent(&#xA;           key,&#xA;           k -> new java.util.HashSet&lt;String>()&#xA;       )&#xA;       .add(&#xA;           valueStr&#xA;       );&#xA;&#xA;   // ==========================&#xA;   // Tipo de dato observado&#xA;   // ==========================&#xA;&#xA;   dataTypes.putIfAbsent(&#xA;       key,&#xA;       value.getClass()&#xA;            .getSimpleName()&#xA;   );&#xA;&#xA;   // ==========================&#xA;   // Mínimo&#xA;   // ==========================&#xA;&#xA;   String currentMin =&#xA;       minValues.get(key);&#xA;&#xA;   if(&#xA;       currentMin == null&#xA;       ||&#xA;       valueStr.compareTo(&#xA;           currentMin&#xA;       ) &lt; 0&#xA;   )&#xA;   {&#xA;       minValues.put(&#xA;           key,&#xA;           valueStr&#xA;       );&#xA;   }&#xA;&#xA;   // ==========================&#xA;   // Máximo&#xA;   // ==========================&#xA;&#xA;   String currentMax =&#xA;       maxValues.get(key);&#xA;&#xA;   if(&#xA;       currentMax == null&#xA;       ||&#xA;       valueStr.compareTo(&#xA;           currentMax&#xA;       ) > 0&#xA;   )&#xA;   {&#xA;       maxValues.put(&#xA;           key,&#xA;           valueStr&#xA;       );&#xA;   }&#xA;}&#xA;}"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE_END" value="for(String key : totalRows.keySet())&#xA;{&#xA;    Long total =&#xA;        totalRows.getOrDefault(key,0L);&#xA;&#xA;    Long nullCount =&#xA;        nullRows.getOrDefault(key,0L);&#xA;&#xA;    Long chars =&#xA;        totalChars.getOrDefault(key,0L);&#xA;&#xA;    Long cardinality =&#xA;        Long.valueOf(&#xA;            distinctValues&#xA;                .getOrDefault(&#xA;                    key,&#xA;                    new java.util.HashSet&lt;String>()&#xA;                )&#xA;                .size()&#xA;        );&#xA;&#xA;    Double avgLen =&#xA;        total == 0&#xA;        ? 0.0&#xA;        : ((double)chars / total);&#xA;&#xA;    System.out.println(&#xA;        key&#xA;        + &quot; | total=&quot;&#xA;        + total&#xA;        + &quot; | nulls=&quot;&#xA;        + nullCount&#xA;        + &quot; | cardinality=&quot;&#xA;        + cardinality&#xA;        + &quot; | avg_len=&quot;&#xA;        + avgLen&#xA;    );&#xA;}&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE_START" value="java.util.Map&lt;String, Long> totalRows =&#xA;new java.util.HashMap&lt;String, Long>();&#xA;&#xA;java.util.Map&lt;String, Long> nullRows =&#xA;new java.util.HashMap&lt;String, Long>();&#xA;&#xA;java.util.Map&lt;String, Long> totalChars =&#xA;new java.util.HashMap&lt;String, Long>();&#xA;&#xA;java.util.Map&lt;String, java.util.Set&lt;String>> distinctValues =&#xA;new java.util.HashMap&lt;String, java.util.Set&lt;String>>();&#xA;&#xA;java.util.Map&lt;String, String> dataTypes =&#xA;new java.util.HashMap&lt;String, String>();&#xA;&#xA;java.util.Map&lt;String, String> minValues =&#xA;new java.util.HashMap&lt;String, String>();&#xA;&#xA;java.util.Map&lt;String, String> maxValues =&#xA;new java.util.HashMap&lt;String, String>();&#xA;&#xA;java.util.Map&lt;String, java.util.Map&lt;String, Long>> patternCounts =&#xA;new java.util.HashMap&lt;String, java.util.Map&lt;String, Long>>();"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE_MAIN" value="routines.system.Dynamic dyn =&#xA;input_row.row;&#xA;&#xA;String datasetName =&#xA;(String) globalMap.get(&quot;row2.table_name&quot;);&#xA;&#xA;if (&#xA;datasetName == null&#xA;||&#xA;datasetName.trim().isEmpty()&#xA;) {&#xA;datasetName = &quot;UNKNOWN_DATASET&quot;;&#xA;}&#xA;&#xA;datasetName =&#xA;datasetName&#xA;    .replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;    .trim();&#xA;&#xA;//Recorrer todas las columnas dinámicas&#xA;for (int i = 0; i &lt; dyn.getColumnCount(); i++) {&#xA;&#xA;String columnName =&#xA;    dyn.getColumnMetadata(i)&#xA;       .getName()&#xA;       .replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;       .trim();&#xA;&#xA;Object value =&#xA;    dyn.getColumnValue(i);&#xA;&#xA;String key =&#xA;    datasetName + &quot;|&quot; + columnName;&#xA;&#xA;totalRows.put(&#xA;    key,&#xA;    totalRows.getOrDefault(key, 0L) + 1&#xA;);&#xA;&#xA;boolean isNull =&#xA;    value == null&#xA;    ||&#xA;    String.valueOf(value).trim().isEmpty();&#xA;&#xA;if (isNull) {&#xA;&#xA;    nullRows.put(&#xA;        key,&#xA;        nullRows.getOrDefault(key, 0L) + 1&#xA;    );&#xA;&#xA;} else {&#xA;&#xA;    String valueStr =&#xA;        String.valueOf(value).trim();&#xA;&#xA;    totalChars.put(&#xA;        key,&#xA;        totalChars.getOrDefault(key, 0L) + valueStr.length()&#xA;    );&#xA;&#xA;    distinctValues&#xA;        .computeIfAbsent(&#xA;            key,&#xA;            k -> new java.util.HashSet&lt;String>()&#xA;        )&#xA;        .add(valueStr);&#xA;&#xA;    String observedType = &quot;String&quot;;&#xA;&#xA;    if (valueStr.matches(&quot;^-?\\d+$&quot;)) {&#xA;        observedType = &quot;Integer&quot;;&#xA;    }&#xA;    else if (valueStr.matches(&quot;^-?\\d+\\.\\d+$&quot;)) {&#xA;        observedType = &quot;Decimal&quot;;&#xA;    }&#xA;    else if (valueStr.matches(&quot;^\\d{4}-\\d{2}-\\d{2}$&quot;)) {&#xA;        observedType = &quot;Date&quot;;&#xA;    }&#xA;    else if (valueStr.matches(&quot;^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}$&quot;)) {&#xA;        observedType = &quot;Timestamp&quot;;&#xA;    }&#xA;    else if (&#xA;        valueStr.equalsIgnoreCase(&quot;true&quot;)&#xA;        ||&#xA;        valueStr.equalsIgnoreCase(&quot;false&quot;)&#xA;    ) {&#xA;        observedType = &quot;Boolean&quot;;&#xA;    }&#xA;&#xA;    dataTypes.putIfAbsent(&#xA;        key,&#xA;        observedType&#xA;    );&#xA;&#xA;    String currentMin =&#xA;        minValues.get(key);&#xA;&#xA;    if (&#xA;        currentMin == null&#xA;        ||&#xA;        valueStr.compareTo(currentMin) &lt; 0&#xA;    ) {&#xA;        minValues.put(key, valueStr);&#xA;    }&#xA;&#xA;    String currentMax =&#xA;        maxValues.get(key);&#xA;&#xA;    if (&#xA;        currentMax == null&#xA;        ||&#xA;        valueStr.compareTo(currentMax) > 0&#xA;    ) {&#xA;        maxValues.put(key, valueStr);&#xA;    }&#xA;&#xA;    String pattern =&#xA;        valueStr&#xA;            .replaceAll(&quot;[0-9]&quot;, &quot;9&quot;)&#xA;            .replaceAll(&quot;[A-ZÁÉÍÓÚÑ]&quot;, &quot;A&quot;)&#xA;            .replaceAll(&quot;[a-záéíóúñ]&quot;, &quot;a&quot;)&#xA;            .replaceAll(&quot;\\s&quot;, &quot; &quot;);&#xA;&#xA;    patternCounts&#xA;        .computeIfAbsent(&#xA;            key,&#xA;            k -> new java.util.HashMap&lt;String, Long>()&#xA;        )&#xA;        .put(&#xA;            pattern,&#xA;            patternCounts&#xA;                .get(key)&#xA;                .getOrDefault(pattern, 0L) + 1&#xA;        );&#xA;}&#xA;}"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE_END" value="&#xA;&#xA;globalMap.put(&quot;DQ_TOTAL_ROWS&quot;, totalRows);&#xA;globalMap.put(&quot;DQ_NULL_ROWS&quot;, nullRows);&#xA;globalMap.put(&quot;DQ_TOTAL_CHARS&quot;, totalChars);&#xA;globalMap.put(&quot;DQ_DISTINCT_VALUES&quot;, distinctValues);&#xA;globalMap.put(&quot;DQ_DATA_TYPES&quot;, dataTypes);&#xA;globalMap.put(&quot;DQ_MIN_VALUES&quot;, minValues);&#xA;globalMap.put(&quot;DQ_MAX_VALUES&quot;, maxValues);&#xA;globalMap.put(&quot;DQ_PATTERN_COUNTS&quot;, patternCounts);"/>
     <elementParameter field="CHECK" name="Version_V2_0" value="false" show="false"/>
     <elementParameter field="CHECK" name="Version_V3_2" value="false" show="false"/>
     <elementParameter field="CHECK" name="Version_V4.0" value="true" show="false"/>
@@ -223,6 +220,12 @@
       <column comment="" key="false" length="-1" name="row_null" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="cardinaly" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="avg_len" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="row" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="min_val" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pct_null" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="max_val" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pattern_top" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pct_top" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="320">
@@ -274,218 +277,6 @@
       <column comment="" key="false" length="-1" name="col9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="120">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_XwXTUF6oEfGQ0ed-VkYKHg-tMap_1-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
-    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="out_valid">
-      <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="8" name="system_pid" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="job_repository_id" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="job_version" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="message_type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="8" name="duration" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="avg_len" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="pct_null" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out_valid">
-        <mapperTableEntries name="moment" expression="row1.moment " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="pid" expression="row1.pid " type="id_String" nullable="true"/>
-        <mapperTableEntries name="father_pid" expression="row1.father_pid " type="id_String" nullable="true"/>
-        <mapperTableEntries name="root_pid" expression="row1.root_pid " type="id_String" nullable="true"/>
-        <mapperTableEntries name="system_pid" expression="row1.system_pid " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="project" expression="row1.project " type="id_String" nullable="true"/>
-        <mapperTableEntries name="job" expression="row1.job " type="id_String" nullable="true"/>
-        <mapperTableEntries name="job_repository_id" expression="row1.job_repository_id " type="id_String" nullable="true"/>
-        <mapperTableEntries name="job_version" expression="row1.job_version " type="id_String" nullable="true"/>
-        <mapperTableEntries name="context" expression="row1.context " type="id_String" nullable="true"/>
-        <mapperTableEntries name="origin" expression="row1.origin " type="id_String" nullable="true"/>
-        <mapperTableEntries name="message_type" expression="row1.message_type " type="id_String" nullable="true"/>
-        <mapperTableEntries name="message" expression="row1.message " type="id_String" nullable="true"/>
-        <mapperTableEntries name="duration" expression="row1.duration " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="avg_len" expression="0.0" type="id_Double" nullable="true"/>
-        <mapperTableEntries name="pct_null" expression="0.0" type="id_Double" nullable="true"/>
-      </outputTables>
-    </nodeData>
-  </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="context.ss_host"/>
-    <elementParameter field="TEXT" name="PORT" value="context.ss_port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.ss_db"/>
-    <elementParameter field="TEXT" name="USER" value="context.ss_user"/>
-    <elementParameter field="PASSWORD" name="PASS" value="context.ss_password"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="((String)globalMap.get(&quot;row2.table_name&quot;))"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
-    <elementParameter field="TABLE" name="ADD_COLS"/>
-    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="moment" id="0"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="3"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="4"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="pid" id="5"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="father_pid" id="10"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="14"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="root_pid" id="15"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="system_pid" id="20"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="23"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="24"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="project" id="25"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="28"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="job" id="30"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="33"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="34"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="job_repository_id" id="35"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="36"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="37"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="38"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="39"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="job_version" id="40"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="41"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="42"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="43"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="44"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="context" id="45"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="46"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="47"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="48"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="49"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="origin" id="50"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="51"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="52"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="53"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="54"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="message_type" id="55"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="56"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="57"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="58"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="59"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="message" id="60"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="61"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="62"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="63"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="64"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="duration" id="65"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="66"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="67"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="68"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="69"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="avg_len" id="70"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="71"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="72"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="73"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="74"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="pct_null" id="75"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="76"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="77"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="78"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="79"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
-    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBOutput_1">
-      <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="8" name="system_pid" nullable="true" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="job_repository_id" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="job_version" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="message_type" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="8" name="duration" nullable="true" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="avg_len" nullable="true" pattern="" precision="-1" sourceType="DOUBLE" type="id_Double" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="pct_null" nullable="true" pattern="" precision="-1" sourceType="DOUBLE" type="id_Double" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" name="REJECT">
-      <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="8" name="system_pid" nullable="true" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="job_repository_id" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="job_version" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="message_type" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="8" name="duration" nullable="true" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="avg_len" nullable="true" pattern="" precision="-1" sourceType="DOUBLE" type="id_Double" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="pct_null" nullable="true" pattern="" precision="-1" sourceType="DOUBLE" type="id_Double" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
@@ -515,6 +306,249 @@
         <additionalField key="Content Type" value="Nominal"/>
       </column>
     </metadata>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_2" show="false"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE_START" value="    java.util.Map&lt;String, Long> totalRows =&#xA;        (java.util.Map&lt;String, Long>) globalMap.get(&quot;DQ_TOTAL_ROWS&quot;);&#xA;&#xA;    java.util.Map&lt;String, Long> nullRows =&#xA;        (java.util.Map&lt;String, Long>) globalMap.get(&quot;DQ_NULL_ROWS&quot;);&#xA;&#xA;    java.util.Map&lt;String, Long> totalChars =&#xA;        (java.util.Map&lt;String, Long>) globalMap.get(&quot;DQ_TOTAL_CHARS&quot;);&#xA;&#xA;    java.util.Map&lt;String, java.util.Set&lt;String>> distinctValues =&#xA;        (java.util.Map&lt;String, java.util.Set&lt;String>>) globalMap.get(&quot;DQ_DISTINCT_VALUES&quot;);&#xA;&#xA;    java.util.Map&lt;String, String> dataTypes =&#xA;        (java.util.Map&lt;String, String>) globalMap.get(&quot;DQ_DATA_TYPES&quot;);&#xA;&#xA;    java.util.Map&lt;String, String> minValues =&#xA;        (java.util.Map&lt;String, String>) globalMap.get(&quot;DQ_MIN_VALUES&quot;);&#xA;&#xA;    java.util.Map&lt;String, String> maxValues =&#xA;        (java.util.Map&lt;String, String>) globalMap.get(&quot;DQ_MAX_VALUES&quot;);&#xA;&#xA;    java.util.Map&lt;String, java.util.Map&lt;String, Long>> patternCounts =&#xA;        (java.util.Map&lt;String, java.util.Map&lt;String, Long>>) globalMap.get(&quot;DQ_PATTERN_COUNTS&quot;);&#xA;&#xA;    java.util.List&lt;String> keys =&#xA;        new java.util.ArrayList&lt;String>(totalRows.keySet());&#xA;&#xA;    java.util.Collections.sort(keys);&#xA;&#xA;    for (String key : keys) {"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE_MAIN" value="String[] parts =&#xA;key.split(&quot;\\|&quot;, 2);&#xA;&#xA;String datasetName =&#xA;parts.length > 0 ? parts[0] : &quot;&quot;;&#xA;&#xA;String columnName =&#xA;parts.length > 1 ? parts[1] : &quot;&quot;;&#xA;&#xA;Long total =&#xA;totalRows.getOrDefault(key, 0L);&#xA;&#xA;Long nullCount =&#xA;nullRows.getOrDefault(key, 0L);&#xA;&#xA;Long nonNull =&#xA;total - nullCount;&#xA;&#xA;Long chars =&#xA;totalChars.getOrDefault(key, 0L);&#xA;&#xA;Long cardinality =&#xA;Long.valueOf(&#xA;    distinctValues&#xA;        .getOrDefault(&#xA;            key,&#xA;            new java.util.HashSet&lt;String>()&#xA;        )&#xA;        .size()&#xA;);&#xA;&#xA;Double avgLen =&#xA;nonNull == 0&#xA;? 0.0&#xA;: ((double) chars / nonNull);&#xA;&#xA;Double pctNull =&#xA;total == 0&#xA;? 0.0&#xA;: ((double) nullCount * 100.0) / total;&#xA;&#xA;String minVal =&#xA;minValues.get(key);&#xA;&#xA;String maxVal =&#xA;maxValues.get(key);&#xA;&#xA;String patternTop =&#xA;null;&#xA;&#xA;Long patternTopCount =&#xA;0L;&#xA;&#xA;java.util.Map&lt;String, Long> patterns =&#xA;patternCounts.get(key);&#xA;&#xA;if (patterns != null) {&#xA;&#xA;for (java.util.Map.Entry&lt;String, Long> entry : patterns.entrySet()) {&#xA;&#xA;    if (entry.getValue() > patternTopCount) {&#xA;        patternTop = entry.getKey();&#xA;        patternTopCount = entry.getValue();&#xA;    }&#xA;}&#xA;}&#xA;&#xA;Double pctTop =&#xA;nonNull == 0&#xA;? 0.0&#xA;: ((double) patternTopCount * 100.0) / nonNull;&#xA;&#xA;out_valid.dataset_name = datasetName;&#xA;out_valid.column_name = columnName;&#xA;out_valid.data_type = dataTypes.get(key);&#xA;&#xA;out_valid.total_row = total;&#xA;out_valid.row_null = nullCount;&#xA;out_valid.pct_null = pctNull;&#xA;out_valid.cardinaly = cardinality;&#xA;out_valid.avg_len = avgLen;&#xA;&#xA;out_valid.min_val = minVal;&#xA;out_valid.max_value = maxVal;&#xA;out_valid.pattern_top = patternTop;&#xA;out_valid.pct_top = pctTop;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE_END" value=" }&#xA;"/>
+    <elementParameter field="CHECK" name="Version_V2_0" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" value="true" show="false"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_2">
+      <column comment="" key="false" length="-1" name="avg_len" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pct_top" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dataset_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="column_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="data_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="total_row" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="row_null" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pct_null" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="cardinaly" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="min_val" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="max_value" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pattern_top" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="880" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_XwXTUF6oEfGQ0ed-VkYKHg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out_valid2">
+      <column comment="" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="column_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="data_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="rows_total" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="rows_null" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pct_null" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="cardinality" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="min_val" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="max_val" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="avg_len" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pattern_top" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pct_top" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out_valid2">
+        <mapperTableEntries name="run_id" expression="context.run_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="run_ts" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="dataset" expression="out_valid.dataset_name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="column_name" expression="out_valid.column_name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="data_type" expression="out_valid.data_type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="rows_total" expression="out_valid.total_row " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="rows_null" expression="out_valid.row_null " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="pct_null" expression="out_valid.pct_null " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="cardinality" expression="out_valid.cardinaly " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="min_val" expression="out_valid.min_val " type="id_String" nullable="true"/>
+        <mapperTableEntries name="max_val" expression="out_valid.max_value " type="id_String" nullable="true"/>
+        <mapperTableEntries name="avg_len" expression="out_valid.avg_len " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="pattern_top" expression="out_valid.pattern_top " type="id_String" nullable="true"/>
+        <mapperTableEntries name="pct_top" expression="out_valid.pct_top " type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="out_valid" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="avg_len" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="pct_top" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="dataset_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="column_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="data_type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="total_row" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="row_null" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="pct_null" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="cardinaly" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="min_val" type="id_String" nullable="true"/>
+        <mapperTableEntries name="max_value" type="id_String" nullable="true"/>
+        <mapperTableEntries name="pattern_top" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ss_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ss_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ss_db"/>
+    <elementParameter field="TEXT" name="USER" value="context.ss_user"/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.ss_password"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_dq_profile&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="run_id" id="0"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="3"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="run_ts" id="5"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dataset" id="10"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="column_name" id="15"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_type" id="20"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="23"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rows_total" id="25"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="28"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rows_null" id="30"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="33"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="34"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pct_null" id="35"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="36"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="37"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="38"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cardinality" id="40"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="41"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="42"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="43"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="min_val" id="45"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="46"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="47"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="48"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="max_val" id="50"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="51"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="52"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="53"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="54"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg_len" id="55"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="56"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="57"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="58"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pattern_top" id="60"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="61"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="62"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="63"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="64"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pct_top" id="65"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="66"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="67"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="68"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="69"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="column_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="data_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="rows_total" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="rows_null" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pct_null" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="cardinality" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="min_val" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="max_val" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="avg_len" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pattern_top" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pct_top" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="column_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="data_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="rows_total" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="rows_null" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pct_null" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="cardinality" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="min_val" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="max_val" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="avg_len" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pattern_top" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pct_top" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.run_id = String.valueOf(System.currentTimeMillis());"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
   </node>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFlowToIterate_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -556,29 +590,87 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="out_valid" lineStyle="0" metaname="out_valid" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_1" target="tJavaFlex_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out_valid" lineStyle="0" metaname="tJavaFlex_2" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_2" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="avg_len" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="pct_top" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="total_row" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="pattern_top" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="row_null" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="cardinaly" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="column_name" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="data_type" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="pct_null" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="min_val" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="max_value" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+      <elementValue elementRef="TRACE_COLUMN" value="dataset_name" id="33"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_valid" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out_valid2" lineStyle="0" metaname="out_valid2" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_valid2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
 </talendfile:ProcessType>

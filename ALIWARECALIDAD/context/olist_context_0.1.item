@@ -3,9 +3,9 @@
   <contextParameter xmi:id="_VbSncV6qEfGQ0ed-VkYKHg" comment="" name="ss_host" prompt="ss_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="svc-3482219c-a389-4079-b18b-d50662524e8a-shared-dml.aws-virginia-6.svc.singlestore.com"/>
   <contextParameter xmi:id="_VbSncl6qEfGQ0ed-VkYKHg" comment="" name="ss_port" prompt="ss_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3333"/>
   <contextParameter xmi:id="_VbSnc16qEfGQ0ed-VkYKHg" comment="" name="ss_db" prompt="ss_db?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="db_andres_99693"/>
-  <contextParameter xmi:id="_VbSndF6qEfGQ0ed-VkYKHg" comment="" name="ss_user" prompt="ss_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_VbSndF6qEfGQ0ed-VkYKHg" comment="" name="ss_user" prompt="ss_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="andres-c8f0f"/>
   <contextParameter xmi:id="_VbSndV6qEfGQ0ed-VkYKHg" comment="" name="ss_password" prompt="ss_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:tiWqAjRpW479C4GlDd/Hbw5p66Rx/lg9xYURWsrPHcBmff6PugLlmg+mXx4KI3x4n+LU"/>
-  <contextParameter xmi:id="_VbSndl6qEfGQ0ed-VkYKHg" comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="routines.System.currentTimeMillis().toString()"/>
+  <contextParameter xmi:id="_VbSndl6qEfGQ0ed-VkYKHg" comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   <contextParameter xmi:id="_VbSnd16qEfGQ0ed-VkYKHg" comment="" name="olist_path" prompt="olist_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Users/andresgaibor/geniuslab/Fuentes/"/>
   <contextParameter xmi:id="_JVOuUF-LEfGRHsGBAOP07A" comment="" name="run_id2" prompt="run_id2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="timestampt"/>
   <contextParameter xmi:id="_JVPVYF-LEfGRHsGBAOP07A" comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="50000"/>
