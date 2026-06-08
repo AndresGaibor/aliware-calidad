@@ -291,16 +291,10 @@
     <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="440" posY="200">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
       <elementParameter field="TABLE" name="GROUPBYS">
-        <elementValue elementRef="OUTPUT_COLUMN" value="run_id" id="0"/>
-        <elementValue elementRef="INPUT_COLUMN" value="run_id" id="1"/>
-        <elementValue elementRef="OUTPUT_COLUMN" value="run_ts" id="2"/>
-        <elementValue elementRef="INPUT_COLUMN" value="run_ts" id="3"/>
-        <elementValue elementRef="OUTPUT_COLUMN" value="job" id="4"/>
-        <elementValue elementRef="INPUT_COLUMN" value="job" id="5"/>
-        <elementValue elementRef="OUTPUT_COLUMN" value="dataset" id="6"/>
-        <elementValue elementRef="INPUT_COLUMN" value="dataset" id="7"/>
-        <elementValue elementRef="OUTPUT_COLUMN" value="dimension" id="8"/>
-        <elementValue elementRef="INPUT_COLUMN" value="dimension" id="9"/>
+        <elementValue elementRef="OUTPUT_COLUMN" value="dataset" id="0"/>
+        <elementValue elementRef="INPUT_COLUMN" value="dataset" id="1"/>
+        <elementValue elementRef="OUTPUT_COLUMN" value="dimension" id="2"/>
+        <elementValue elementRef="INPUT_COLUMN" value="dimension" id="3"/>
       </elementParameter>
       <elementParameter field="TABLE" name="OPERATIONS">
         <elementValue elementRef="OUTPUT_COLUMN" value="rows_eval" id="0"/>
