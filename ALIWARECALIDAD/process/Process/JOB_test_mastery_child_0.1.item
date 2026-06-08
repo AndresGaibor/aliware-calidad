@@ -1,8 +1,9 @@
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_wpJ3ZzVvLzYGe-gPXIJrAc" defaultContext="Default" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmi:id="_MasteryChildJobIdStable" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default"></context>
-  <node xmi:id="_bspMO7t176fz3sqXNmO1ng" componentName="tJava" posX="100" posY="100">
+  <parameters></parameters>
+  <node xmi:id="_2b-5SzQf9EXpeigWxFkKTP" componentName="tJava" posX="100" posY="100">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"></elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="Log Hijo"></elementParameter>
-    <elementParameter field="TEXT" name="CODE" value="&quot;System.out.println(\&quot;=== [HIJO] Ejecutado exitosamente por tRunJob ===\&quot;);&quot;"></elementParameter>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;=== [HIJO] Ejecutado exitosamente por tRunJob ===&quot;);"></elementParameter>
   </node>
 </talendfile:ProcessType>

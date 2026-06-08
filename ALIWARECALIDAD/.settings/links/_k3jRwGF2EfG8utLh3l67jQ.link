@@ -1,5 +1,5 @@
 {
-  "itemId" : "_XwXTUF6oEfGQ0ed-VkYKHg",
+  "itemId" : "_k3jRwGF2EfG8utLh3l67jQ",
   "contextList" : [ {
     "contextName" : "Default",
     "repoId" : "_p9EjMF-LEfGRHsGBAOP07A",
@@ -21,9 +21,6 @@
     }, {
       "id" : "_VbSndF6qEfGQ0ed-VkYKHg",
       "name" : "DB_USER"
-    }, {
-      "id" : "_lvG3cGBbEfG_06p10MWAVQ",
-      "name" : "FECHAINI"
     }, {
       "id" : "_VbSnd16qEfGQ0ed-VkYKHg",
       "name" : "olist_path"

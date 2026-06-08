@@ -1,181 +1,856 @@
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.talend.com/joblet.ecore" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper">
-  <model:JobletProcess xmi:id="_rbQV-6Yixb8-n5FSE3dcNT" defaultContext="Default">
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
     <context confirmationNeeded="false" hide="false" name="Default">
-      <contextParameter xmi:id="_UnqSOoB_FbpJkjzNo7vv-T" name="p_rules_yaml_path" type="id_String" value="" comment="Ruta al archivo yaml de reglas"></contextParameter>
-      <contextParameter xmi:id="_3QpO7djWF36mms-fQxLQ3a" name="p_strict_mode" type="id_Boolean" value="true" comment="Modo estricto: true rechaza, false solo registra"></contextParameter>
+      <contextParameter comment="Ruta al archivo yaml de reglas" name="p_rules_yaml_path" prompt="p_rules_yaml_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_AZuZYGKgEfGqnN3QkVy38Q"/>
+      <contextParameter comment="Modo estricto: true rechaza, false solo registra" name="p_strict_mode" prompt="p_strict_mode?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true" internalId="_AZuZYWKgEfGqnN3QkVy38Q"/>
+      <contextParameter comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="50000" internalId="_AZuZYmKgEfGqnN3QkVy38Q"/>
+      <contextParameter comment="" name="olist_path" prompt="olist_path?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="/Users/andresgaibor/geniuslab/Fuentes/" internalId="_AZuZY2KgEfGqnN3QkVy38Q"/>
+      <contextParameter comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_Long" value="" internalId="_AZuZZGKgEfGqnN3QkVy38Q"/>
+      <contextParameter comment="" name="DB_HOST" prompt="DB_HOST?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="209.50.254.159" internalId="_7JTTcGNhEfGLoYeQujM5uQ"/>
+      <contextParameter comment="" name="DB_NAME" prompt="DB_NAME?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="DSADEV" internalId="_7JTTcWNhEfGLoYeQujM5uQ"/>
+      <contextParameter comment="" name="DB_PASSWORD" prompt="DB_PASSWORD?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_Password" value="enc:system.encryption.key.v1:ENxFKsQ77OtuiEJPIHL6c+/yzjYr/xelWoAKuo5iVIJztpY=" internalId="_7JUhkGNhEfGLoYeQujM5uQ"/>
+      <contextParameter comment="" name="DB_PORT" prompt="DB_PORT?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="3306" internalId="_7JUhkWNhEfGLoYeQujM5uQ"/>
+      <contextParameter comment="" name="DB_USER" prompt="DB_USER?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="usr_acme" internalId="_7JUhkmNhEfGLoYeQujM5uQ"/>
+      <contextParameter comment="" name="FECHAINI" prompt="FECHAINI?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="" internalId="_7JUhk2NhEfGLoYeQujM5uQ"/>
     </context>
-    <parameters xmi:id="__mwl8YK-5zDzwMLdByUYvC"></parameters>
-    <node xmi:id="_bjnwy84U1AMSKuUwwHS1FK" componentName="INPUT" posX="100" posY="200">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"></elementParameter>
-      <elementParameter field="TEXT" name="LABEL" value="Entrada del Joblet"></elementParameter>
-      <metadata connector="FLOW" label="INPUT_1" name="INPUT_1" xmi:id="_jXAFdivw3L3664GTi4JiH6">
-        <column name="run_id" type="id_String" nullable="true"></column>
-        <column name="run_ts" type="id_Date" nullable="true"></column>
-        <column name="dataset" type="id_String" nullable="true"></column>
-        <column name="business_key" type="id_String" nullable="true"></column>
-        <column name="payload_json" type="id_String" nullable="true"></column>
-        <column name="rule_id" type="id_String" nullable="true"></column>
-        <column name="dimension" type="id_String" nullable="true"></column>
-        <column name="severity" type="id_String" nullable="true"></column>
-        <column name="rule_passed" type="id_Boolean" nullable="true"></column>
+    <parameters>
+      <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" show="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" show="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;/Applications/TalendStudio-8.0.1/studio/workspace/in.csv&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_18" show="false"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:vkmEQwgCp1e8zKwBkn1ix0ffCrlf3SFJiQNcpJSM" show="false"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    </parameters>
+    <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="280">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplicate_1" show="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tReplicate_1">
+        <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Valor de la PK de negocio (ej:&#xA;order&#xA;_&#xA;id)" key="false" length="-1" name="business_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="JSON con todo el registro" key="false" length="-1" name="payload_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Regla a evaluar (driver)" key="false" length="-1" name="rule_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Dimensión DAMA" key="false" length="-1" name="dimension" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Crítica/Alta/Media/Baja" key="false" length="-1" name="severity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Resultado" key="false" length="-1" name="rule_passed" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
-    <node xmi:id="_gZB_3OiJzrxwUmEV4CfFgr" componentName="tFilterRow" posX="250" posY="200">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1"></elementParameter>
-      <elementParameter field="TEXT" name="LABEL" value="Filtro Rejects (rule_passed == false)"></elementParameter>
-      <elementParameter field="TEXT" name="USE_ADVANCED" value="true"></elementParameter>
-      <elementParameter field="TEXT" name="ADVANCED_COND" value="row_in.rule_passed == false"></elementParameter>
-      <metadata connector="FILTER" label="tFilterRow_1" name="tFilterRow_1" xmi:id="_4Wx2F3usRxZWv8cDw1r5-T">
-        <column name="run_id" type="id_String" nullable="true"></column>
-        <column name="run_ts" type="id_Date" nullable="true"></column>
-        <column name="dataset" type="id_String" nullable="true"></column>
-        <column name="business_key" type="id_String" nullable="true"></column>
-        <column name="payload_json" type="id_String" nullable="true"></column>
-        <column name="rule_id" type="id_String" nullable="true"></column>
-        <column name="dimension" type="id_String" nullable="true"></column>
-        <column name="severity" type="id_String" nullable="true"></column>
-        <column name="rule_passed" type="id_Boolean" nullable="true"></column>
+    <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="200">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+      <elementParameter field="TABLE" name="CONDITIONS"/>
+      <elementParameter field="CHECK" name="USE_ADVANCED" value="true"/>
+      <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="row2.rule_passed == false"/>
+      <elementParameter field="TEXT" name="LABEL" value="Filtro Rejects (rule_passed == false)"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FILTER" name="tFilterRow_1">
+        <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Valor de la PK de negocio (ej:&#xA;order&#xA;_&#xA;id)" key="false" length="-1" name="business_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="JSON con todo el registro" key="false" length="-1" name="payload_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Regla a evaluar (driver)" key="false" length="-1" name="rule_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Dimensión DAMA" key="false" length="-1" name="dimension" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Crítica/Alta/Media/Baja" key="false" length="-1" name="severity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Resultado" key="false" length="-1" name="rule_passed" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="REJECT" name="REJECT">
+        <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Valor de la PK de negocio (ej:&#xA;order&#xA;_&#xA;id)" key="false" length="-1" name="business_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="JSON con todo el registro" key="false" length="-1" name="payload_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Regla a evaluar (driver)" key="false" length="-1" name="rule_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Dimensión DAMA" key="false" length="-1" name="dimension" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Crítica/Alta/Media/Baja" key="false" length="-1" name="severity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Resultado" key="false" length="-1" name="rule_passed" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="FLOW" name="tFilterRow_1">
+        <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Valor de la PK de negocio (ej:&#xA;order&#xA;_&#xA;id)" key="false" length="-1" name="business_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="JSON con todo el registro" key="false" length="-1" name="payload_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Regla a evaluar (driver)" key="false" length="-1" name="rule_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Dimensión DAMA" key="false" length="-1" name="dimension" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Crítica/Alta/Media/Baja" key="false" length="-1" name="severity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Resultado" key="false" length="-1" name="rule_passed" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
-    <node xmi:id="_J5xxXY2mFODFyxl9sJfnKx" componentName="tMap" posX="400" posY="200">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1"></elementParameter>
-      <elementParameter field="TEXT" name="LABEL" value="Mapear Rejects"></elementParameter>
-      <metadata connector="FLOW" label="out_rejects" name="out_rejects" xmi:id="_DhOxRD-wo2hfCyHhJURqsA">
-        <column name="run_id" type="id_String" nullable="true"></column>
-        <column name="run_ts" type="id_Date" nullable="true"></column>
-        <column name="source_table" type="id_String" nullable="true"></column>
-        <column name="business_key" type="id_String" nullable="true"></column>
-        <column name="rule_id" type="id_String" nullable="true"></column>
-        <column name="severity" type="id_String" nullable="true"></column>
-        <column name="row_payload" type="id_String" nullable="true"></column>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="200" sizeX="41" sizeY="40">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_Zhp9UapFRBhg9REk7EEKPR-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="Mapear Rejects"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="out_rejects" name="out_rejects">
+        <column key="false" length="-1" name="run_id" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="-1" name="source_table" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="business_key" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="rule_id" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="severity" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="row_payload" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"></uiProperties>
-        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"></varTables>
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
         <outputTables sizeState="INTERMEDIATE" name="out_rejects">
-          <mapperTableEntries name="run_id" expression="row_filtered.run_id" type="id_String" nullable="true"></mapperTableEntries>
-          <mapperTableEntries name="run_ts" expression="row_filtered.run_ts" type="id_Date" nullable="true"></mapperTableEntries>
-          <mapperTableEntries name="source_table" expression="row_filtered.dataset" type="id_String" nullable="true"></mapperTableEntries>
-          <mapperTableEntries name="business_key" expression="row_filtered.business_key" type="id_String" nullable="true"></mapperTableEntries>
-          <mapperTableEntries name="rule_id" expression="row_filtered.rule_id" type="id_String" nullable="true"></mapperTableEntries>
-          <mapperTableEntries name="severity" expression="row_filtered.severity" type="id_String" nullable="true"></mapperTableEntries>
-          <mapperTableEntries name="row_payload" expression="row_filtered.payload_json" type="id_String" nullable="true"></mapperTableEntries>
+          <mapperTableEntries name="run_id" expression="row_filtered.run_id" type="id_String" nullable="true"/>
+          <mapperTableEntries name="run_ts" expression="row_filtered.run_ts" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="source_table" expression="row_filtered.dataset" type="id_String" nullable="true"/>
+          <mapperTableEntries name="business_key" expression="row_filtered.business_key" type="id_String" nullable="true"/>
+          <mapperTableEntries name="rule_id" expression="row_filtered.rule_id" type="id_String" nullable="true"/>
+          <mapperTableEntries name="severity" expression="row_filtered.severity" type="id_String" nullable="true"/>
+          <mapperTableEntries name="row_payload" expression="row_filtered.payload_json" type="id_String" nullable="true"/>
         </outputTables>
         <inputTables sizeState="INTERMEDIATE" name="row_filtered" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-          <mapperTableEntries name="run_id" type="id_String"></mapperTableEntries>
-          <mapperTableEntries name="run_ts" type="id_Date"></mapperTableEntries>
-          <mapperTableEntries name="dataset" type="id_String"></mapperTableEntries>
-          <mapperTableEntries name="business_key" type="id_String"></mapperTableEntries>
-          <mapperTableEntries name="payload_json" type="id_String"></mapperTableEntries>
-          <mapperTableEntries name="rule_id" type="id_String"></mapperTableEntries>
-          <mapperTableEntries name="dimension" type="id_String"></mapperTableEntries>
-          <mapperTableEntries name="severity" type="id_String"></mapperTableEntries>
-          <mapperTableEntries name="rule_passed" type="id_Boolean"></mapperTableEntries>
+          <mapperTableEntries name="run_id" type="id_String" nullable="true"/>
+          <mapperTableEntries name="run_ts" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="dataset" type="id_String" nullable="true"/>
+          <mapperTableEntries name="business_key" type="id_String" nullable="true"/>
+          <mapperTableEntries name="payload_json" type="id_String" nullable="true"/>
+          <mapperTableEntries name="rule_id" type="id_String" nullable="true"/>
+          <mapperTableEntries name="dimension" type="id_String" nullable="true"/>
+          <mapperTableEntries name="severity" type="id_String" nullable="true"/>
+          <mapperTableEntries name="rule_passed" type="id_Boolean" nullable="true"/>
+          <mapperTableEntries name="job" type="id_String" nullable="true"/>
         </inputTables>
       </nodeData>
     </node>
-    <node xmi:id="_hz9hhUwnKIGj-Kqjw4VEqC" componentName="tMysqlOutput" posX="550" posY="200">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1"></elementParameter>
-      <elementParameter field="TEXT" name="LABEL" value="Insertar stg_rejects"></elementParameter>
-      <elementParameter field="TEXT" name="USE_EXISTING_CONNECTION" value="true"></elementParameter>
-      <elementParameter field="TEXT" name="CONNECTION" value="tDBConnection_1"></elementParameter>
-      <elementParameter field="TEXT" name="TABLE" value="&quot;stg_rejects&quot;"></elementParameter>
-      <elementParameter field="TEXT" name="DATA_ACTION" value="INSERT"></elementParameter>
-      <elementParameter field="TEXT" name="DIE_ON_ERROR" value="true"></elementParameter>
-    </node>
-    <node xmi:id="_-ndrxvZb6RPeTxxmZPN6Qd" componentName="tAggregateRow" posX="400" posY="350">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1"></elementParameter>
-      <elementParameter field="TEXT" name="LABEL" value="Agrupar métricas"></elementParameter>
-      <elementParameter field="TABLE" name="GROUPBYS">
-        <elementValue elementRef="OUTPUT_COLUMN" value="dataset" id="0"></elementValue>
-        <elementValue elementRef="INPUT_COLUMN" value="dataset" id="1"></elementValue>
-        <elementValue elementRef="OUTPUT_COLUMN" value="dimension" id="2"></elementValue>
-        <elementValue elementRef="INPUT_COLUMN" value="dimension" id="3"></elementValue>
-      </elementParameter>
-      <elementParameter field="TABLE" name="OPERATIONS">
-        <elementValue elementRef="OUTPUT_COLUMN" value="run_id" id="0"></elementValue>
-        <elementValue elementRef="FUNCTION" value="first" id="1"></elementValue>
-        <elementValue elementRef="INPUT_COLUMN" value="run_id" id="2"></elementValue>
-        <elementValue elementRef="IGNORE_NULL" value="false" id="3"></elementValue>
-        <elementValue elementRef="OUTPUT_COLUMN" value="run_ts" id="4"></elementValue>
-        <elementValue elementRef="FUNCTION" value="first" id="5"></elementValue>
-        <elementValue elementRef="INPUT_COLUMN" value="run_ts" id="6"></elementValue>
-        <elementValue elementRef="IGNORE_NULL" value="false" id="7"></elementValue>
-        <elementValue elementRef="OUTPUT_COLUMN" value="rows_ko" id="8"></elementValue>
-        <elementValue elementRef="FUNCTION" value="count" id="9"></elementValue>
-        <elementValue elementRef="INPUT_COLUMN" value="run_id" id="10"></elementValue>
-        <elementValue elementRef="IGNORE_NULL" value="false" id="11"></elementValue>
-      </elementParameter>
-      <metadata connector="FLOW" label="tAggregateRow_1" name="tAggregateRow_1" xmi:id="_6ELh07UvZ2z6hnWDjb1z3l">
-        <column name="run_id" type="id_String" nullable="true"></column>
-        <column name="run_ts" type="id_Date" nullable="true"></column>
-        <column name="dataset" type="id_String" nullable="true"></column>
-        <column name="dimension" type="id_String" nullable="true"></column>
-        <column name="rows_ko" type="id_Integer" nullable="true"></column>
-      </metadata>
-    </node>
-    <node xmi:id="_I4fhmtmr_f1ih3ZEkOSPb_" componentName="tMap" posX="550" posY="350">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2"></elementParameter>
-      <elementParameter field="TEXT" name="LABEL" value="Calcular Score"></elementParameter>
-      <metadata connector="FLOW" label="out_metrics" name="out_metrics" xmi:id="_rAJcj_PD5dv_iAiU3_UEao">
-        <column name="run_id" type="id_String" nullable="true"></column>
-        <column name="run_ts" type="id_Date" nullable="true"></column>
-        <column name="dataset" type="id_String" nullable="true"></column>
-        <column name="dimension" type="id_String" nullable="true"></column>
-        <column name="rows_eval" type="id_Integer" nullable="true"></column>
-        <column name="rows_ko" type="id_Integer" nullable="true"></column>
-        <column name="score" type="id_Double" nullable="true"></column>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="280" posY="360">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_Zhp9UapFRBhg9REk7EEKPR-tMap_3-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="tAggregateRow_1" name="out_v">
+        <column comment="" key="false" length="-1" name="ko_flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Valor de la PK de negocio (ej:&#xA;order&#xA;_&#xA;id)" key="false" length="-1" name="business_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="JSON con todo el registro" key="false" length="-1" name="payload_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Regla a evaluar (driver)" key="false" length="-1" name="rule_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Dimensión DAMA" key="false" length="-1" name="dimension" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Crítica/Alta/Media/Baja" key="false" length="-1" name="severity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Resultado" key="false" length="-1" name="rule_passed" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"></uiProperties>
-        <varTables sizeState="INTERMEDIATE" name="Var">
-          <mapperTableEntries name="eval" expression="((Integer)globalMap.get(&quot;tDBInput_1_NB_LINE&quot;)) != null &amp;&amp; ((Integer)globalMap.get(&quot;tDBInput_1_NB_LINE&quot;)) &gt; 0 ? ((Integer)globalMap.get(&quot;tDBInput_1_NB_LINE&quot;)) : 1" type="id_Integer" nullable="false"></mapperTableEntries>
-        </varTables>
-        <outputTables sizeState="INTERMEDIATE" name="out_metrics">
-          <mapperTableEntries name="run_id" expression="row_aggregated.run_id" type="id_String" nullable="true"></mapperTableEntries>
-          <mapperTableEntries name="run_ts" expression="row_aggregated.run_ts" type="id_Date" nullable="true"></mapperTableEntries>
-          <mapperTableEntries name="dataset" expression="row_aggregated.dataset" type="id_String" nullable="true"></mapperTableEntries>
-          <mapperTableEntries name="dimension" expression="row_aggregated.dimension" type="id_String" nullable="true"></mapperTableEntries>
-          <mapperTableEntries name="rows_eval" expression="Var.eval" type="id_Integer" nullable="true"></mapperTableEntries>
-          <mapperTableEntries name="rows_ko" expression="row_aggregated.rows_ko" type="id_Integer" nullable="true"></mapperTableEntries>
-          <mapperTableEntries name="score" expression="1 - ((double)row_aggregated.rows_ko / Var.eval)" type="id_Double" nullable="true"></mapperTableEntries>
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="out_v">
+          <mapperTableEntries name="ko_flag" expression="row3.rule_passed == false ? 1 : 0" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="run_id" expression="row3.run_id " type="id_String" nullable="true"/>
+          <mapperTableEntries name="run_ts" expression="row3.run_ts " type="id_Date" nullable="true"/>
+          <mapperTableEntries name="dataset" expression="row3.dataset " type="id_String" nullable="true"/>
+          <mapperTableEntries name="business_key" expression="row3.business_key " type="id_String" nullable="true"/>
+          <mapperTableEntries name="payload_json" expression="row3.payload_json " type="id_String" nullable="true"/>
+          <mapperTableEntries name="rule_id" expression="row3.rule_id " type="id_String" nullable="true"/>
+          <mapperTableEntries name="dimension" expression="row3.dimension " type="id_String" nullable="true"/>
+          <mapperTableEntries name="severity" expression="row3.severity " type="id_String" nullable="true"/>
+          <mapperTableEntries name="rule_passed" expression="row3.rule_passed " type="id_Boolean" nullable="true"/>
+          <mapperTableEntries name="job" expression="row3.job " type="id_String" nullable="true"/>
         </outputTables>
-        <inputTables sizeState="INTERMEDIATE" name="row_aggregated" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-          <mapperTableEntries name="run_id" type="id_String"></mapperTableEntries>
-          <mapperTableEntries name="run_ts" type="id_Date"></mapperTableEntries>
-          <mapperTableEntries name="dataset" type="id_String"></mapperTableEntries>
-          <mapperTableEntries name="dimension" type="id_String"></mapperTableEntries>
-          <mapperTableEntries name="rows_ko" type="id_Integer"></mapperTableEntries>
+        <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="run_id" type="id_String" nullable="true"/>
+          <mapperTableEntries name="run_ts" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="dataset" type="id_String" nullable="true"/>
+          <mapperTableEntries name="business_key" type="id_String" nullable="true"/>
+          <mapperTableEntries name="payload_json" type="id_String" nullable="true"/>
+          <mapperTableEntries name="rule_id" type="id_String" nullable="true"/>
+          <mapperTableEntries name="dimension" type="id_String" nullable="true"/>
+          <mapperTableEntries name="severity" type="id_String" nullable="true"/>
+          <mapperTableEntries name="rule_passed" type="id_Boolean" nullable="true"/>
+          <mapperTableEntries name="job" type="id_String" nullable="true"/>
         </inputTables>
       </nodeData>
     </node>
-    <node xmi:id="_iSbrPF_lbtP9OXtohrEeYz" componentName="tMysqlOutput" posX="700" posY="350">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2"></elementParameter>
-      <elementParameter field="TEXT" name="LABEL" value="Insertar stg_dq_metrics"></elementParameter>
-      <elementParameter field="TEXT" name="USE_EXISTING_CONNECTION" value="true"></elementParameter>
-      <elementParameter field="TEXT" name="CONNECTION" value="tDBConnection_1"></elementParameter>
-      <elementParameter field="TEXT" name="TABLE" value="&quot;stg_dq_metrics&quot;"></elementParameter>
-      <elementParameter field="TEXT" name="DATA_ACTION" value="INSERT"></elementParameter>
-      <elementParameter field="TEXT" name="DIE_ON_ERROR" value="true"></elementParameter>
+    <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="350">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+      <elementParameter field="TABLE" name="GROUPBYS">
+        <elementValue elementRef="OUTPUT_COLUMN" value="run_id" id="0"/>
+        <elementValue elementRef="INPUT_COLUMN" value="run_id" id="1"/>
+        <elementValue elementRef="OUTPUT_COLUMN" value="job" id="2"/>
+        <elementValue elementRef="INPUT_COLUMN" value="job" id="3"/>
+        <elementValue elementRef="OUTPUT_COLUMN" value="dataset" id="4"/>
+        <elementValue elementRef="INPUT_COLUMN" value="dataset" id="5"/>
+        <elementValue elementRef="OUTPUT_COLUMN" value="dimension" id="6"/>
+        <elementValue elementRef="INPUT_COLUMN" value="dimension" id="7"/>
+      </elementParameter>
+      <elementParameter field="TABLE" name="OPERATIONS">
+        <elementValue elementRef="OUTPUT_COLUMN" value="rows_eval" id="0"/>
+        <elementValue elementRef="FUNCTION" value="count" id="1"/>
+        <elementValue elementRef="INPUT_COLUMN" value="run_id" id="2"/>
+        <elementValue elementRef="IGNORE_NULL" value="false" id="3"/>
+        <elementValue elementRef="OUTPUT_COLUMN" value="rows_ko" id="4"/>
+        <elementValue elementRef="FUNCTION" value="sum" id="5"/>
+        <elementValue elementRef="INPUT_COLUMN" value="ko_flag" id="6"/>
+        <elementValue elementRef="IGNORE_NULL" value="false" id="7"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+      <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+      <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+      <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="Agrupar métricas"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="tAggregateRow_1" name="tAggregateRow_1">
+        <column key="false" length="-1" name="run_id" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="-1" name="dataset" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="dimension" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="rows_ko" nullable="true" precision="-1" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="rows_eval" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      </metadata>
     </node>
-    <connection xmi:id="_Aioxmg_o5xURtdEMrEYVoj" source="INPUT_1" target="tFilterRow_1" label="row_in" connectorName="FLOW">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_in"></elementParameter>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="550" posY="350">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_Zhp9UapFRBhg9REk7EEKPR-tMap_2-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="Calcular Score"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="out_metrics" name="out_metrics">
+        <column key="false" length="-1" name="run_id" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="-1" name="dataset" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="dimension" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="rows_eval" nullable="true" precision="-1" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="-1" name="rows_ko" nullable="true" precision="-1" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="-1" name="score" nullable="true" precision="-1" type="id_Double" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var">
+          <mapperTableEntries name="eval" expression="((Integer)globalMap.get(&quot;tDBInput_1_NB_LINE&quot;)) != null &amp;&amp; ((Integer)globalMap.get(&quot;tDBInput_1_NB_LINE&quot;)) > 0 ? ((Integer)globalMap.get(&quot;tDBInput_1_NB_LINE&quot;)) : 1" type="id_Integer"/>
+        </varTables>
+        <outputTables sizeState="INTERMEDIATE" name="out_metrics">
+          <mapperTableEntries name="run_id" expression="row_aggregated.run_id" type="id_String" nullable="true"/>
+          <mapperTableEntries name="run_ts" expression="row_aggregated.run_ts" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="job" expression="row_aggregated.job " type="id_String" nullable="true"/>
+          <mapperTableEntries name="dataset" expression="row_aggregated.dataset" type="id_String" nullable="true"/>
+          <mapperTableEntries name="dimension" expression="row_aggregated.dimension" type="id_String" nullable="true"/>
+          <mapperTableEntries name="rows_eval" expression="Var.eval" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="rows_ko" expression="row_aggregated.rows_ko" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="score" expression="row_aggregated.rows_eval == 0&#xA;&#x9;&#x9;&#x9;? 1.0&#xA;&#x9;&#x9;&#x9;: 1.0 - ((double) row_aggregated.rows_ko / row_aggregated.rows_eval) " type="id_Double" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row_aggregated" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="run_id" type="id_String" nullable="true"/>
+          <mapperTableEntries name="run_ts" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="job" type="id_String" nullable="true"/>
+          <mapperTableEntries name="dataset" type="id_String" nullable="true"/>
+          <mapperTableEntries name="dimension" type="id_String" nullable="true"/>
+          <mapperTableEntries name="rows_ko" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="rows_eval" type="id_Integer" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="200">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+      <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+      <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+      <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+      <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+      <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+      <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+      <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+      <elementParameter field="TABLE" name="LENGTHS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="run_id" id="0"/>
+        <elementValue elementRef="LENGTH" value="10" id="1"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="run_ts" id="2"/>
+        <elementValue elementRef="LENGTH" value="10" id="3"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="source_table" id="4"/>
+        <elementValue elementRef="LENGTH" value="10" id="5"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="business_key" id="6"/>
+        <elementValue elementRef="LENGTH" value="10" id="7"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="rule_id" id="8"/>
+        <elementValue elementRef="LENGTH" value="10" id="9"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="severity" id="10"/>
+        <elementValue elementRef="LENGTH" value="10" id="11"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="row_payload" id="12"/>
+        <elementValue elementRef="LENGTH" value="10" id="13"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+      <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="out_rejects" name="tLogRow_1">
+        <column key="false" length="-1" name="run_id" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="-1" name="source_table" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="business_key" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="rule_id" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="severity" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="row_payload" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="200">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_3" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+      <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="context.ss_host" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="context.ss_port" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.ss_db" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="context.ss_user" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS" value="context.ss_password" show="false"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_rejects_agaibor&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+      <elementParameter field="TABLE" name="ADD_COLS"/>
+      <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="run_id" id="0"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="3"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="4"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="run_ts" id="5"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="source_table" id="10"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="business_key" id="15"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="rule_id" id="20"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="23"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="24"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="severity" id="25"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="28"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="29"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="row_payload" id="30"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="33"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="34"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+      <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+      <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="out_rejects" name="tDBOutput_3">
+        <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="-1" name="source_table" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="business_key" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="rule_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="severity" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="row_payload" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="REJECT" label="out_rejects" name="REJECT">
+        <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="-1" name="source_table" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="business_key" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="rule_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="severity" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="row_payload" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="360">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+      <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+      <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+      <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+      <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+      <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+      <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+      <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+      <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+      <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+      <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+      <elementParameter field="TABLE" name="LENGTHS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="run_id" id="0"/>
+        <elementValue elementRef="LENGTH" value="10" id="1"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="run_ts" id="2"/>
+        <elementValue elementRef="LENGTH" value="10" id="3"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="source_table" id="4"/>
+        <elementValue elementRef="LENGTH" value="10" id="5"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="business_key" id="6"/>
+        <elementValue elementRef="LENGTH" value="10" id="7"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="rule_id" id="8"/>
+        <elementValue elementRef="LENGTH" value="10" id="9"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="severity" id="10"/>
+        <elementValue elementRef="LENGTH" value="10" id="11"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="row_payload" id="12"/>
+        <elementValue elementRef="LENGTH" value="10" id="13"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+      <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="out_rejects" name="tLogRow_2">
+        <column key="false" length="-1" name="run_id" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="-1" name="source_table" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="business_key" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="rule_id" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="severity" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="row_payload" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="880" posY="360">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+      <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="context.ss_host" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="context.ss_port" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.ss_db" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="context.ss_user" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS" value="context.ss_password" show="false"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_dq_metrics_agaibor&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+      <elementParameter field="TABLE" name="ADD_COLS"/>
+      <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="run_id" id="0"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="3"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="4"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="run_ts" id="5"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="job" id="10"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="dataset" id="15"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="dimension" id="20"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="23"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="24"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="rows_eval" id="25"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="28"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="29"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="rows_ko" id="30"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="33"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="34"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="score" id="35"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="36"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="37"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="38"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="39"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+      <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+      <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="out_metrics" name="tDBOutput_1">
+        <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="-1" name="dataset" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="dimension" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="rows_eval" nullable="true" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="-1" name="rows_ko" nullable="true" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="-1" name="score" nullable="true" precision="-1" sourceType="DOUBLE" type="id_Double" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="REJECT" label="out_metrics" name="REJECT">
+        <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="-1" name="dataset" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="dimension" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="rows_eval" nullable="true" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="-1" name="rows_ko" nullable="true" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="-1" name="score" nullable="true" precision="-1" sourceType="DOUBLE" type="id_Double" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="40">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+      <elementParameter field="TEXT" name="HOST" value="context.DB_HOST"/>
+      <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="context.DB_PORT"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.DB_NAME"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+      <elementParameter field="TEXT" name="USER" value="context.DB_USER"/>
+      <elementParameter field="PASSWORD" name="PASS" value="context.DB_PASSWORD"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tDBConnection_singlestore"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    </node>
+    <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="40">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    </node>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="INPUT_2" offsetLabelX="0" offsetLabelY="0" source="INPUT_2" target="tReplicate_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="job" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
     </connection>
-    <connection xmi:id="_dDS4VuTT7veOOM3LTVBPXB" source="tFilterRow_1" target="tMap_1" label="row_filtered" connectorName="FILTER">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_filtered"></elementParameter>
+    <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tReplicate_1" target="tFilterRow_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="rule_id" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+        <elementValue elementRef="TRACE_COLUMN" value="severity" id="3"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+        <elementValue elementRef="TRACE_COLUMN" value="rule_passed" id="6"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+        <elementValue elementRef="TRACE_COLUMN" value="business_key" id="9"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+        <elementValue elementRef="TRACE_COLUMN" value="payload_json" id="12"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
     </connection>
-    <connection xmi:id="_PV8ATHR9CF8bGqRS46BfjZ" source="tMap_1" target="tDBOutput_1" label="out_rejects" connectorName="FLOW">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_rejects"></elementParameter>
+    <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tReplicate_1" target="tMap_3">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
     </connection>
-    <connection xmi:id="_9-E88tdurAJ_UswjZ23FQ8" source="INPUT_1" target="tAggregateRow_1" label="row_in_dup" connectorName="FLOW">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_in_dup"></elementParameter>
+    <connection connectorName="FILTER" label="row_filtered" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_1" target="tMap_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="rule_id" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+        <elementValue elementRef="TRACE_COLUMN" value="severity" id="3"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+        <elementValue elementRef="TRACE_COLUMN" value="run_id" id="6"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+        <elementValue elementRef="TRACE_COLUMN" value="rule_passed" id="9"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+        <elementValue elementRef="TRACE_COLUMN" value="business_key" id="12"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+        <elementValue elementRef="TRACE_COLUMN" value="payload_json" id="15"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+        <elementValue elementRef="TRACE_COLUMN" value="dataset" id="18"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+        <elementValue elementRef="TRACE_COLUMN" value="dimension" id="21"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+        <elementValue elementRef="TRACE_COLUMN" value="run_ts" id="24"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+        <elementValue elementRef="TRACE_COLUMN" value="job" id="27"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_filtered" show="false"/>
     </connection>
-    <connection xmi:id="_jYzq1L489vjxBS96s5KmO8" source="tAggregateRow_1" target="tMap_2" label="row_aggregated" connectorName="FLOW">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_aggregated"></elementParameter>
+    <connection connectorName="FLOW" label="out_rejects" lineStyle="0" metaname="out_rejects" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_rejects" show="false"/>
     </connection>
-    <connection xmi:id="_NBw0m-FG63ED38EBGFLs4-" source="tMap_2" target="tDBOutput_2" label="out_metrics" connectorName="FLOW">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_metrics"></elementParameter>
+    <connection connectorName="FLOW" label="out_v" lineStyle="0" metaname="out_v" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tAggregateRow_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="rule_id" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+        <elementValue elementRef="TRACE_COLUMN" value="severity" id="3"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ko_flag" id="6"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+        <elementValue elementRef="TRACE_COLUMN" value="rule_passed" id="9"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+        <elementValue elementRef="TRACE_COLUMN" value="business_key" id="12"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+        <elementValue elementRef="TRACE_COLUMN" value="payload_json" id="15"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+        <elementValue elementRef="TRACE_COLUMN" value="job" id="18"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_v" show="false"/>
     </connection>
+    <connection connectorName="FLOW" label="row_aggregated" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMap_2">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="rows_eval" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+        <elementValue elementRef="TRACE_COLUMN" value="job" id="3"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_aggregated" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="out_metrics" lineStyle="0" metaname="out_metrics" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tLogRow_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_metrics" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tDBOutput_3">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBOutput_3" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_3" target="OUTPUT_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tDBOutput_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="OUTPUT_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_2" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="80" posY="280" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_2"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="true" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_2">
+        <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Valor de la PK de negocio (ej:&#xA;order&#xA;_&#xA;id)" key="false" length="-1" name="business_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="JSON con todo el registro" key="false" length="-1" name="payload_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Regla a evaluar (driver)" key="false" length="-1" name="rule_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Dimensión DAMA" key="false" length="-1" name="dimension" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Crítica/Alta/Media/Baja" key="false" length="-1" name="severity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="Resultado" key="false" length="-1" name="rule_passed" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="200">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="out_rejects" name="OUTPUT_1">
+        <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="-1" name="source_table" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="business_key" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="rule_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="severity" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="row_payload" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="360">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_2"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="out_metrics" name="OUTPUT_2">
+        <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="-1" name="dataset" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="dimension" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column key="false" length="-1" name="rows_eval" nullable="true" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="-1" name="rows_ko" nullable="true" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="-1" name="score" nullable="true" precision="-1" sourceType="DOUBLE" type="id_Double" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
   </model:JobletProcess>
-  <TalendProperties:ByteArray xmi:id="_fiyKyE4eTE7aTI2ghG4tmq"></TalendProperties:ByteArray>
+  <TalendProperties:ByteArray/>
 </xmi:XMI>

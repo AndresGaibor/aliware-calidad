@@ -1,12 +1,9 @@
 {
-  "itemId" : "_XwXTUF6oEfGQ0ed-VkYKHg",
+  "itemId" : "_k7J_YGF2EfG8utLh3l67jQ",
   "contextList" : [ {
     "contextName" : "Default",
     "repoId" : "_p9EjMF-LEfGRHsGBAOP07A",
     "parameterList" : [ {
-      "id" : "_JVPVYF-LEfGRHsGBAOP07A",
-      "name" : "batch_size"
-    }, {
       "id" : "_VbSncV6qEfGQ0ed-VkYKHg",
       "name" : "DB_HOST"
     }, {
@@ -22,14 +19,11 @@
       "id" : "_VbSndF6qEfGQ0ed-VkYKHg",
       "name" : "DB_USER"
     }, {
-      "id" : "_lvG3cGBbEfG_06p10MWAVQ",
-      "name" : "FECHAINI"
+      "id" : "_JVPVYF-LEfGRHsGBAOP07A",
+      "name" : "batch_size"
     }, {
       "id" : "_VbSnd16qEfGQ0ed-VkYKHg",
       "name" : "olist_path"
-    }, {
-      "id" : "_JVOuUF-LEfGRHsGBAOP07A",
-      "name" : "run_id"
     } ]
   } ]
 }

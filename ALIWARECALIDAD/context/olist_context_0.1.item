@@ -5,8 +5,10 @@
   <contextParameter xmi:id="_VbSnc16qEfGQ0ed-VkYKHg" comment="" name="ss_db" prompt="ss_db?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="db_andres_99693"/>
   <contextParameter xmi:id="_VbSndF6qEfGQ0ed-VkYKHg" comment="" name="ss_user" prompt="ss_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="andres-c8f0f"/>
   <contextParameter xmi:id="_VbSndV6qEfGQ0ed-VkYKHg" comment="" name="ss_password" prompt="ss_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:tiWqAjRpW479C4GlDd/Hbw5p66Rx/lg9xYURWsrPHcBmff6PugLlmg+mXx4KI3x4n+LU"/>
-  <contextParameter xmi:id="_VbSndl6qEfGQ0ed-VkYKHg" comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_VbSndl6qEfGQ0ed-VkYKHg" comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
   <contextParameter xmi:id="_VbSnd16qEfGQ0ed-VkYKHg" comment="" name="olist_path" prompt="olist_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Users/andresgaibor/geniuslab/Fuentes/"/>
   <contextParameter xmi:id="_JVOuUF-LEfGRHsGBAOP07A" comment="" name="run_id2" prompt="run_id2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="timestampt"/>
   <contextParameter xmi:id="_JVPVYF-LEfGRHsGBAOP07A" comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="50000"/>
+  <contextParameter xmi:id="_Qmrh0GLwEfGqnN3QkVy38Q" comment="" name="env" prompt="env?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEV"/>
+  <contextParameter xmi:id="_Qmrh0WLwEfGqnN3QkVy38Q" comment="" name="strict_mode" prompt="strict_mode?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
 </talendfile:ContextType>
