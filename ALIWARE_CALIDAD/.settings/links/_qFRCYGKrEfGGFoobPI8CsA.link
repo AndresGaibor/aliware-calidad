@@ -1,13 +1,6 @@
 {
-  "itemId" : "_E0KIAF6oEfGPh5Ars2lx7Q",
+  "itemId" : "_qFRCYGKrEfGGFoobPI8CsA",
   "contextList" : [ {
-    "contextName" : "Default",
-    "repoId" : "_rzPg4F6qEfGPh5Ars2lx7Q",
-    "parameterList" : [ {
-      "id" : "_rznUVl6qEfGPh5Ars2lx7Q",
-      "name" : "run_id"
-    } ]
-  }, {
     "contextName" : "Default",
     "repoId" : "_vkvy0F-KEfGbrr-j5qI4Bw",
     "parameterList" : [ {
@@ -40,6 +33,12 @@
     }, {
       "id" : "_vlRXSF-KEfGbrr-j5qI4Bw",
       "name" : "PIPELINE_NAME"
+    }, {
+      "id" : "_YJSGkF-NEfGbrr-j5qI4Bw",
+      "name" : "run_id"
+    }, {
+      "id" : "_Rf0wUGLwEfGN9asye36-0A",
+      "name" : "Strict_mode"
     } ]
   } ]
 }

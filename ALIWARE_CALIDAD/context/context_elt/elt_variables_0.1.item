@@ -8,7 +8,8 @@
   <contextParameter xmi:id="_vlRXRl-KEfGbrr-j5qI4Bw" comment="" name="DB_USER" prompt="DB_USER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="usr_acme"/>
   <contextParameter xmi:id="_vlRXR1-KEfGbrr-j5qI4Bw" comment="" name="DB_PASSWORD" prompt="DB_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="acme123"/>
   <contextParameter xmi:id="_vlRXSF-KEfGbrr-j5qI4Bw" comment="" name="PIPELINE_NAME" prompt="PIPELINE_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="lab08elt"/>
-  <contextParameter xmi:id="_YJSGkF-NEfGbrr-j5qI4Bw" comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="timestamp "/>
+  <contextParameter xmi:id="_YJSGkF-NEfGbrr-j5qI4Bw" comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
   <contextParameter xmi:id="_YJSGkV-NEfGbrr-j5qI4Bw" comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="5000"/>
   <contextParameter xmi:id="_mfvDIGBbEfGyI6Yfhg-nxg" comment="" name="FECHAINI" prompt="FECHAINI?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Rf0wUGLwEfGN9asye36-0A" comment="" name="Strict_mode" prompt="Strict_mode?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
 </talendfile:ContextType>

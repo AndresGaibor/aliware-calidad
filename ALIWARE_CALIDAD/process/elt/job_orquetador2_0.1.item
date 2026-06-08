@@ -11,7 +11,7 @@
     <contextParameter comment="" name="ENV_NAME" prompt="ENV_NAME?" promptNeeded="false" repositoryContextId="_vkvy0F-KEfGbrr-j5qI4Bw" type="id_String" value="dev" internalId="_fO4SZ2BgEfGyI6Yfhg-nxg"/>
     <contextParameter comment="" name="FECHAINI" prompt="FECHAINI?" promptNeeded="false" repositoryContextId="_vkvy0F-KEfGbrr-j5qI4Bw" type="id_String" value="" internalId="_fO4SaGBgEfGyI6Yfhg-nxg"/>
     <contextParameter comment="" name="PIPELINE_NAME" prompt="PIPELINE_NAME?" promptNeeded="false" repositoryContextId="_vkvy0F-KEfGbrr-j5qI4Bw" type="id_String" value="lab08elt" internalId="_fO4SaWBgEfGyI6Yfhg-nxg"/>
-    <contextParameter comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="_vkvy0F-KEfGbrr-j5qI4Bw" type="id_String" value="timestamp " internalId="_fO4SamBgEfGyI6Yfhg-nxg"/>
+    <contextParameter comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="_vkvy0F-KEfGbrr-j5qI4Bw" type="id_Long" value="" internalId="_fO4SamBgEfGyI6Yfhg-nxg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -292,13 +292,13 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>

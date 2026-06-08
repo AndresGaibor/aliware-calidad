@@ -7,4 +7,6 @@
   <contextParameter xmi:id="_rznUVV6qEfGPh5Ars2lx7Q" comment="" name="ss_password" prompt="ss_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:HRLZXaJfIEcYccE0INBYpX/70MxSjlgkw95brq/rVOm1sUwkuVcFBlhGTzcO2BXKgbs94xAo"/>
   <contextParameter xmi:id="_rznUVl6qEfGPh5Ars2lx7Q" comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="0"/>
   <contextParameter xmi:id="_rznUV16qEfGPh5Ars2lx7Q" comment="" name="ss_port" prompt="ss_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3333"/>
+  <contextParameter xmi:id="_JRsvYGKPEfGrhvfiAm11HA" comment="" name="dataset" prompt="dataset?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_TH6V0GKrEfGGFoobPI8CsA" comment="" name="job" prompt="job?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="jl_calidad_olist2"/>
 </talendfile:ContextType>
