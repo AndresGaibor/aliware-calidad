@@ -3,26 +3,21 @@
   <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="Ruta al archivo yaml de reglas" name="p_rules_yaml_path" prompt="p_rules_yaml_path?" promptNeeded="false" repositoryContextId="_Zhp9UapFRBhg9REk7EEKPR" type="id_String" value="" internalId="_AZuZYGKgEfGqnN3QkVy38Q"/>
     <contextParameter comment="Modo estricto: true rechaza, false solo registra" name="p_strict_mode" prompt="p_strict_mode?" promptNeeded="false" repositoryContextId="_Zhp9UapFRBhg9REk7EEKPR" type="id_Boolean" value="true" internalId="_AZuZYWKgEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="50000" internalId="_AZuZYmKgEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="olist_path" prompt="olist_path?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="/Users/andresgaibor/geniuslab/Fuentes/" internalId="_AZuZY2KgEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_Long" value="" internalId="_AZuZZGKgEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="DB_HOST" prompt="DB_HOST?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="209.50.254.159" internalId="_9NcyYGLmEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="DB_NAME" prompt="DB_NAME?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="DSADEV" internalId="_9NcyYWLmEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="DB_PASSWORD" prompt="DB_PASSWORD?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_Password" value="enc:system.encryption.key.v1:0wBxOJuJOsRsL5EcPlSb7MT49jHmisag1R7cDLTAV8KACm8=" internalId="_9NdZcGLmEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="DB_PORT" prompt="DB_PORT?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="3306" internalId="_9NdZcWLmEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="DB_USER" prompt="DB_USER?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="usr_acme" internalId="_9NdZcmLmEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="FECHAINI" prompt="FECHAINI?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="" internalId="_9NdZc2LmEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="run_id2" prompt="run_id2?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="timestampt" internalId="_AZuZZWKgEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="ss_db" prompt="ss_db?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="db_andres_99693" internalId="_AZuZZmKgEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="ss_host" prompt="ss_host?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="svc-3482219c-a389-4079-b18b-d50662524e8a-shared-dml.aws-virginia-6.svc.singlestore.com" internalId="_AZuZZ2KgEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="ss_password" prompt="ss_password?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_Password" value="enc:system.encryption.key.v1:+s6gQcFopLk6Ky2ExmH/o2XcEXY72uZ/c53wnh0iAdfT9w+0TziYb3tiRo/9QPQzR0yZ" internalId="_AZvAcGKgEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="ss_port" prompt="ss_port?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="3333" internalId="_AZvAcWKgEfGqnN3QkVy38Q"/>
-    <contextParameter comment="" name="ss_user" prompt="ss_user?" promptNeeded="false" repositoryContextId="_VaYBcF6qEfGQ0ed-VkYKHg" type="id_String" value="andres-c8f0f" internalId="_AZvAcmKgEfGqnN3QkVy38Q"/>
+    <contextParameter comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_Integer" value="500000" internalId="_kOKeUGNqEfGGHqk4t4zbtg"/>
+    <contextParameter comment="" name="DB_HOST" prompt="DB_HOST?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="209.50.254.159" internalId="_kOKeUWNqEfGGHqk4t4zbtg"/>
+    <contextParameter comment="" name="DB_NAME" prompt="DB_NAME?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="DSADEV" internalId="_kOKeUmNqEfGGHqk4t4zbtg"/>
+    <contextParameter comment="" name="DB_PASSWORD" prompt="DB_PASSWORD?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_Password" value="enc:system.encryption.key.v1:J7BvX35UvKxu48q+Vc6nAlbXijmYKBbIthL5lwisbfcAw+4=" internalId="_kOKeU2NqEfGGHqk4t4zbtg"/>
+    <contextParameter comment="" name="DB_PORT" prompt="DB_PORT?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="3306" internalId="_kOKeVGNqEfGGHqk4t4zbtg"/>
+    <contextParameter comment="" name="DB_USER" prompt="DB_USER?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="usr_acme" internalId="_kOKeVWNqEfGGHqk4t4zbtg"/>
+    <contextParameter comment="" name="FECHAINI" prompt="FECHAINI?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="" internalId="_kOKeVmNqEfGGHqk4t4zbtg"/>
+    <contextParameter comment="" name="olist_path" prompt="olist_path?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_String" value="/Users/andresgaibor/geniuslab/Fuentes/" internalId="_kOKeV2NqEfGGHqk4t4zbtg"/>
+    <contextParameter comment="" name="run_id" prompt="run_id?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_Long" value="" internalId="_kOKeWGNqEfGGHqk4t4zbtg"/>
+    <contextParameter comment="" name="run_ts" prompt="run_ts?" promptNeeded="false" repositoryContextId="_p9EjMF-LEfGRHsGBAOP07A" type="id_Date" value="" internalId="_kOKeWWNqEfGGHqk4t4zbtg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="120" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="160" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -218,7 +213,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="tMap_DQ011"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="out1">
+    <metadata connector="FLOW" name="out_dq011">
       <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -233,17 +228,17 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out1">
+      <outputTables sizeState="INTERMEDIATE" name="out_dq011">
         <mapperTableEntries name="run_id" expression="String.valueOf(context.run_id) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="run_ts" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="run_ts" expression="context.run_ts" type="id_Date" nullable="true"/>
         <mapperTableEntries name="dataset" expression="&quot;olist_orders_dataset&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="business_key" expression="row2.order_id " type="id_String" nullable="true"/>
-        <mapperTableEntries name="payload_json" expression="&quot;{}&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="payload_json" expression="&quot;{\&quot;reason\&quot;:\&quot;customer_id_null_or_empty\&quot;,\&quot;customer_id\&quot;:\&quot;&quot; + (row2.customer_id != null ? row2.customer_id : &quot;&quot;) + &quot;\&quot;}&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="rule_id" expression="&quot;DQ-011&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="dimension" expression="&quot;Completitud&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="severity" expression="&quot;Critica&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="severity" expression="&quot;Crítica&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="rule_passed" expression="row2.customer_id != null &amp;&amp; !row2.customer_id.isEmpty() " type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="job" type="id_String" nullable="true"/>
+        <mapperTableEntries name="job" expression="&quot;JOB_dq_olist_pipeline_agaibor&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="order_id" type="id_String" nullable="true"/>
@@ -253,6 +248,51 @@
         <mapperTableEntries name="order_delivered_customer_date" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
+  </node>
+  <node componentName="JL_calidad_olist" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="720" posY="360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="JL_calidad_olist_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="JL_calidad_olist"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="JL_calidad_olist_1">
+      <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Valor de la PK de negocio (ej:&#xA;order&#xA;_&#xA;id)" key="false" length="-1" name="business_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="JSON con todo el registro" key="false" length="-1" name="payload_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Regla a evaluar (driver)" key="false" length="-1" name="rule_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Dimensión DAMA" key="false" length="-1" name="dimension" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Crítica/Alta/Media/Baja" key="false" length="-1" name="severity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Resultado" key="false" length="-1" name="rule_passed" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT_1" name="OUTPUT_1">
+      <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="-1" name="source_table" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="business_key" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="rule_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="severity" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="row_payload" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT_2" name="OUTPUT_2">
+      <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="-1" name="dataset" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="dimension" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="rows_eval" nullable="true" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="-1" name="rows_ko" nullable="true" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="-1" name="score" nullable="true" precision="-1" sourceType="DOUBLE" type="id_Double" usefulColumn="true"/>
+    </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="520" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
@@ -269,7 +309,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="tMap_DQ012"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="out2">
+    <metadata connector="FLOW" name="out_dq012">
       <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -282,19 +322,19 @@
       <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out2">
+      <outputTables sizeState="INTERMEDIATE" name="out_dq012">
         <mapperTableEntries name="run_id" expression="String.valueOf(context.run_id) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="run_ts" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="run_ts" expression="context.run_ts" type="id_Date" nullable="true"/>
         <mapperTableEntries name="dataset" expression="&quot;olist_orders_dataset&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="business_key" expression="row3.order_id " type="id_String" nullable="true"/>
-        <mapperTableEntries name="payload_json" expression="&quot;{}&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="payload_json" expression="&quot;{\&quot;reason\&quot;:\&quot;invalid_order_status\&quot;,\&quot;order_status\&quot;:\&quot;&quot; + (row3.order_status != null ? row3.order_status : &quot;&quot;) + &quot;\&quot;,\&quot;valid_statuses\&quot;:\&quot;delivered,shipped,canceled,unavailable,invoiced,processing,approved,created\&quot;}&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="rule_id" expression="&quot;DQ-012&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="dimension" expression="&quot;Consistencia&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="dimension" expression="&quot;Validez&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="severity" expression="&quot;Alta&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="rule_passed" expression="java.util.Arrays.asList(&quot;delivered&quot;,&quot;shipped&quot;,&quot;canceled&quot;,&quot;unavailable&quot;,&quot;invoiced&quot;,&quot;processing&quot;,&quot;approved&quot;,&quot;created&quot;).contains(row3.order_status) " type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="job" type="id_String" nullable="true"/>
+        <mapperTableEntries name="job" expression="&quot;JOB_dq_olist_pipeline_agaibor&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="order_id" type="id_String" nullable="true"/>
@@ -304,6 +344,51 @@
         <mapperTableEntries name="order_delivered_customer_date" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
+  </node>
+  <node componentName="JL_calidad_olist" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="720" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="JL_calidad_olist_12"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="JL_calidad_olist"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="JL_calidad_olist_12">
+      <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Valor de la PK de negocio (ej:&#xA;order&#xA;_&#xA;id)" key="false" length="-1" name="business_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="JSON con todo el registro" key="false" length="-1" name="payload_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Regla a evaluar (driver)" key="false" length="-1" name="rule_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Dimensión DAMA" key="false" length="-1" name="dimension" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Crítica/Alta/Media/Baja" key="false" length="-1" name="severity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Resultado" key="false" length="-1" name="rule_passed" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT_1" name="OUTPUT_1">
+      <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="-1" name="source_table" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="business_key" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="rule_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="severity" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="row_payload" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT_2" name="OUTPUT_2">
+      <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="-1" name="dataset" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="dimension" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="rows_eval" nullable="true" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="-1" name="rows_ko" nullable="true" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="-1" name="score" nullable="true" precision="-1" sourceType="DOUBLE" type="id_Double" usefulColumn="true"/>
+    </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="520" posY="600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
@@ -320,7 +405,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="tMap_DQ013"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="out3">
+    <metadata connector="FLOW" name="out_dq013">
       <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -335,17 +420,17 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out3">
+      <outputTables sizeState="INTERMEDIATE" name="out_dq013">
         <mapperTableEntries name="run_id" expression="String.valueOf(context.run_id) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="run_ts" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="run_ts" expression="context.run_ts" type="id_Date" nullable="true"/>
         <mapperTableEntries name="dataset" expression="&quot;olist_orders_dataset&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="business_key" expression="row4.order_id " type="id_String" nullable="true"/>
-        <mapperTableEntries name="payload_json" expression="&quot;{}&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="payload_json" expression="&quot;{\&quot;delivery_date\&quot;:\&quot;&quot; + (row4.order_delivered_customer_date != null ? row4.order_delivered_customer_date : &quot;&quot;) + &quot;\&quot;,\&quot;purchase_date\&quot;:\&quot;&quot; + (row4.order_purchase_timestamp != null ? row4.order_purchase_timestamp : &quot;&quot;) + &quot;\&quot;,\&quot;reason\&quot;:\&quot;delivery_not_before_purchase\&quot;}&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="rule_id" expression="&quot;DQ-013&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="dimension" expression="&quot;Consistencia&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="severity" expression="&quot;Alta&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="rule_passed" expression="row3.order_delivered_customer_date == null&#xA;&#x9;&#x9;&#x9;&#x9;|| row3.order_delivered_customer_date.trim().isEmpty()&#xA;&#x9;&#x9;&#x9;&#x9;|| &quot;null&quot;.equalsIgnoreCase(row3.order_delivered_customer_date.trim())&#xA;&#x9;&#x9;&#x9;&#x9;|| row3.order_purchase_timestamp == null&#xA;&#x9;&#x9;&#x9;&#x9;|| row3.order_purchase_timestamp.trim().isEmpty()&#xA;&#x9;&#x9;&#x9;&#x9;|| &quot;null&quot;.equalsIgnoreCase(row3.order_purchase_timestamp.trim())&#xA;&#x9;&#x9;&#x9;&#x9;|| !TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row3.order_delivered_customer_date.trim())&#xA;&#x9;&#x9;&#x9;&#x9;        .before(&#xA;&#x9;&#x9;&#x9;&#x9;            TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row3.order_purchase_timestamp.trim())&#xA;&#x9;&#x9;&#x9;&#x9;        ) " type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="job" type="id_String" nullable="true"/>
+        <mapperTableEntries name="rule_passed" expression="row4.order_delivered_customer_date != null&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; !row4.order_delivered_customer_date.trim().isEmpty()&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; !&quot;null&quot;.equalsIgnoreCase(row4.order_delivered_customer_date.trim())&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; row4.order_purchase_timestamp != null&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; !row4.order_purchase_timestamp.trim().isEmpty()&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; !&quot;null&quot;.equalsIgnoreCase(row4.order_purchase_timestamp.trim())&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; row4.order_delivered_customer_date.trim().matches(&quot;\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}&quot;)&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; row4.order_purchase_timestamp.trim().matches(&quot;\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}&quot;)&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; !TalendDate.parseDate(&#xA;&#x9;&#x9;&#x9;&#x9;        &quot;yyyy-MM-dd HH:mm:ss&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;        row4.order_delivered_customer_date.trim()&#xA;&#x9;&#x9;&#x9;&#x9;   ).before(&#xA;&#x9;&#x9;&#x9;&#x9;        TalendDate.parseDate(&#xA;&#x9;&#x9;&#x9;&#x9;            &quot;yyyy-MM-dd HH:mm:ss&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;            row4.order_purchase_timestamp.trim()&#xA;&#x9;&#x9;&#x9;&#x9;        )&#xA;&#x9;&#x9;&#x9;&#x9;   ) " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="job" expression="&quot;JOB_dq_olist_pipeline_agaibor&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="order_id" type="id_String" nullable="true"/>
@@ -356,9 +441,53 @@
       </inputTables>
     </nodeData>
   </node>
+  <node componentName="JL_calidad_olist" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="720" posY="600">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="JL_calidad_olist_17"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="JL_calidad_olist"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="JL_calidad_olist_17">
+      <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Valor de la PK de negocio (ej:&#xA;order&#xA;_&#xA;id)" key="false" length="-1" name="business_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="JSON con todo el registro" key="false" length="-1" name="payload_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Regla a evaluar (driver)" key="false" length="-1" name="rule_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Dimensión DAMA" key="false" length="-1" name="dimension" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Crítica/Alta/Media/Baja" key="false" length="-1" name="severity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Resultado" key="false" length="-1" name="rule_passed" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT_1" name="OUTPUT_1">
+      <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="-1" name="source_table" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="business_key" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="rule_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="severity" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="row_payload" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT_2" name="OUTPUT_2">
+      <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="run_ts" nullable="true" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="-1" name="dataset" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="dimension" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="-1" name="rows_eval" nullable="true" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="-1" name="rows_ko" nullable="true" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="-1" name="score" nullable="true" precision="-1" sourceType="DOUBLE" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="880">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
@@ -373,7 +502,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xA;SELECT&#xA;  order_id,&#xA;  customer_id,&#xA;  order_status,&#xA;  order_purchase_timestamp,&#xA;  order_delivered_customer_date&#xA;FROM raw_olist_orders_agaibor;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xA;SELECT&#xA;  customer_id,&#xA;  customer_unique_id,&#xA;  customer_zip_code_prefix,&#xA;  customer_city,&#xA;  customer_state&#xA;FROM raw_olist_customers_agaibor;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -444,11 +573,30 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="-80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.run_id = System.currentTimeMillis();"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.run_id = System.currentTimeMillis();&#xA;context.run_ts = TalendDate.getCurrentDate();"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="tJava_run_id"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="760">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Construir razón&#xA;String reason = &quot;&quot;;&#xA;String delDate = row4.order_delivered_customer_date;&#xA;String purDate = row4.order_purchase_timestamp;&#xA;&#xA;if (delDate == null || delDate.trim().isEmpty() || &quot;null&quot;.equalsIgnoreCase(delDate.trim())) {&#xA; reason = &quot;delivery_date_null_or_empty&quot;;&#xA;} else if (purDate == null || purDate.trim().isEmpty() || &quot;null&quot;.equalsIgnoreCase(purDate.trim())) {&#xA; reason = &quot;purchase_date_null_or_empty&quot;;&#xA;} else {&#xA; reason = &quot;delivery_before_purchase&quot;;&#xA;}&#xA;&#xA;//Construir JSON manual sin Gson&#xA;StringBuilder json = new StringBuilder();&#xA;json.append(&quot;{&quot;);&#xA;json.append(&quot;\&quot;delivery_date\&quot;:\&quot;&quot;).append(delDate != null ? delDate.replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;) : &quot;&quot;).append(&quot;\&quot;,&quot;);&#xA;json.append(&quot;\&quot;purchase_date\&quot;:\&quot;&quot;).append(purDate != null ? purDate.replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;) : &quot;&quot;).append(&quot;\&quot;,&quot;);&#xA;json.append(&quot;\&quot;reason\&quot;:\&quot;&quot;).append(reason).append(&quot;\&quot;&quot;);&#xA;json.append(&quot;}&quot;);&#xA;&#xA;output_row.payload_json = json.toString();"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="Heredado del job padre" key="false" length="-1" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Heredado" key="false" length="-1" name="run_ts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="Nombre de la tabla" key="false" length="-1" name="dataset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Valor de la PK de negocio (ej:&#xA;order&#xA;_&#xA;id)" key="false" length="-1" name="business_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="JSON con todo el registro" key="false" length="-1" name="payload_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Regla a evaluar (driver)" key="false" length="-1" name="rule_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Dimensión DAMA" key="false" length="-1" name="dimension" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Crítica/Alta/Media/Baja" key="false" length="-1" name="severity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Resultado" key="false" length="-1" name="rule_passed" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
@@ -472,7 +620,19 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>
-  <note opaque="false" posX="400" posY="280" sizeHeight="41" sizeWidth="281" text="Validar que el Id del cliente no es nulo">
+  <connection connectorName="FLOW" label="out_dq011" lineStyle="0" metaname="out_dq011" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="JL_calidad_olist_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_dq011" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out_dq012" lineStyle="0" metaname="out_dq012" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="JL_calidad_olist_12">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_dq012" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out_dq013" lineStyle="0" metaname="out_dq013" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="JL_calidad_olist_17">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_dq013" show="false"/>
+  </connection>
+  <note opaque="false" posX="400" posY="320" sizeHeight="41" sizeWidth="281" text="Validar que el Id del cliente no es nulo">
     <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
   </note>
   <note opaque="false" posX="360" posY="80" sizeHeight="41" sizeWidth="281" text="Validar que el Id del cliente no es nulo"/>
@@ -510,6 +670,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
