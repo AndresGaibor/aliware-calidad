@@ -194,6 +194,7 @@
       <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
       <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
       <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="tMap_valido"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" label="tAggregateRow_1" name="out_v">
         <column key="false" length="-1" name="run_id" nullable="true" precision="-1" type="id_String" usefulColumn="true"/>
@@ -449,6 +450,7 @@
       <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
       <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
       <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tDBOutput_rejects"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" label="out_rejects" name="tDBOutput_3">
         <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -591,6 +593,7 @@
       <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
       <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
       <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tDBOutput_metrics"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" label="out_metrics" name="tDBOutput_1">
         <column key="false" length="-1" name="run_id" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -753,8 +756,8 @@
     </connection>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_2" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
     </subjob>
     <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="80" posY="280" input="true">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_2"/>
@@ -782,7 +785,7 @@
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
       <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
       <elementParameter field="CHECK" name="START" value="false" show="false"/>
-      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="LABEL" value="OUTPUT_rejects"/>
       <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <elementParameter field="CHECK" name="INFORMATION" value="false"/>
@@ -801,7 +804,7 @@
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_2"/>
       <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
       <elementParameter field="CHECK" name="START" value="false" show="false"/>
-      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="LABEL" value="OUTPUT_metrics"/>
       <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <elementParameter field="CHECK" name="INFORMATION" value="false"/>

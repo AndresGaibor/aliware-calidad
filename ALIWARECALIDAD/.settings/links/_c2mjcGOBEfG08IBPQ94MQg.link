@@ -1,0 +1,48 @@
+{
+  "itemId" : "_c2mjcGOBEfG08IBPQ94MQg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_Zhp9UapFRBhg9REk7EEKPR",
+    "parameterList" : [ {
+      "id" : "_AZuZYGKgEfGqnN3QkVy38Q",
+      "name" : "p_rules_yaml_path"
+    }, {
+      "id" : "_AZuZYWKgEfGqnN3QkVy38Q",
+      "name" : "p_strict_mode"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_p9EjMF-LEfGRHsGBAOP07A",
+    "parameterList" : [ {
+      "id" : "_JVPVYF-LEfGRHsGBAOP07A",
+      "name" : "batch_size"
+    }, {
+      "id" : "_VbSncV6qEfGQ0ed-VkYKHg",
+      "name" : "DB_HOST"
+    }, {
+      "id" : "_VbSnc16qEfGQ0ed-VkYKHg",
+      "name" : "DB_NAME"
+    }, {
+      "id" : "_VbSndV6qEfGQ0ed-VkYKHg",
+      "name" : "DB_PASSWORD"
+    }, {
+      "id" : "_VbSncl6qEfGQ0ed-VkYKHg",
+      "name" : "DB_PORT"
+    }, {
+      "id" : "_VbSndF6qEfGQ0ed-VkYKHg",
+      "name" : "DB_USER"
+    }, {
+      "id" : "_lvG3cGBbEfG_06p10MWAVQ",
+      "name" : "FECHAINI"
+    }, {
+      "id" : "_VbSnd16qEfGQ0ed-VkYKHg",
+      "name" : "olist_path"
+    }, {
+      "id" : "_JVOuUF-LEfGRHsGBAOP07A",
+      "name" : "run_id"
+    }, {
+      "id" : "_bmZ-UGNqEfGGHqk4t4zbtg",
+      "name" : "run_ts"
+    } ]
+  } ]
+}
